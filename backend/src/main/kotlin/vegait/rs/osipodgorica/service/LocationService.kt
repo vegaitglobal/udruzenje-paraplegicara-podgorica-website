@@ -35,8 +35,7 @@ class LocationService(
             latitude = request.latitude,
             longitude = request.longitude,
             address = request.address?: "",
-            postalNumber = request.postalNumber?: 81000
-            longitude = request.longitude,
+            postalNumber = request.postalNumber?: 81000,
             city = city
         )
 
