@@ -31,21 +31,11 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.1.4")
 	implementation("mysql:mysql-connector-java:8.0.33")
-
-//	implementation("org.hibernate.orm:hibernate-core:6.1.7.Final")
 	compileOnly("org.hibernate.orm:hibernate-jpamodelgen:6.2.6.Final")
 	implementation("com.blazebit:blaze-persistence-core-api-jakarta:1.6.9")
 	runtimeOnly("com.blazebit:blaze-persistence-core-impl-jakarta:1.6.9")
 	implementation("com.blazebit:blaze-persistence-integration-hibernate-6.2:1.6.9")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
-
-	
-//	implementation("jakarta.xml.bind:jakarta.xml.bind-api:4.0.1")
-//	implementation("com.sun.xml.bind:jaxb-impl:4.0.3")
-//	implementation("jakarta.transaction:jakarta.transaction-api:2.0.1")
-//	implementation("jakarta.activation:jakarta.activation-api:2.1.2")
-//	implementation("jakarta.annotation:jakarta.annotation-api:2.1.1")
-
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
