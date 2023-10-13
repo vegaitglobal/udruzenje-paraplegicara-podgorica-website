@@ -14,6 +14,9 @@ class Location (
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     var category: Category,
+    @ManyToOne
+    @JoinColumn(name = "city_id", nullable = true)
+    var city: City,
     @ManyToMany
     @JoinTable(
         name= "accessibility_feature_location",
