@@ -44,11 +44,12 @@ class LocationService(
         return repository.findById(id).orElseThrow()
     }
 
-    fun index(categoryId: Long?, cityId: Long?, featureIds: List<Long>?): List<Location> {
+    fun index(categoryId: Long?,cityId: Long? featureIds: List<Long>?, name: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
             .accessibilityFeatures(featureIds)
             .category(categoryId)
             .city(cityId)
+            .name(name)
             .build()
     }
 
