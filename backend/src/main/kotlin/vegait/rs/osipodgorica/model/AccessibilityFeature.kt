@@ -11,4 +11,5 @@ import jakarta.persistence.Table
 class AccessibilityFeature(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long? = null,
     var name: String,
+    var relativeUrl: String? = null
 )

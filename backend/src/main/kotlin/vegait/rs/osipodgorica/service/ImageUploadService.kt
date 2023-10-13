@@ -3,6 +3,7 @@ package vegait.rs.osipodgorica.service
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 import org.springframework.web.multipart.MultipartFile
+import java.io.File
 import java.io.IOException
 import java.io.InputStream
 import java.nio.file.Files
@@ -27,6 +28,14 @@ class ImageUploadService(
             val inputStream: InputStream = file.inputStream
             Files.copy(inputStream, destinationFile.toAbsolutePath(), StandardCopyOption.REPLACE_EXISTING)
         } catch (e: IOException) {
+            val folder = File(this.rootLocation.resolve(folderName).toString())
+            if (folder.exists()) {
+                for (file in folder.listFiles()) {
+                    file.delete();
+                }
+                folder.delete()
+            }
+
             throw RuntimeException("There was an error uploading the file to $folderName/$name", e)
         }
 

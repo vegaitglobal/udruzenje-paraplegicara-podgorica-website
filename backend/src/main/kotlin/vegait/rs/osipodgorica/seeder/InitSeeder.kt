@@ -34,24 +34,26 @@ class InitSeeder(
 
     private fun features(): List<AccessibilityFeature> {
         return arrayListOf(
-            AccessibilityFeature(name = "Rampa"),
-            AccessibilityFeature(name = "Taktilna crta vodilja"),
-            AccessibilityFeature(name = "Lift"),
-            AccessibilityFeature(name = "Ulazni prostor"),
-            AccessibilityFeature(name = "Toalet"),
-            AccessibilityFeature(name = "Kupatilo"),
-            AccessibilityFeature(name = "Ulaz u vodu na plaži i bazenu"),
-            AccessibilityFeature(name = "Mjesto u gledalištu"),
-            AccessibilityFeature(name = "Šalter"),
-            AccessibilityFeature(name = "Pult"),
-            AccessibilityFeature(name = "Induktivna petlja ili transmisioni obruč"),
-            AccessibilityFeature(name = "Oglasni pano"),
-            AccessibilityFeature(name = "Orjentacioni plan za kretanje u objektu"),
-            AccessibilityFeature(name = "Stajalište i peron"),
-            AccessibilityFeature(name = "Parking mjesto"),
-            AccessibilityFeature(name = "Semafor"),
-            AccessibilityFeature(name = "Pješački prelazi"),
-            AccessibilityFeature(name = "Raskrsnica")
+            AccessibilityFeature(id = 1, name = "Rampa", "uploads/features/1/rampa.png"),
+            AccessibilityFeature(id = 2, name = "Lift", "uploads/features/2/lift.png"),
+            AccessibilityFeature(id = 3, name = "Parking mjesto", "uploads/features/3/parking.png"),
+            AccessibilityFeature(id = 4, name = "Toalet", "uploads/features/4/toalet.png"),
+
+//            nemamo ikonice pa su privremeno zakomentarisani
+//            AccessibilityFeature(name = "Taktilna crta vodilja"),
+//            AccessibilityFeature(name = "Ulazni prostor"),
+//            AccessibilityFeature(name = "Kupatilo"),
+//            AccessibilityFeature(name = "Ulaz u vodu na plaži i bazenu"),
+//            AccessibilityFeature(name = "Mjesto u gledalištu"),
+//            AccessibilityFeature(name = "Šalter"),
+//            AccessibilityFeature(name = "Pult"),
+//            AccessibilityFeature(name = "Induktivna petlja ili transmisioni obruč"),
+//            AccessibilityFeature(name = "Oglasni pano"),
+//            AccessibilityFeature(name = "Orjentacioni plan za kretanje u objektu"),
+//            AccessibilityFeature(name = "Stajalište i peron"),
+//            AccessibilityFeature(name = "Semafor"),
+//            AccessibilityFeature(name = "Pješački prelazi"),
+//            AccessibilityFeature(name = "Raskrsnica")
         )
     }
 
