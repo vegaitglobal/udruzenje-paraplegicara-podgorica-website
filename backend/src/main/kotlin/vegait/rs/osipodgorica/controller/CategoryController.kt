@@ -28,7 +28,7 @@ class CategoryController(val categoryService: CategoryService) {
     fun delete(@PathVariable id: Long) {
         return categoryService.delete(id)
     }
-    // update, delete,
+
     @GetMapping
     fun index(): List<Category> {
         return categoryService.index()
