@@ -6,5 +6,7 @@ data class CreateLocationRequest(
     val categoryId: Long,
     val accessibilityFeatureIds: List<Long>,
     val latitude: Double,
-    val longitude: Double
+    val longitude: Double,
+    val address: String?,
+    val postalNumber: Long?
 )

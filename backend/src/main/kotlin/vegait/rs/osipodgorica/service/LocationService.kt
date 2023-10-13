@@ -30,7 +30,9 @@ class LocationService(
             category = category,
             accessibilityFeatures = features,
             latitude = request.latitude,
-            longitude = request.longitude
+            longitude = request.longitude,
+            address = request.address?: "",
+            postalNumber = request.postalNumber?: 81000
         )
 
         return repository.save(location)
@@ -62,6 +64,12 @@ class LocationService(
         existingLocation.latitude = request.latitude
         existingLocation.longitude = request.longitude
         existingLocation.accessibilityFeatures = features
+        if (request.address !=null) {
+            existingLocation.address = request.address
+        }
+        if (request.postalNumber != null) {
+            existingLocation.postalNumber = request.postalNumber
+        }
 
         return repository.save(existingLocation)
     }
