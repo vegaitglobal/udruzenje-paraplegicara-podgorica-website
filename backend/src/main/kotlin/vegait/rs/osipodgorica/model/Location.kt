@@ -11,6 +11,8 @@ class Location (
     var description: String,
     var latitude: Double,
     var longitude: Double,
+    var address: String?,
+    var postalNumber: Long?,
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     var category: Category,
