@@ -43,6 +43,16 @@ class LocationQueryBuilder(
         return this
     }
 
+    fun locationName(locationName: String?): LocationQueryBuilder {
+        if (locationName == null) {
+            return this
+        }
+
+        criteriaBuilder.where("location.name").like().value("%$locationName%").noEscape()
+
+        return this
+    }
+
     fun build(): List<Location> {
         return this.criteriaBuilder.resultList
     }
