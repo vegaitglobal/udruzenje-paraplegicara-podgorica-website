@@ -3,6 +3,7 @@ package vegait.rs.osipodgorica.service
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import vegait.rs.osipodgorica.dto.CreateAccessibilityFeature
+import vegait.rs.osipodgorica.dto.UpdateAccessibilityFeature
 import vegait.rs.osipodgorica.model.AccessibilityFeature
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 
@@ -25,5 +26,27 @@ class AccessibilityFeatureService(val featureRepo: AccessibilityFeatureRepositor
 
     fun index(): List<AccessibilityFeature> {
         return featureRepo.findAll()
+    }
+
+    fun update(request: UpdateAccessibilityFeature, id: Long): AccessibilityFeature {
+        val feature = featureRepo.findById(id).orElseThrow()
+        feature.name = request.name
+
+        if (request.thumbnail != null) {
+            val oldThumbnail = feature.relativeUrl
+            val imagePath = uploadService.store(request.thumbnail, "features/" + feature.id)
+            if (oldThumbnail != null) {
+                uploadService.deleteFile(oldThumbnail)
+            }
+            feature.relativeUrl = imagePath
+
+        }
+
+        return featureRepo.save(feature)
+    }
+
+    fun delete(id: Long) {
+        uploadService.deleteFolder("features/$id/")
+        return featureRepo.deleteById(id)
     }
 }
