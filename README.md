@@ -1,6 +1,6 @@
 # Projekat za Udruženje paraplegičara Podgorice - Code For Cause 2023
 ## Stack
-Backend: Spring Boot, Kotlin: dependency `JDK 17`
+Backend: Spring Boot, Kotlin: dependency `JDK 17`   
 Frontend: Next JS: dependency `NodeJS 18.18.1 LTS`
 # Local setup
 ## Backend 
