@@ -28,9 +28,9 @@ class LocationController(
     @ResponseStatus(HttpStatus.OK)
     fun index(@RequestParam(name = "categoryId", required = false) categoryId: Long?,
               @RequestParam(name = "featureIds", required = false) featureIds: List<Long>?,
-              @RequestParam(name = "locationName", required = false) locationName: String?): List<Location> {
+              @RequestParam(name = "name", required = false) name: String?): List<Location> {
 
-        return service.index(categoryId, featureIds, locationName)
+        return service.index(categoryId, featureIds, name)
     }
 
     @DeleteMapping("/{id}")
