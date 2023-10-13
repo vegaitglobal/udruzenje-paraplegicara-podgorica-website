@@ -87,7 +87,7 @@ class InitSeeder(
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
         val bank = categoryRepo.findByName("Banke")
-        val podgorica = cityRepo.findById(1).orElseThrow();
+        val podgorica = cityRepo.findById(1).orElseThrow()
 
         return arrayListOf(
                 Location(
@@ -124,17 +124,6 @@ class InitSeeder(
                         city = podgorica
                 ),
                 Location(
-                        name = "MUP",
-                        description = "Ministarstvo unutrašnjih poslova",
-                        category = publicFacility,
-                        accessibilityFeatures = hashSetOf(ramp),
-                        latitude = 42.442171,
-                        longitude = 19.252682,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
                         name = "Crnogorsko Komercijalna Banka",
                         description = "Crnogorsko Komercijalna Banka",
                         category = bank,
@@ -167,83 +156,6 @@ class InitSeeder(
                         postalNumber = 81000,
                         city = podgorica
                 ),
-                Location(
-                        name = "KBC",
-                        description = "Kliničko bolnički centar CG",
-                        category = hospital,
-                        accessibilityFeatures = hashSetOf(parking, loo),
-                        latitude = 42.437966,
-                        longitude = 19.246028,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
-                        name = "KIC Budo Tomović",
-                        description = "Kulturni objekat",
-                        category = culturalFacility,
-                        accessibilityFeatures = hashSetOf(loo),
-                        latitude = 42.446105,
-                        longitude = 19.264439,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
-                        name = "MUP",
-                        description = "Ministarstvo unutrašnjih poslova",
-                        category = publicFacility,
-                        accessibilityFeatures = hashSetOf(ramp),
-                        latitude = 42.442171,
-                        longitude = 19.252682,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
-                        name = "MUP",
-                        description = "Ministarstvo unutrašnjih poslova",
-                        category = publicFacility,
-                        accessibilityFeatures = hashSetOf(ramp),
-                        latitude = 42.442171,
-                        longitude = 19.252682,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
-                        name = "Crnogorsko Komercijalna Banka",
-                        description = "Crnogorsko Komercijalna Banka",
-                        category = bank,
-                        accessibilityFeatures = hashSetOf(ramp, loo),
-                        latitude = 42.441631066437786,
-                        longitude = 19.247161806315603,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
-                        name = "Filijala Crnogorska Komercijalna Banka",
-                        description = "filijala-crnogorska-komercijalna-banka",
-                        category = bank,
-                        accessibilityFeatures = hashSetOf(ramp, loo),
-                        latitude = 42.44190356595263,
-                        longitude = 19.247437111656154,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                ),
-                Location(
-                        name = "Filijala Crnogorska Komercijalna Banka 2",
-                        description = "filijala-crnogorska-komercijalna-banka",
-                        category = bank,
-                        accessibilityFeatures = hashSetOf(ramp, loo),
-                        latitude = 42.442468066159144,
-                        longitude = 19.249060753384356,
-                        address = "",
-                        postalNumber = 81000,
-                        city = podgorica
-                )
         )
     }
 }
