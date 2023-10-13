@@ -1,5 +1,8 @@
 # Projekat za Udruženje paraplegičara Podgorice - Code For Cause 2023
-
+## Stack
+Backend: Spring Boot, Kotlin: dependency `JDK 17`
+Frontend: Next JS: dependency `NodeJS 18.18.1 LTS`
+# Local setup
 ## Backend 
 
 ### Podesiti bazu kroz doker (ili lokalno)
@@ -17,7 +20,7 @@ mysql:latest
 
 2. U projektu postoji Gradle wrapper koji možemo koristiti da podignemo aplikaciju.
 
-Unutar projekta izvršimo sledeće komande:
+Unutar `backend` foldera izvršimo sledeće komande:
 
 #### Linux
 ```bash
@@ -44,7 +47,15 @@ Unutar projekta izvršimo sledeće komande:
 #### Napomene:
 Prilikom prvog podizanja aplikacije automatski će biti kreirani određeni testni podaci - kategorije, elementi pristupačnosti i par lokacija koje možemo iskoristiti da istestiramo osnovne funkcionalnosti.
 
-#### Aplikacija je dostupna na [http://localhost:8080](http://localhost:8080) a swagger UI na [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+#### API je dostupn na [http://localhost:8080](http://localhost:8080) a swagger UI na [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 
 ## Frontend
+
+Unutar frontend projekta izvršimo:
+
+```bash
+npm run dev
+```
+
+#### Otvorimo [http://localhost:3000](http://localhost:3000) da bismo pristupili klijent aplikaciji
