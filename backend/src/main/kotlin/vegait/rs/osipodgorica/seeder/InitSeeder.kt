@@ -82,7 +82,7 @@ class InitSeeder(
     private fun locations(): List<Location> {
         val publicFacility = categoryRepo.findByName("Objekti državnih organa")
         val culturalFacility = categoryRepo.findByName("Kultura")
-        val hospital = categoryRepo.findByName("Obrazovanje")
+        val hospital = categoryRepo.findByName("Zdravstvo")
         val parking = featuresRepo.findByName("Parking mjesto")
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
