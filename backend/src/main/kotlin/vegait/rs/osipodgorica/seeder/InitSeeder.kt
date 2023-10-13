@@ -8,12 +8,14 @@ import vegait.rs.osipodgorica.model.Location
 import vegait.rs.osipodgorica.model.Category
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 import vegait.rs.osipodgorica.repository.CategoryRepository
+import vegait.rs.osipodgorica.repository.CityRepository
 import vegait.rs.osipodgorica.repository.LocationRepository
 
 @Component
 class InitSeeder(
     val featuresRepo: AccessibilityFeatureRepository,
     val categoryRepo: CategoryRepository,
+    val cityRepo: CityRepository,
     val locationRepo: LocationRepository,
     val env: Environment
 ): CommandLineRunner {
@@ -85,6 +87,7 @@ class InitSeeder(
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
         val bank = categoryRepo.findByName("Banke")
+        val podgorica = cityRepo.findById(1).orElseThrow();
 
         return arrayListOf(
             Location(
@@ -93,7 +96,8 @@ class InitSeeder(
                 category = hospital,
                 accessibilityFeatures = hashSetOf(parking, loo),
                 latitude = 42.437966,
-                longitude = 19.246028
+                longitude = 19.246028,
+                city = podgorica
             ),
             Location(
                 name = "KIC Budo Tomović",
@@ -101,7 +105,8 @@ class InitSeeder(
                 category = culturalFacility,
                 accessibilityFeatures = hashSetOf(loo),
                 latitude = 42.446105,
-                longitude = 19.264439
+                longitude = 19.264439,
+                city = podgorica
             ),
             Location(
                 name = "MUP",
@@ -109,7 +114,8 @@ class InitSeeder(
                 category = publicFacility,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.442171,
-                longitude = 19.252682
+                longitude = 19.252682,
+                city = podgorica
             ),
             Location(
                 name = "MUP",
@@ -117,7 +123,8 @@ class InitSeeder(
                 category = publicFacility,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.442171,
-                longitude = 19.252682
+                longitude = 19.252682,
+                city = podgorica
             ),
             Location(
                 name = "Crnogorsko Komercijalna Banka",
@@ -125,7 +132,8 @@ class InitSeeder(
                 category = bank,
                 accessibilityFeatures = hashSetOf(ramp, loo),
                 latitude = 42.441631066437786,
-                longitude = 19.247161806315603
+                longitude = 19.247161806315603,
+                city = podgorica
             ),
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka",
@@ -133,7 +141,8 @@ class InitSeeder(
                 category = bank,
                 accessibilityFeatures = hashSetOf(ramp, loo),
                 latitude = 42.44190356595263,
-                longitude = 19.247437111656154
+                longitude = 19.247437111656154,
+                city = podgorica
             ),
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka 2",
@@ -141,7 +150,8 @@ class InitSeeder(
                 category = bank,
                 accessibilityFeatures = hashSetOf(ramp, loo),
                 latitude = 42.442468066159144,
-                longitude = 19.249060753384356
+                longitude = 19.249060753384356,
+                city = podgorica
             )
         )
     }

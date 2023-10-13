@@ -43,6 +43,15 @@ class LocationQueryBuilder(
         return this
     }
 
+    fun city(cityId: Long?): LocationQueryBuilder {
+        if (cityId==null) {
+            return this
+        }
+
+        criteriaBuilder.where("location.city.id").eq(cityId)
+        return this
+    }
+
     fun build(): List<Location> {
         return this.criteriaBuilder.resultList
     }
