@@ -9,6 +9,7 @@ import vegait.rs.osipodgorica.model.Category
 import vegait.rs.osipodgorica.model.Location
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 import vegait.rs.osipodgorica.repository.CategoryRepository
+import vegait.rs.osipodgorica.repository.CityRepository
 import vegait.rs.osipodgorica.repository.LocationRepository
 import vegait.rs.osipodgorica.utils.LocationQueryBuilder
 
@@ -16,6 +17,7 @@ import vegait.rs.osipodgorica.utils.LocationQueryBuilder
 class LocationService(
     val repository: LocationRepository,
     val categoryRepo: CategoryRepository,
+    val cityRepository: CityRepository,
     val featureRepo: AccessibilityFeatureRepository,
     val entityManager: EntityManager,
     val criteriaBuilderFactory: CriteriaBuilderFactory
@@ -24,6 +26,7 @@ class LocationService(
     fun store(request: CreateLocationRequest) : Location {
         val category: Category = categoryRepo.findById(request.categoryId).orElseThrow()
         val features = featureRepo.findAllByIdIn(request.accessibilityFeatureIds)
+        val city = cityRepository.findById(request.cityId).orElseThrow()
         val location = Location(
             name = request.name,
             description = request.description,
@@ -33,6 +36,8 @@ class LocationService(
             longitude = request.longitude,
             address = request.address?: "",
             postalNumber = request.postalNumber?: 81000
+            longitude = request.longitude,
+            city = city
         )
 
         return repository.save(location)
@@ -42,10 +47,11 @@ class LocationService(
         return repository.findById(id).orElseThrow()
     }
 
-    fun index(categoryId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
+    fun index(categoryId: Long?,cityId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
             .accessibilityFeatures(featureIds)
             .category(categoryId)
+            .city(cityId)
             .name(name)
             .build()
     }
