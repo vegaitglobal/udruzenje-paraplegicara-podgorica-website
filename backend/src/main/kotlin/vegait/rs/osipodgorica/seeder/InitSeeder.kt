@@ -57,15 +57,21 @@ class InitSeeder(
 
     private fun categories(): List<Category> {
         return arrayListOf(
-          Category(id = 1, name = "Objekti državnih organa", relativeUrl = "/uploads/categories/1/image.jpg"),
-          Category(id = 2, name = "Lokalna samouprava", relativeUrl = "/uploads/categories/2/image.jpg"),
-          Category(id = 3, name = "Zdravstvo", relativeUrl = "/uploads/categories/3/image.jpg"),
-          Category(id = 4, name = "Obrazovanje", relativeUrl = "/uploads/categories/4/image.jpg"),
-          Category(id = 5, name = "Kultura", relativeUrl = "/uploads/categories/5/image.jpg"),
-          Category(id = 6, name = "Otvoreni i zatvoreni sportski i rekreativni objekti", relativeUrl = "/uploads/categories/6/image.jpg"),
-          Category(id = 7, name = "Saobraćajni terminali", relativeUrl = "/uploads/categories/7/image.jpg"),
-          Category(id = 8, name = "Pošte", relativeUrl = "/uploads/categories/8/image.jpg"),
-          Category(id = 9, name = "Ostalo", relativeUrl = "/uploads/categories/9/image.jpg"),
+          Category(id = 1, name = "Objekti državnih organa", relativeUrl = "/uploads/categories/1/m-drzavni-organi.png"),
+          Category(id = 2, name = "Lokalna samouprava", relativeUrl = "/uploads/categories/2/m-drzavni-organi.png"),
+          Category(id = 3, name = "Zdravstvo", relativeUrl = "/uploads/categories/3/m-zdravlje.png"),
+          Category(id = 4, name = "Obrazovanje", relativeUrl = "/uploads/categories/4/m-obrazovanje.png"),
+          Category(id = 5, name = "Kultura", relativeUrl = "/uploads/categories/5/m-kultura.png"),
+          Category(id = 6, name = "Otvoreni i zatvoreni sportski i rekreativni objekti", relativeUrl = "/uploads/categories/6/m-sport.png"),
+          Category(id = 7, name = "Saobraćajni terminali", relativeUrl = "/uploads/categories/7/m-saobracaj.png"),
+          Category(id = 8, name = "Pošte", relativeUrl = "/uploads/categories/8/m-posta.png"),
+          Category(id = 9, name = "Banke", relativeUrl = "/uploads/categories/9/m-banke.png"),
+          Category(id = 10, name = "Trgovački objekti", relativeUrl = "/uploads/categories/10/m-trgovina.png"),
+          Category(id = 11, name = "Turistički objekti", relativeUrl = "/uploads/categories/11/m-turizam.png"),
+          Category(id = 12, name = "Ugostiteljski objekti", relativeUrl = "/uploads/categories/12/m-ugostiteljstvo.png"),
+          Category(id = 13, name = "Vjerski objekti", relativeUrl = "/uploads/categories/13/m-crkve.png"),
+          Category(id = 14, name = "Telekomunikacije", relativeUrl = "/uploads/categories/14/m-telekomunikacije.png"),
+          Category(id = 15, name = "Zabava", relativeUrl = "/uploads/categories/15/m-zabava.png"),
         )
     }
 
@@ -76,7 +82,7 @@ class InitSeeder(
         val parking = featuresRepo.findByName("Parking mjesto")
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
-        val other = categoryRepo.findByName("Ostalo")
+        val bank = categoryRepo.findByName("Banke")
 
         return arrayListOf(
             Location(
@@ -114,7 +120,7 @@ class InitSeeder(
             Location(
                 name = "Crnogorsko Komercijalna Banka",
                 description = "Crnogorsko Komercijalna Banka",
-                category = other,
+                category = bank,
                 accessibilityFeatures = hashSetOf(ramp, loo),
                 latitude = 42.441631066437786,
                 longitude = 19.247161806315603
@@ -122,7 +128,7 @@ class InitSeeder(
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka",
                 description = "filijala-crnogorska-komercijalna-banka",
-                category = other,
+                category = bank,
                 accessibilityFeatures = hashSetOf(ramp, loo),
                 latitude = 42.44190356595263,
                 longitude = 19.247437111656154
@@ -130,7 +136,7 @@ class InitSeeder(
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka 2",
                 description = "filijala-crnogorska-komercijalna-banka",
-                category = other,
+                category = bank,
                 accessibilityFeatures = hashSetOf(ramp, loo),
                 latitude = 42.442468066159144,
                 longitude = 19.249060753384356
