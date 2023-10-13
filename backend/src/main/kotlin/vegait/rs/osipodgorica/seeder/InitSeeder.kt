@@ -64,7 +64,8 @@ class InitSeeder(
           Category(id = 5, name = "Kultura", relativeUrl = "/uploads/categories/5/image.jpg"),
           Category(id = 6, name = "Otvoreni i zatvoreni sportski i rekreativni objekti", relativeUrl = "/uploads/categories/6/image.jpg"),
           Category(id = 7, name = "Saobraćajni terminali", relativeUrl = "/uploads/categories/7/image.jpg"),
-          Category(id = 8, name = "Pošte", relativeUrl = "/uploads/categories/8/image.jpg")
+          Category(id = 8, name = "Pošte", relativeUrl = "/uploads/categories/8/image.jpg"),
+          Category(id = 9, name = "Ostalo", relativeUrl = "/uploads/categories/9/image.jpg"),
         )
     }
 
@@ -75,6 +76,7 @@ class InitSeeder(
         val parking = featuresRepo.findByName("Parking mjesto")
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
+        val other = categoryRepo.findByName("Ostalo")
 
         return arrayListOf(
             Location(
@@ -100,6 +102,38 @@ class InitSeeder(
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.442171,
                 longitude = 19.252682
+            ),
+            Location(
+                name = "MUP",
+                description = "Ministarstvo unutrašnjih poslova",
+                category = publicFacility,
+                accessibilityFeatures = hashSetOf(ramp),
+                latitude = 42.442171,
+                longitude = 19.252682
+            ),
+            Location(
+                name = "Crnogorsko Komercijalna Banka",
+                description = "Crnogorsko Komercijalna Banka",
+                category = other,
+                accessibilityFeatures = hashSetOf(ramp, loo),
+                latitude = 42.441631066437786,
+                longitude = 19.247161806315603
+            ),
+            Location(
+                name = "Filijala Crnogorska Komercijalna Banka",
+                description = "filijala-crnogorska-komercijalna-banka",
+                category = other,
+                accessibilityFeatures = hashSetOf(ramp, loo),
+                latitude = 42.44190356595263,
+                longitude = 19.247437111656154
+            ),
+            Location(
+                name = "Filijala Crnogorska Komercijalna Banka 2",
+                description = "filijala-crnogorska-komercijalna-banka",
+                category = other,
+                accessibilityFeatures = hashSetOf(ramp, loo),
+                latitude = 42.442468066159144,
+                longitude = 19.249060753384356
             )
         )
     }
