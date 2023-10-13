@@ -26,4 +26,8 @@ class CategoryService(val categoryRepo: CategoryRepository, val uploadService: I
     fun index(): List<Category> {
         return categoryRepo.findAll()
     }
+
+    fun delete(id: Long) {
+        categoryRepo.deleteById(id)
+    }
 }

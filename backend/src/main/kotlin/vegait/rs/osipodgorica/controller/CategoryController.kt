@@ -1,5 +1,6 @@
 package vegait.rs.osipodgorica.controller
 
+import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.*
@@ -22,6 +23,12 @@ class CategoryController(val categoryService: CategoryService) {
         return categoryService.get(id)
     }
 
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    fun delete(@PathVariable id: Long) {
+        return categoryService.delete(id)
+    }
+    // update, delete,
     @GetMapping
     fun index(): List<Category> {
         return categoryService.index()
