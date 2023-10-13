@@ -118,15 +118,6 @@ class InitSeeder(
                 city = podgorica
             ),
             Location(
-                name = "MUP",
-                description = "Ministarstvo unutrašnjih poslova",
-                category = publicFacility,
-                accessibilityFeatures = hashSetOf(ramp),
-                latitude = 42.442171,
-                longitude = 19.252682,
-                city = podgorica
-            ),
-            Location(
                 name = "Crnogorsko Komercijalna Banka",
                 description = "Crnogorsko Komercijalna Banka",
                 category = bank,
