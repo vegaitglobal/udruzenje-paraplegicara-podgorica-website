@@ -26,7 +26,7 @@ class LocationService(
     fun store(request: CreateLocationRequest) : Location {
         val category: Category = categoryRepo.findById(request.categoryId).orElseThrow()
         val features = featureRepo.findAllByIdIn(request.accessibilityFeatureIds)
-        val city = cityRepository.findById(request.cityId).orElseThrow();
+        val city = cityRepository.findById(request.cityId).orElseThrow()
         val location = Location(
             name = request.name,
             description = request.description,
@@ -44,7 +44,7 @@ class LocationService(
         return repository.findById(id).orElseThrow()
     }
 
-    fun index(categoryId: Long?,cityId: Long? featureIds: List<Long>?, name: String?): List<Location> {
+    fun index(categoryId: Long?,cityId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
             .accessibilityFeatures(featureIds)
             .category(categoryId)
