@@ -43,12 +43,12 @@ class LocationQueryBuilder(
         return this
     }
 
-    fun locationName(locationName: String?): LocationQueryBuilder {
-        if (locationName == null) {
+    fun name(name: String?): LocationQueryBuilder {
+        if (name == null) {
             return this
         }
 
-        criteriaBuilder.where("location.name").like().value("%$locationName%").noEscape()
+        criteriaBuilder.where("location.name").like().value("%$name%").noEscape()
 
         return this
     }
