@@ -40,10 +40,11 @@ class LocationService(
         return repository.findById(id).orElseThrow()
     }
 
-    fun index(categoryId: Long?, featureIds: List<Long>?): List<Location> {
+    fun index(categoryId: Long?, featureIds: List<Long>?, locationName: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
             .accessibilityFeatures(featureIds)
             .category(categoryId)
+            .locationName(locationName)
             .build()
     }
 
