@@ -106,6 +106,7 @@ class InitSeeder(
 
         val podgorica = cityRepo.findById(1).orElseThrow()
         val niksic = cityRepo.findById(9).orElseThrow()
+        val cetinje = cityRepo.findById(2).orElseThrow()
 
         return arrayListOf(
             Location(
@@ -205,7 +206,7 @@ class InitSeeder(
                 longitude = 18.925302028656006,
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
-                city = podgorica
+                city = cetinje
             ),
             Location(
                 name = "voli-29-podgorica",
