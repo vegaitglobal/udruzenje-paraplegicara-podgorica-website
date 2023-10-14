@@ -9,7 +9,11 @@ import vegait.rs.osipodgorica.repository.CategoryRepository
 
 @Service
 @Transactional
-class CategoryService(val categoryRepo: CategoryRepository, val uploadService: ImageUploadService) {
+class CategoryService(
+    val categoryRepo: CategoryRepository,
+    val uploadService: ImageUploadService,
+    val imageUploadService: ImageUploadService,
+) {
 
     fun store(request: CreateCategoryRequest): Category {
         val category = categoryRepo.save(Category(name = request.name))
@@ -37,7 +41,9 @@ class CategoryService(val categoryRepo: CategoryRepository, val uploadService: I
         return categoryRepo.findAll()
     }
 
-    fun delete(id: Long) {
+    fun delete(id: Long) = runCatching {
         categoryRepo.deleteById(id)
+    }.mapCatching {
+//        imageUploadService.d
     }
 }
