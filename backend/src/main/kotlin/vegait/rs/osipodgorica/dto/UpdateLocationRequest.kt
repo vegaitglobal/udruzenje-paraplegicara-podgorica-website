@@ -12,5 +12,6 @@ data class UpdateLocationRequest(
     val longitude: Double,
     val address: String?,
     val postalNumber: Long?,
-    val newImages: List<MultipartFile>?
+    val thumbnail: MultipartFile?,
+    val images: List<MultipartFile>?
 )

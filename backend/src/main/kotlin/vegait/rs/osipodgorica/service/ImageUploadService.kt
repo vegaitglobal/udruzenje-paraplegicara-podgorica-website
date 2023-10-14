@@ -18,6 +18,7 @@ class ImageUploadService(
 ) {
     val rootLocation: Path = Paths.get(uploadDir)
 
+    // currently in case of failure in some cases the folder will remain behind but we could have a cron to delete empty folders
     fun store(file: MultipartFile, folderName: String): String {
         // file name format: timestamp_originalName
         val name = generateFileName(file)
@@ -28,7 +29,6 @@ class ImageUploadService(
             val inputStream: InputStream = file.inputStream
             Files.copy(inputStream, destinationFile.toAbsolutePath(), StandardCopyOption.REPLACE_EXISTING)
         } catch (e: IOException) {
-//            deleteFolder(folderName)
             throw RuntimeException("There was an error uploading the file to $folderName/$name", e)
         }
 
@@ -60,15 +60,12 @@ class ImageUploadService(
         }
     }
 
+    // in case of exception we will delete any files uploaded beforehand
     fun storeAll(newImages: List<MultipartFile>, folderName: String): List<String> {
         val storedUrls: MutableList<String> = mutableListOf()
         try {
             for (file in newImages) {
                 val url = store(file, folderName)
-
-                if (storedUrls.size > 0) {
-                    throw RuntimeException()
-                }
                 storedUrls.add(url)
             }
         } catch (ex: RuntimeException) {
@@ -76,7 +73,7 @@ class ImageUploadService(
                 deleteFile(url)
             }
 
-            throw RuntimeException("There was an error uploading the file to $folderName/", ex)
+            throw RuntimeException("There was an error uploading files to $folderName/", ex)
         }
 
         return storedUrls

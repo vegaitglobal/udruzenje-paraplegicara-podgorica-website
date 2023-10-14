@@ -104,9 +104,19 @@ class LocationService(
             existingLocation.postalNumber = request.postalNumber
         }
 
-        if (request.newImages != null) {
+        if (request.thumbnail != null) {
+            val oldThumbnail = existingLocation.thumbnailUrl
+            val newThumbnailUrl = uploadService.store(request.thumbnail, "locations/" + existingLocation.id)
+            existingLocation.thumbnailUrl = newThumbnailUrl
+
+            if (oldThumbnail != null) {
+                uploadService.deleteFile(oldThumbnail)
+            }
+        }
+
+        if (request.images != null) {
             val newUrls = uploadService.storeAll(
-                request.newImages,
+                request.images,
                 "locations/" + existingLocation.id
             )
 
@@ -118,11 +128,6 @@ class LocationService(
                 existingLocation.images!!.add(LocationImage(relativeUrl = url))
             }
         }
-
-        // take images and store them
-        // if an exception occurs delete all the ones you saved previously
-        // so add so a list the ones you manage to store
-        // if exception occurs delete it
 
         return repository.save(existingLocation)
     }

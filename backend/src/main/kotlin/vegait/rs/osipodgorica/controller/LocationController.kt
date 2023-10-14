@@ -1,6 +1,7 @@
 package vegait.rs.osipodgorica.controller
 
 import org.springframework.http.HttpStatus
+import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 import vegait.rs.osipodgorica.dto.CreateLocationRequest
 import vegait.rs.osipodgorica.dto.UpdateLocationRequest
@@ -12,7 +13,7 @@ import vegait.rs.osipodgorica.service.LocationService
 class LocationController(
     val service: LocationService,
 ) {
-    @PostMapping
+    @PostMapping(consumes = [MediaType.MULTIPART_FORM_DATA_VALUE])
     @ResponseStatus(HttpStatus.CREATED)
     fun store(@ModelAttribute request: CreateLocationRequest): Location {
         return service.store(request)
@@ -41,9 +42,9 @@ class LocationController(
         return service.delete(id)
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{id}", consumes = [MediaType.MULTIPART_FORM_DATA_VALUE])
     @ResponseStatus(HttpStatus.OK)
-    fun update(@RequestBody request: UpdateLocationRequest, @PathVariable id: Long): Location {
+    fun update(@ModelAttribute request: UpdateLocationRequest, @PathVariable id: Long): Location {
         return service.update(request, id)
     }
 
