@@ -2,7 +2,6 @@ package vegait.rs.osipodgorica.service
 
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
-import org.springframework.web.multipart.MultipartFile
 import vegait.rs.osipodgorica.dto.CreateCategoryRequest
 import vegait.rs.osipodgorica.dto.UpdateCategoryRequest
 import vegait.rs.osipodgorica.model.Category
@@ -11,54 +10,47 @@ import vegait.rs.osipodgorica.repository.CategoryRepository
 @Service
 @Transactional
 class CategoryService(
-    val categoryRepo: CategoryRepository,
-    val uploadService: ImageUploadService,
-    val imageUploadService: ImageUploadService,
+	val categoryRepo: CategoryRepository,
+	val uploadService: ImageUploadService,
+	val imageUploadService: ImageUploadService,
 ) {
 
-    fun store(request: CreateCategoryRequest): Category {
-        val category = categoryRepo.save(Category(name = request.name))
+	fun store(request: CreateCategoryRequest): Category {
+		val category = categoryRepo.save(Category(name = request.name))
 
-        val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
-        category.relativeUrl = imagePath
+		val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
+		category.relativeUrl = imagePath
 
-        return categoryRepo.save(category)
-    }
+		return categoryRepo.save(category)
+	}
 
-    fun update(request: UpdateCategoryRequest, id: Long) =
-        runCatching {
-            categoryRepo.findById(id).get()
-        }.mapCatching { oldCategory ->
-            Category(
-                id = id,
-                name = request.name,
-                relativeUrl = request.thumbnail?.storeNewIcon(id, oldCategory.relativeUrl)
-                    ?: oldCategory.relativeUrl,
-            )
-        }.mapCatching { category ->
-            categoryRepo.save(category)
-        }.getOrThrow()
+	fun update(request: UpdateCategoryRequest, id: Long): Category {
+		val category = categoryRepo.findById(id).orElseThrow()
+		category.name = request.name
 
-    private fun MultipartFile.storeNewIcon(id: Long, oldIconPath: String?): String? =
-        runCatching {
-            oldIconPath?.let { scopedOldIconPath ->
-                imageUploadService.deleteFile(scopedOldIconPath)
-            }
-        }.mapCatching {
-            imageUploadService.store(this, "categories/$id")
-        }.getOrNull()
+		if (request.thumbnail != null) {
+			val oldThumbnail = category.relativeUrl
+			val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
+			if (oldThumbnail != null) {
+				uploadService.deleteFile(oldThumbnail)
+			}
+			category.relativeUrl = imagePath
 
-    fun get(id: Long): Category {
-        return categoryRepo.findById(id).orElseThrow()
-    }
+		}
+		return categoryRepo.save(category)
+	}
 
-    fun index(): List<Category> {
-        return categoryRepo.findAll()
-    }
+	fun get(id: Long): Category {
+		return categoryRepo.findById(id).orElseThrow()
+	}
 
-    fun delete(id: Long) {
-        categoryRepo.deleteById(id).also {
-            imageUploadService.deleteFolder("categories/$id")
-        }
-    }
+	fun index(): List<Category> {
+		return categoryRepo.findAll()
+	}
+
+	fun delete(id: Long) {
+		imageUploadService.deleteFolder("categories/$id")
+		return categoryRepo.deleteById(id)
+	}
+
 }
