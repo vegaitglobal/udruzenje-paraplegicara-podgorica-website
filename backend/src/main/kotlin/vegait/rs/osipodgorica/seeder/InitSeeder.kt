@@ -6,18 +6,22 @@ import org.springframework.stereotype.Component
 import vegait.rs.osipodgorica.model.AccessibilityFeature
 import vegait.rs.osipodgorica.model.Category
 import vegait.rs.osipodgorica.model.Location
+import vegait.rs.osipodgorica.model.NewsTag
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 import vegait.rs.osipodgorica.repository.CategoryRepository
 import vegait.rs.osipodgorica.repository.CityRepository
 import vegait.rs.osipodgorica.repository.LocationRepository
+import vegait.rs.osipodgorica.repository.NewsRepository
+import vegait.rs.osipodgorica.repository.NewsTagRepository
 
 @Component
 class InitSeeder(
-        val featuresRepo: AccessibilityFeatureRepository,
-        val categoryRepo: CategoryRepository,
-        val cityRepo: CityRepository,
-        val locationRepo: LocationRepository,
-        val env: Environment
+    val featuresRepo: AccessibilityFeatureRepository,
+    val categoryRepo: CategoryRepository,
+    val cityRepo: CityRepository,
+    val locationRepo: LocationRepository,
+    val newsTagRepo: NewsTagRepository,
+    val env: Environment
 ) : CommandLineRunner {
 
     override fun run(vararg args: String?) {
@@ -31,6 +35,10 @@ class InitSeeder(
 
         if (env.activeProfiles.contains("dev") && locationRepo.count() == 0L) {
             locationRepo.saveAll(locations())
+        }
+
+        if (newsTagRepo.count() == 0L) {
+            newsTagRepo.saveAll(newsTags())
         }
     }
 
@@ -156,6 +164,16 @@ class InitSeeder(
                         postalNumber = 81000,
                         city = podgorica
                 ),
+        )
+    }
+
+    private fun newsTags(): List<NewsTag> {
+        return arrayListOf(
+                NewsTag(id = 1, name = "Vijesti", slug = "vijesti"),
+                NewsTag(id = 2, name = "Sport", slug = "sport"),
+                NewsTag(id = 3, name = "Projekti", slug = "projekti"),
+                NewsTag(id = 4, name = "Nekategorisano", slug = "nekategorisano"),
+                NewsTag(id = 5, name = "Saopštenja", slug = "saopstenja"),
         )
     }
 }
