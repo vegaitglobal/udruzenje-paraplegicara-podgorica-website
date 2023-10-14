@@ -37,6 +37,7 @@ class LocationService(
             address = request.address ?: "",
             postalNumber = request.postalNumber ?: 81000,
             city = city,
+            slug = request.slug,
         )
 
         return repository.save(location)

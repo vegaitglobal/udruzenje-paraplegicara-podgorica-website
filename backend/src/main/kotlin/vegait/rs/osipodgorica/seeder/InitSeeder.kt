@@ -119,6 +119,7 @@ class InitSeeder(
                 address = "",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "kbc",
             ),
             Location(
                 name = "KIC Budo Tomović",
@@ -130,6 +131,7 @@ class InitSeeder(
                 address = "",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "kic",
             ),
             Location(
                 name = "MUP",
@@ -141,6 +143,7 @@ class InitSeeder(
                 address = "",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "mup",
             ),
             Location(
                 name = "Crnogorsko Komercijalna Banka",
@@ -152,6 +155,7 @@ class InitSeeder(
                 address = "",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "ckb",
             ),
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka",
@@ -163,6 +167,7 @@ class InitSeeder(
                 address = "",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "filijala-ckb",
             ),
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka 2",
@@ -174,6 +179,7 @@ class InitSeeder(
                 address = "",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "filijala-ckb-2",
             ),
             Location(
                 name = "MINISTARSTVO ZA LJUDSKA I MANJINSKA PRAVA",
@@ -185,6 +191,7 @@ class InitSeeder(
                 address = "46, Rimski Trg, Kruševac",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "mzmp",
             ),
             Location(
                 name = "shoping-centar-mall-of-montenegro",
@@ -196,6 +203,7 @@ class InitSeeder(
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "mallofmne",
             ),
             Location(
                 name = "njegosev-park",
@@ -207,6 +215,7 @@ class InitSeeder(
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
                 city = cetinje,
+                slug = "njegosev",
             ),
             Location(
                 name = "voli-29-podgorica",
@@ -218,6 +227,7 @@ class InitSeeder(
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "voli",
             ),
             Location(
                 name = "nas-diskont-podgorica",
@@ -230,6 +240,7 @@ class InitSeeder(
                 address = "4 Jula bb, E80",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "lakovic",
             ),
             Location(
                 name = "benzinska-pumpa-eko-petrol-bs-podgorica-6",
@@ -243,6 +254,7 @@ class InitSeeder(
                 address = "Vojisavljevica bb, E762, Zabjelo",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "benzinska",
             ),
             Location(
                 name = "dom-zdravlja-tuzi",
@@ -254,6 +266,7 @@ class InitSeeder(
                 address = "Tuzi, E-762",
                 postalNumber = 81000,
                 city = podgorica,
+                slug = "doma-zdravlja-tuzi",
             ),
             Location(
                 name = "idea-kapino-polje-niksic",
@@ -267,6 +280,7 @@ class InitSeeder(
                 address = "Tuzi, E-762",
                 postalNumber = 81000,
                 city = niksic,
+                slug = "idea",
             ),
         )
     }
