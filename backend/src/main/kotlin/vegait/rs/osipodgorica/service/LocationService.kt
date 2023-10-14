@@ -20,10 +20,10 @@ class LocationService(
     val cityRepository: CityRepository,
     val featureRepo: AccessibilityFeatureRepository,
     val entityManager: EntityManager,
-    val criteriaBuilderFactory: CriteriaBuilderFactory
+    val criteriaBuilderFactory: CriteriaBuilderFactory,
 ) {
 
-    fun store(request: CreateLocationRequest) : Location {
+    fun store(request: CreateLocationRequest): Location {
         val category: Category = categoryRepo.findById(request.categoryId).orElseThrow()
         val features = featureRepo.findAllByIdIn(request.accessibilityFeatureIds)
         val city = cityRepository.findById(request.cityId).orElseThrow()
@@ -34,9 +34,9 @@ class LocationService(
             accessibilityFeatures = features,
             latitude = request.latitude,
             longitude = request.longitude,
-            address = request.address?: "",
-            postalNumber = request.postalNumber?: 81000,
-            city = city
+            address = request.address ?: "",
+            postalNumber = request.postalNumber ?: 81000,
+            city = city,
         )
 
         return repository.save(location)
@@ -46,7 +46,7 @@ class LocationService(
         return repository.findById(id).orElseThrow()
     }
 
-    fun index(categoryId: Long?,cityId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
+    fun index(categoryId: Long?, cityId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
             .accessibilityFeatures(featureIds)
             .category(categoryId)
@@ -70,7 +70,7 @@ class LocationService(
         existingLocation.latitude = request.latitude
         existingLocation.longitude = request.longitude
         existingLocation.accessibilityFeatures = features
-        if (request.address !=null) {
+        if (request.address != null) {
             existingLocation.address = request.address
         }
         if (request.postalNumber != null) {
