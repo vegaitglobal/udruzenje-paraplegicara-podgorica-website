@@ -13,8 +13,8 @@ import java.nio.file.StandardCopyOption
 
 @Service
 class ImageUploadService(
-        @Value("\${app.file.upload-dir:./uploads}")
-        var uploadDir: String
+    @Value("\${app.file.upload-dir:./uploads}")
+    var uploadDir: String,
 ) {
     val rootLocation: Path = Paths.get(uploadDir)
 
