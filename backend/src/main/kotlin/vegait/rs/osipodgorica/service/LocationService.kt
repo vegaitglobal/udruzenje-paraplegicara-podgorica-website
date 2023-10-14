@@ -43,6 +43,7 @@ class LocationService(
             address = request.address ?: "",
             postalNumber = request.postalNumber ?: 81000,
             city = city,
+            slug = request.slug,
         )
 
         location = repository.save(location);
@@ -68,9 +69,7 @@ class LocationService(
         return repository.save(location)
     }
 
-    fun get(id: Long): Location {
-        return repository.findById(id).orElseThrow()
-    }
+    fun get(slug: String): Location = repository.findBySlug(slug = slug)
 
     fun index(categoryId: Long?, cityId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
@@ -96,6 +95,8 @@ class LocationService(
         existingLocation.latitude = request.latitude
         existingLocation.longitude = request.longitude
         existingLocation.accessibilityFeatures = features
+        existingLocation.slug = request.slug
+
         if (request.address != null) {
             existingLocation.address = request.address
         }

@@ -4,6 +4,7 @@ import org.springframework.web.multipart.MultipartFile
 
 data class CreateLocationRequest(
     val name: String,
+    val slug: String,
     val description: String,
     val categoryId: Long,
     val accessibilityFeatureIds: List<Long>,

@@ -4,11 +4,13 @@ import jakarta.persistence.*
 
 @Entity
 @Table(name = "locations")
-class Location(
+data class Location(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     var name: String,
+    @Column(unique = true) var slug: String,
+    @Column(columnDefinition = "MEDIUMTEXT")
     var description: String,
     var latitude: Double,
     var longitude: Double,
@@ -32,10 +34,11 @@ class Location(
     var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf(),
 
     @OneToMany(
-        cascade = [CascadeType.ALL],
-        orphanRemoval = true
+            cascade = [CascadeType.ALL],
+            orphanRemoval = true
     )
     @JoinColumn(name= "location_id")
     var images: MutableList<LocationImage>? = mutableListOf(),
     var thumbnailUrl: String? = ""
 )
+
