@@ -71,6 +71,7 @@ class LocationService(
         existingLocation.latitude = request.latitude
         existingLocation.longitude = request.longitude
         existingLocation.accessibilityFeatures = features
+        existingLocation.slug = request.slug
         if (request.address != null) {
             existingLocation.address = request.address
         }

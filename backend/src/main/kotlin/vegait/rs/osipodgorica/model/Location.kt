@@ -8,7 +8,7 @@ data class Location(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
-    val slug: String,
+    var slug: String,
     var name: String,
     @Column(columnDefinition = "MEDIUMTEXT")
     var description: String,
