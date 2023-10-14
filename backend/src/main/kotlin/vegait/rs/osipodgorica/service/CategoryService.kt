@@ -41,9 +41,10 @@ class CategoryService(
         return categoryRepo.findAll()
     }
 
-    fun delete(id: Long) = runCatching {
-        categoryRepo.deleteById(id)
-    }.mapCatching {
-//        imageUploadService.d
-    }
+    fun delete(id: Long) = categoryRepo.deleteById(id)
+//            runCatching {
+
+//    }.mapCatching {
+// //        imageUploadService.d
+//    }
 }
