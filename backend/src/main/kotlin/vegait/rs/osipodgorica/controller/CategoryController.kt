@@ -34,7 +34,7 @@ class CategoryController(val categoryService: CategoryService) {
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    fun update(@RequestBody request: UpdateCategoryRequest, @PathVariable id: Long): Category {
+    fun update(@ModelAttribute request: UpdateCategoryRequest, @PathVariable id: Long): Category {
         return categoryService.update(request, id)
     }
 
