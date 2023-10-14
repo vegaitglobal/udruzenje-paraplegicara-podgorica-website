@@ -6,9 +6,7 @@ import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.*
 import vegait.rs.osipodgorica.dto.CreateCategoryRequest
 import vegait.rs.osipodgorica.dto.UpdateCategoryRequest
-import vegait.rs.osipodgorica.dto.UpdateLocationRequest
 import vegait.rs.osipodgorica.model.Category
-import vegait.rs.osipodgorica.model.Location
 import vegait.rs.osipodgorica.service.CategoryService
 
 @RestController
@@ -24,7 +22,7 @@ class CategoryController(val categoryService: CategoryService) {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    fun get(@PathVariable id : Long): Category {
+    fun get(@PathVariable id: Long): Category {
         return categoryService.get(id)
     }
 
