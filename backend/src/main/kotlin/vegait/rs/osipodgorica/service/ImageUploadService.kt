@@ -35,12 +35,13 @@ class ImageUploadService(
         return destinationFile.toString()
     }
 
-    fun deleteFile(path: String) {
-        val file = File(path)
-        if (file.exists()) {
+    fun deleteFile(path: String): Boolean =
+        File(path).takeIf { file ->
+            file.exists()
+        }?.let { file ->
             file.delete()
-        }
-    }
+            true
+        } ?: false
 
     fun deleteFolder(folderName: String) {
         val folder = File(this.rootLocation.resolve(folderName).toString())
