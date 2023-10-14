@@ -13,8 +13,8 @@ import java.nio.file.StandardCopyOption
 
 @Service
 class ImageUploadService(
-    @Value("\${app.file.upload-dir:./uploads}")
-    var uploadDir: String
+        @Value("\${app.file.upload-dir:./uploads}")
+        var uploadDir: String
 ) {
     val rootLocation: Path = Paths.get(uploadDir)
 
@@ -28,17 +28,27 @@ class ImageUploadService(
             val inputStream: InputStream = file.inputStream
             Files.copy(inputStream, destinationFile.toAbsolutePath(), StandardCopyOption.REPLACE_EXISTING)
         } catch (e: IOException) {
-            val folder = File(this.rootLocation.resolve(folderName).toString())
-            if (folder.exists()) {
-                for (file in folder.listFiles()) {
-                    file.delete();
-                }
-                folder.delete()
-            }
-
+            deleteFolder(folderName)
             throw RuntimeException("There was an error uploading the file to $folderName/$name", e)
         }
 
         return destinationFile.toString()
+    }
+
+    fun deleteFile(path: String) {
+        val file = File(path)
+        if (file.exists()) {
+            file.delete()
+        }
+    }
+
+    fun deleteFolder(folderName: String) {
+        val folder = File(this.rootLocation.resolve(folderName).toString())
+        if (folder.exists()) {
+            for (file in folder.listFiles()) {
+                file.delete()
+            }
+            folder.delete()
+        }
     }
 }
