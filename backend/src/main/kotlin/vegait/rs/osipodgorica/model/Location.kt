@@ -4,10 +4,12 @@ import jakarta.persistence.*
 
 @Entity
 @Table(name = "locations")
-class Location (
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+data class Location(
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     var name: String,
+    @Column(unique = true) var slug: String,
     @Column(columnDefinition = "MEDIUMTEXT")
     var description: String,
     var latitude: Double,
@@ -22,10 +24,9 @@ class Location (
     var city: City,
     @ManyToMany
     @JoinTable(
-        name= "accessibility_feature_location",
+        name = "accessibility_feature_location",
         joinColumns = arrayOf(JoinColumn(name = "location_id")),
-        inverseJoinColumns = arrayOf(JoinColumn(name = "accessibility_feature_id"))
+        inverseJoinColumns = arrayOf(JoinColumn(name = "accessibility_feature_id")),
     )
-    var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf()
+    var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf(),
 )
-

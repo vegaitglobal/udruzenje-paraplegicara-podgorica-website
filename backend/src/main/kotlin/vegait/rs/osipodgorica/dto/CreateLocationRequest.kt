@@ -2,6 +2,7 @@ package vegait.rs.osipodgorica.dto
 
 data class CreateLocationRequest(
     val name: String,
+    val slug: String,
     val description: String,
     val categoryId: Long,
     val accessibilityFeatureIds: List<Long>,
@@ -9,5 +10,5 @@ data class CreateLocationRequest(
     val longitude: Double,
     val cityId: Long,
     val address: String?,
-    val postalNumber: Long?
+    val postalNumber: Long?,
 )
