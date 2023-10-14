@@ -43,9 +43,7 @@ class LocationService(
         return repository.save(location)
     }
 
-    fun get(id: Long): Location {
-        return repository.findById(id).orElseThrow()
-    }
+    fun get(slug: String): Location = repository.findBySlug(slug = slug)
 
     fun index(categoryId: Long?, cityId: Long?, featureIds: List<Long>?, name: String?): List<Location> {
         return LocationQueryBuilder(criteriaBuilderFactory, entityManager)
