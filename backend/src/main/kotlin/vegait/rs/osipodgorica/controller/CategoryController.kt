@@ -17,12 +17,14 @@ import vegait.rs.osipodgorica.service.CategoryService
 class CategoryController(val categoryService: CategoryService) {
 
     @PostMapping(consumes = [MediaType.MULTIPART_FORM_DATA_VALUE])
+    @ResponseStatus(HttpStatus.CREATED)
     fun store(@ModelAttribute request: CreateCategoryRequest): Category {
         return categoryService.store(request)
     }
 
     @GetMapping("/{id}")
-    fun get(@PathVariable id: Long): Category {
+    @ResponseStatus(HttpStatus.OK)
+    fun get(@PathVariable id : Long): Category {
         return categoryService.get(id)
     }
 
@@ -39,6 +41,7 @@ class CategoryController(val categoryService: CategoryService) {
     }
 
     @GetMapping
+    @ResponseStatus(HttpStatus.OK)
     fun index(): List<Category> {
         return categoryService.index()
     }
