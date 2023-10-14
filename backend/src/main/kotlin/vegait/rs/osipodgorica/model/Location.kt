@@ -32,21 +32,10 @@ class Location(
     var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf(),
 
     @OneToMany(
-//        mappedBy = "location",
         cascade = [CascadeType.ALL],
         orphanRemoval = true
     )
     @JoinColumn(name= "location_id")
     var images: MutableList<LocationImage>? = mutableListOf(),
     var thumbnailUrl: String? = ""
-) {
-//    fun addImage(image: LocationImage) {
-//        images?.plus(image)
-//        image.location = this
-//    }
-//
-//    fun removeImage(image: LocationImage) {
-//        images?.minus(image)
-//        image.location = null
-//    }
-}
+)

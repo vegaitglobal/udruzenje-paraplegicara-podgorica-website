@@ -9,7 +9,10 @@ import vegait.rs.osipodgorica.dto.UpdateLocationRequest
 import vegait.rs.osipodgorica.model.Category
 import vegait.rs.osipodgorica.model.Location
 import vegait.rs.osipodgorica.model.LocationImage
-import vegait.rs.osipodgorica.repository.*
+import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
+import vegait.rs.osipodgorica.repository.CategoryRepository
+import vegait.rs.osipodgorica.repository.CityRepository
+import vegait.rs.osipodgorica.repository.LocationRepository
 import vegait.rs.osipodgorica.utils.LocationQueryBuilder
 
 @Service
@@ -21,11 +24,8 @@ class LocationService(
     val featureRepo: AccessibilityFeatureRepository,
     val entityManager: EntityManager,
     val criteriaBuilderFactory: CriteriaBuilderFactory,
-    val imageService: LocationImageService,
     val uploadService: ImageUploadService,
-    val imageRepository: LocationImageRepository
 ) {
-
     fun store(request: CreateLocationRequest): Location {
         val category: Category = categoryRepo.findById(request.categoryId).orElseThrow()
         val features = featureRepo.findAllByIdIn(request.accessibilityFeatureIds)
