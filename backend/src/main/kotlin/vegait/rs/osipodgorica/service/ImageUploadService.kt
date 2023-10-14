@@ -43,10 +43,6 @@ class ImageUploadService(
         return System.currentTimeMillis().toString() + "_" + file.originalFilename
     }
 
-//    fun store(file: String, folderName: String): String {
-//
-//    }
-
     fun deleteFile(path: String) {
         val file = File(path)
         if (file.exists()) {
