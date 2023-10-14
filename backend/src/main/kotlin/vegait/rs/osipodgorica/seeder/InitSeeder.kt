@@ -17,7 +17,7 @@ class InitSeeder(
     val categoryRepo: CategoryRepository,
     val cityRepo: CityRepository,
     val locationRepo: LocationRepository,
-    val env: Environment
+    val env: Environment,
 ) : CommandLineRunner {
 
     override fun run(vararg args: String?) {
@@ -64,7 +64,7 @@ class InitSeeder(
             Category(
                 id = 1,
                 name = "Objekti državnih organa",
-                relativeUrl = "uploads/categories/1/m-drzavni-organi.png"
+                relativeUrl = "uploads/categories/1/m-drzavni-organi.png",
             ),
             Category(id = 2, name = "Lokalna samouprava", relativeUrl = "uploads/categories/2/m-drzavni-organi.png"),
             Category(id = 3, name = "Zdravstvo", relativeUrl = "uploads/categories/3/m-zdravlje.png"),
@@ -73,7 +73,7 @@ class InitSeeder(
             Category(
                 id = 6,
                 name = "Otvoreni i zatvoreni sportski i rekreativni objekti",
-                relativeUrl = "uploads/categories/6/m-sport.png"
+                relativeUrl = "uploads/categories/6/m-sport.png",
             ),
             Category(id = 7, name = "Saobraćajni terminali", relativeUrl = "uploads/categories/7/m-saobracaj.png"),
             Category(id = 8, name = "Pošte", relativeUrl = "uploads/categories/8/m-posta.png"),
@@ -83,7 +83,7 @@ class InitSeeder(
             Category(
                 id = 12,
                 name = "Ugostiteljski objekti",
-                relativeUrl = "uploads/categories/12/m-ugostiteljstvo.png"
+                relativeUrl = "uploads/categories/12/m-ugostiteljstvo.png",
             ),
             Category(id = 13, name = "Vjerski objekti", relativeUrl = "uploads/categories/13/m-crkve.png"),
             Category(id = 14, name = "Telekomunikacije", relativeUrl = "uploads/categories/14/m-telekomunikacije.png"),
@@ -118,7 +118,7 @@ class InitSeeder(
                 longitude = 19.246028,
                 address = "",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "KIC Budo Tomović",
@@ -129,7 +129,7 @@ class InitSeeder(
                 longitude = 19.264439,
                 address = "",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "MUP",
@@ -140,7 +140,7 @@ class InitSeeder(
                 longitude = 19.252682,
                 address = "",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "Crnogorsko Komercijalna Banka",
@@ -151,7 +151,7 @@ class InitSeeder(
                 longitude = 19.247161806315603,
                 address = "",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka",
@@ -162,7 +162,7 @@ class InitSeeder(
                 longitude = 19.247437111656154,
                 address = "",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "Filijala Crnogorska Komercijalna Banka 2",
@@ -173,7 +173,7 @@ class InitSeeder(
                 longitude = 19.249060753384356,
                 address = "",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "MINISTARSTVO ZA LJUDSKA I MANJINSKA PRAVA",
@@ -184,7 +184,7 @@ class InitSeeder(
                 longitude = 19.246871165554012,
                 address = "46, Rimski Trg, Kruševac",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "shoping-centar-mall-of-montenegro",
@@ -195,7 +195,7 @@ class InitSeeder(
                 longitude = 19.26276325396725,
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "njegosev-park",
@@ -206,7 +206,7 @@ class InitSeeder(
                 longitude = 18.925302028656006,
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
-                city = cetinje
+                city = cetinje,
             ),
             Location(
                 name = "voli-29-podgorica",
@@ -217,32 +217,32 @@ class InitSeeder(
                 longitude = 19.29769992828369,
                 address = "Bulevar Save Kovačevića br. 74",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "nas-diskont-podgorica",
                 description = "Objekat nas diskont ima uradjena zakosenja prije ulaska u prodajni prostor. Unutrasnja komunikacija licima sa invaliditetom je moguca, a ispred samog objekta nalazi se obiljezeno vise parking mjesta.\n" +
-                        "Radno vrijeme: 07:00 - 22:00 svakog dana",
+                    "Radno vrijeme: 07:00 - 22:00 svakog dana",
                 category = commercialFacilities,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.42097757031943,
                 longitude = 19.25699472427368,
                 address = "4 Jula bb, E80",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "benzinska-pumpa-eko-petrol-bs-podgorica-6",
                 description = "Iza objekta se nalazi toalet do koga vodi rampa sa rukohvatom. Neposredno do rampe se nalaze obiljezena dva parking mjesta. U sklopu objekta se nalazi cafe, prodavnica i auto perionica.\n" +
-                        "Pumpa se nalazi sa desne strane magistralnog pumpa od pravca naselja Zabjelo u pravcu takozvanih cetinjskih semafora.\n" +
-                        "Radno vrijeme: 0:00 - 24:00 svakog dana.",
+                    "Pumpa se nalazi sa desne strane magistralnog pumpa od pravca naselja Zabjelo u pravcu takozvanih cetinjskih semafora.\n" +
+                    "Radno vrijeme: 0:00 - 24:00 svakog dana.",
                 category = trafficFacility,
                 accessibilityFeatures = hashSetOf(ramp, toalet, parking),
                 latitude = 42.43025134141357,
                 longitude = 19.23166662454605,
                 address = "Vojisavljevica bb, E762, Zabjelo",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "dom-zdravlja-tuzi",
@@ -253,20 +253,20 @@ class InitSeeder(
                 longitude = 19.329114486755316,
                 address = "Tuzi, E-762",
                 postalNumber = 81000,
-                city = podgorica
+                city = podgorica,
             ),
             Location(
                 name = "idea-kapino-polje-niksic",
                 description = "Na izlazu iz Niksica, prema granici Bosne i Hercegovine, do Vukovog mosta, nalazi se prodajni objekat IDEA.\n" +
-                        "Objekat ima na ulazu rampu bez ograde.\n" +
-                        "Radno vrijeme: pon - ned: 07:00 - 22:00",
+                    "Objekat ima na ulazu rampu bez ograde.\n" +
+                    "Radno vrijeme: pon - ned: 07:00 - 22:00",
                 category = commercialFacilities,
                 accessibilityFeatures = hashSetOf(ramp, toalet, parking),
                 latitude = 42.78118691504842,
                 longitude = 18.92085760831833,
                 address = "Tuzi, E-762",
                 postalNumber = 81000,
-                city = niksic
+                city = niksic,
             ),
         )
     }
