@@ -46,4 +46,10 @@ class LocationController(
     fun update(@RequestBody request: UpdateLocationRequest, @PathVariable id: Long): Location {
         return service.update(request, id)
     }
+
+    @DeleteMapping("/{id}/images/{imageId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    fun deleteImage(@PathVariable("id") locId: Long, @PathVariable("imageId") imageId: Long) {
+        service.deleteImg(locId, imageId);
+    }
 }

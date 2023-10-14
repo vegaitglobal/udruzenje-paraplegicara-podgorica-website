@@ -12,6 +12,7 @@ import vegait.rs.osipodgorica.model.LocationImage
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 import vegait.rs.osipodgorica.repository.CategoryRepository
 import vegait.rs.osipodgorica.repository.CityRepository
+import vegait.rs.osipodgorica.repository.LocationImageRepository
 import vegait.rs.osipodgorica.repository.LocationRepository
 import vegait.rs.osipodgorica.utils.LocationQueryBuilder
 
@@ -25,6 +26,7 @@ class LocationService(
     val entityManager: EntityManager,
     val criteriaBuilderFactory: CriteriaBuilderFactory,
     val uploadService: ImageUploadService,
+    val imageRepo: LocationImageRepository
 ) {
     fun store(request: CreateLocationRequest): Location {
         val category: Category = categoryRepo.findById(request.categoryId).orElseThrow()
@@ -95,5 +97,13 @@ class LocationService(
         }
 
         return repository.save(existingLocation)
+    }
+
+    fun deleteImg(locId: Long, imageId: Long) {
+        repository.findById(locId).orElseThrow()
+
+        val image = imageRepo.findById(imageId).orElseThrow()
+        uploadService.deleteFile(image.relativeUrl!!)
+        imageRepo.deleteById(imageId)
     }
 }

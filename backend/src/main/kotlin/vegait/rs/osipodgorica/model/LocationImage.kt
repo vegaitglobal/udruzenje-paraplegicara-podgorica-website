@@ -7,5 +7,5 @@ import jakarta.persistence.*
 class LocationImage(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
-    var relativeUrl: String?,
+    var relativeUrl: String? = null,
 )
