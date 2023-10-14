@@ -31,16 +31,19 @@ class CategoryService(
         }.mapCatching { oldCategory ->
             Category(
                 id = id,
-                name = oldCategory.name,
-                relativeUrl = request.thumbnail?.storeNewIcon(id) ?: oldCategory.relativeUrl,
+                name = request.name,
+                relativeUrl = request.thumbnail?.storeNewIcon(id, oldCategory.relativeUrl)
+                    ?: oldCategory.relativeUrl,
             )
         }.mapCatching { category ->
             categoryRepo.save(category)
         }.getOrThrow()
 
-    private fun MultipartFile.storeNewIcon(id: Long): String? =
+    private fun MultipartFile.storeNewIcon(id: Long, oldIconPath: String?): String? =
         runCatching {
-            imageUploadService.deleteFile("categories/$id")
+            oldIconPath?.let { scopedOldIconPath ->
+                imageUploadService.deleteFile(scopedOldIconPath)
+            }
         }.mapCatching {
             imageUploadService.store(this, "categories/$id")
         }.getOrNull()
