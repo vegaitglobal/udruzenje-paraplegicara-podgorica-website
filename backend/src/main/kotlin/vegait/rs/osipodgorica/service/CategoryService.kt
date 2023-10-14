@@ -57,9 +57,7 @@ class CategoryService(
     }
 
     fun delete(id: Long) {
-        runCatching {
-            categoryRepo.deleteById(id)
-        }.mapCatching {
+        categoryRepo.deleteById(id).also {
             imageUploadService.deleteFolder("categories/$id")
         }
     }
