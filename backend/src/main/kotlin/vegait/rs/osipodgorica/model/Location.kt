@@ -8,6 +8,7 @@ class Location (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     var name: String,
+    @Column(columnDefinition = "MEDIUMTEXT")
     var description: String,
     var latitude: Double,
     var longitude: Double,
