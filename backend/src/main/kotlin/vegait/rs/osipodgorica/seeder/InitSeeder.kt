@@ -105,6 +105,7 @@ class InitSeeder(
         val lift = featuresRepo.findByName("Lift")
 
         val podgorica = cityRepo.findById(1).orElseThrow()
+        val niksic = cityRepo.findById(9).orElseThrow()
 
         return arrayListOf(
             Location(
@@ -264,7 +265,7 @@ class InitSeeder(
                 longitude = 18.92085760831833,
                 address = "Tuzi, E-762",
                 postalNumber = 81000,
-                city = podgorica
+                city = niksic
             ),
         )
     }
