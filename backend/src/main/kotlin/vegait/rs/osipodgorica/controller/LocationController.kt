@@ -18,10 +18,10 @@ class LocationController(
         return service.store(request)
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{slug}")
     @ResponseStatus(HttpStatus.OK)
-    fun get(@PathVariable id: Long): Location {
-        return service.get(id)
+    fun get(@PathVariable slug: String): Location {
+        return service.get(slug)
     }
 
     @GetMapping
