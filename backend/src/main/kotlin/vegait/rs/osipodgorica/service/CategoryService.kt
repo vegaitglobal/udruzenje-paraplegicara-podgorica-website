@@ -36,7 +36,7 @@ class CategoryService(
             )
         }.mapCatching { category ->
             categoryRepo.save(category)
-        }
+        }.getOrThrow()
 
     private fun MultipartFile.storeNewIcon(id: Long): String? =
         runCatching {
