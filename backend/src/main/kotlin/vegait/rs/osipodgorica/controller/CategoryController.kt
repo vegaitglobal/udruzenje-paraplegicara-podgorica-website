@@ -5,7 +5,10 @@ import org.springframework.http.MediaType
 import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.*
 import vegait.rs.osipodgorica.dto.CreateCategoryRequest
+import vegait.rs.osipodgorica.dto.UpdateCategoryRequest
+import vegait.rs.osipodgorica.dto.UpdateLocationRequest
 import vegait.rs.osipodgorica.model.Category
+import vegait.rs.osipodgorica.model.Location
 import vegait.rs.osipodgorica.service.CategoryService
 
 @RestController
@@ -19,7 +22,7 @@ class CategoryController(val categoryService: CategoryService) {
     }
 
     @GetMapping("/{id}")
-    fun get(@PathVariable id : Long): Category {
+    fun get(@PathVariable id: Long): Category {
         return categoryService.get(id)
     }
 
@@ -27,6 +30,12 @@ class CategoryController(val categoryService: CategoryService) {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     fun delete(@PathVariable id: Long) {
         return categoryService.delete(id)
+    }
+
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    fun update(@RequestBody request: UpdateCategoryRequest, @PathVariable id: Long): Category {
+        return categoryService.update(request, id)
     }
 
     @GetMapping
