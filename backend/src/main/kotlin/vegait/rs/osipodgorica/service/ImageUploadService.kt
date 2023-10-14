@@ -20,8 +20,8 @@ class ImageUploadService(
 
     fun store(file: MultipartFile, folderName: String): String {
         // file name format: timestamp_originalName
-        val name: String = System.currentTimeMillis().toString() + "_" + file.originalFilename
-        val destinationFile: Path = this.rootLocation.resolve(Paths.get("$folderName/$name")).normalize()
+        val name = generateFileName(file)
+        val destinationFile = generateDestinationPath(folderName, name)
 
         try {
             Files.createDirectories(this.rootLocation.resolve("$folderName/$name"))
@@ -34,6 +34,18 @@ class ImageUploadService(
 
         return destinationFile.toString()
     }
+
+    private fun generateDestinationPath(folderName: String, name: String): Path {
+        return this.rootLocation.resolve(Paths.get("$folderName/$name")).normalize()
+    }
+
+    private fun generateFileName(file: MultipartFile): String {
+        return System.currentTimeMillis().toString() + "_" + file.originalFilename
+    }
+
+//    fun store(file: String, folderName: String): String {
+//
+//    }
 
     fun deleteFile(path: String) {
         val file = File(path)
