@@ -2,6 +2,7 @@ package vegait.rs.osipodgorica.service
 
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
+import org.springframework.web.multipart.MultipartFile
 import vegait.rs.osipodgorica.dto.CreateCategoryRequest
 import vegait.rs.osipodgorica.dto.UpdateCategoryRequest
 import vegait.rs.osipodgorica.model.Category
@@ -25,13 +26,24 @@ class CategoryService(
     }
 
     fun update(request: UpdateCategoryRequest, id: Long) =
-        Category(
-            id = id,
-            name = request.name,
-            relativeUrl = request.relativeUrl,
-        ).let { newCategory ->
-            categoryRepo.save(newCategory)
+        runCatching {
+            categoryRepo.findById(id).get()
+        }.mapCatching { oldCategory ->
+            Category(
+                id = id,
+                name = oldCategory.name,
+                relativeUrl = request.thumbnail?.storeNewIcon(id) ?: oldCategory.relativeUrl,
+            )
+        }.mapCatching { category ->
+            categoryRepo.save(category)
         }
+
+    private fun MultipartFile.storeNewIcon(id: Long): String? =
+        runCatching {
+            imageUploadService.deleteFile("categories/$id")
+        }.mapCatching {
+            imageUploadService.store(this, "categories/$id")
+        }.getOrNull()
 
     fun get(id: Long): Category {
         return categoryRepo.findById(id).orElseThrow()
