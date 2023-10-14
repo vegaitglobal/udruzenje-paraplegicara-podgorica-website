@@ -47,15 +47,22 @@ class LocationService(
 
         location = repository.save(location);
 
-        val imageSet: MutableList<LocationImage> = mutableListOf()
-        for (image in request.images!!) {
-            // store images
-            val url = uploadService.store(image, "locations/" + location.id)
-            imageSet.add(LocationImage(relativeUrl = url))
+        if (request.images != null) {
+            val imageUrls = uploadService.storeAll(
+                    request.images,
+                    "locations/" + location.id
+            )
+
+            if (location.images == null) {
+                location.images = mutableListOf()
+            }
+
+            for (url in imageUrls) {
+                location.images!!.add(LocationImage(relativeUrl = url))
+            }
         }
 
         // update with info about images
-        location.images = imageSet
         location.thumbnailUrl = uploadService.store(request.thumbnail, "locations/" + location.id)
 
         return repository.save(location)
@@ -95,6 +102,26 @@ class LocationService(
         if (request.postalNumber != null) {
             existingLocation.postalNumber = request.postalNumber
         }
+
+        if (request.newImages != null) {
+            val newUrls = uploadService.storeAll(
+                request.newImages,
+                "locations/" + existingLocation.id
+            )
+
+            if (existingLocation.images == null) {
+                existingLocation.images = mutableListOf()
+            }
+
+            for (url in newUrls) {
+                existingLocation.images!!.add(LocationImage(relativeUrl = url))
+            }
+        }
+
+        // take images and store them
+        // if an exception occurs delete all the ones you saved previously
+        // so add so a list the ones you manage to store
+        // if exception occurs delete it
 
         return repository.save(existingLocation)
     }

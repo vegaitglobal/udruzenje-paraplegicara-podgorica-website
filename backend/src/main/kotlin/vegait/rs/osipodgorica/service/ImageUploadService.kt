@@ -13,8 +13,8 @@ import java.nio.file.StandardCopyOption
 
 @Service
 class ImageUploadService(
-        @Value("\${app.file.upload-dir:./uploads}")
-        var uploadDir: String
+    @Value("\${app.file.upload-dir:./uploads}")
+    var uploadDir: String
 ) {
     val rootLocation: Path = Paths.get(uploadDir)
 
@@ -28,7 +28,7 @@ class ImageUploadService(
             val inputStream: InputStream = file.inputStream
             Files.copy(inputStream, destinationFile.toAbsolutePath(), StandardCopyOption.REPLACE_EXISTING)
         } catch (e: IOException) {
-            deleteFolder(folderName)
+//            deleteFolder(folderName)
             throw RuntimeException("There was an error uploading the file to $folderName/$name", e)
         }
 
@@ -58,5 +58,27 @@ class ImageUploadService(
             }
             folder.delete()
         }
+    }
+
+    fun storeAll(newImages: List<MultipartFile>, folderName: String): List<String> {
+        val storedUrls: MutableList<String> = mutableListOf()
+        try {
+            for (file in newImages) {
+                val url = store(file, folderName)
+
+                if (storedUrls.size > 0) {
+                    throw RuntimeException()
+                }
+                storedUrls.add(url)
+            }
+        } catch (ex: RuntimeException) {
+            for (url in storedUrls) {
+                deleteFile(url)
+            }
+
+            throw RuntimeException("There was an error uploading the file to $folderName/", ex)
+        }
+
+        return storedUrls
     }
 }
