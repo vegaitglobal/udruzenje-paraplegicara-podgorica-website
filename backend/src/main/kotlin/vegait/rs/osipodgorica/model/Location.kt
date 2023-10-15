@@ -10,6 +10,7 @@ data class Location(
     var id: Long? = null,
     var name: String,
     @Column(unique = true) var slug: String,
+    @Lob
     @Column(columnDefinition = "MEDIUMTEXT")
     var description: String,
     var latitude: Double,
