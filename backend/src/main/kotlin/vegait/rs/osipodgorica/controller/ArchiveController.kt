@@ -42,9 +42,9 @@ class ArchiveController(
     @ResponseStatus(HttpStatus.OK)
     fun get(@PathVariable id: Long): Archive = archiveService.get(id)
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    fun delete(id: Long) {
+    fun delete(@PathVariable id: Long) {
         archiveService.delete(id)
     }
 }
