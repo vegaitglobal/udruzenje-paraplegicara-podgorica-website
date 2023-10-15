@@ -10,7 +10,7 @@ data class Archive(
     val id: Long? = null,
     val description: String,
     @Column(unique = true)
-    val path: String,
+§    val relativeUrl: String,
     @Column(unique = true)
     val name: String,
     val startDate: String,
