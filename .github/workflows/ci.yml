@@ -17,12 +17,12 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build the Docker image api
       run: docker build --file backend/Dockerfile --tag codeforacause/udruzenjeparaplegicara:api-${{ github.run_number }} backend/.
-    - name: Build the Docker image ui
-      run: docker build --file frontend/Dockerfile --tag codeforacause/udruzenjeparaplegicara:ui-${{ github.run_number }} frontend/.
+    # - name: Build the Docker image ui
+    #   run: docker build --file frontend/Dockerfile --tag codeforacause/udruzenjeparaplegicara:ui-${{ github.run_number }} frontend/.
     - name: Pushing docker image api to CR backend
       run: docker push codeforacause/udruzenjeparaplegicara:api-${{ github.run_number }}
-    - name: Pushing docker image ui to CR backend
-      run: docker push codeforacause/udruzenjeparaplegicara:ui-${{ github.run_number }}
+    # - name: Pushing docker image ui to CR backend
+    #   run: docker push codeforacause/udruzenjeparaplegicara:ui-${{ github.run_number }}
     - name: Replace tokens
       uses: cschleiden/replace-tokens@v1.1
       with:

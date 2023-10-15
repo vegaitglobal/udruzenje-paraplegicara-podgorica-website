@@ -1,16 +1,16 @@
 services:
-  ui:
-    image: codeforacause/udruzenjeparaplegicara:ui-#{TAG_NUMBER}#
-    container_name: udruzenjeparaplegicara_ui
-    ports:
-      - '12011:80'
-    environment:
-      NEXT_PUBLIC_GOOGLE_PUBLIC_KEY: '#{NEXT_PUBLIC_GOOGLE_PUBLIC_KEY}#'
-      NEXT_PUBLIC_BASE_URL: 'https://api.udruzenjeparaplegicara.codeforacause.rs'
-      NEXT_PUBLIC_URL: 'https://api.udruzenjeparaplegicara.codeforacause.rs/api/v1/'
-    restart: always
-    depends_on:
-      - api
+  # ui:
+  #   image: codeforacause/udruzenjeparaplegicara:ui-#{TAG_NUMBER}#
+  #   container_name: udruzenjeparaplegicara_ui
+  #   ports:
+  #     - '12011:80'
+  #   environment:
+  #     NEXT_PUBLIC_GOOGLE_PUBLIC_KEY: '#{NEXT_PUBLIC_GOOGLE_PUBLIC_KEY}#'
+  #     NEXT_PUBLIC_BASE_URL: 'https://api.udruzenjeparaplegicara.codeforacause.rs'
+  #     NEXT_PUBLIC_URL: 'https://api.udruzenjeparaplegicara.codeforacause.rs/api/v1/'
+  #   restart: always
+  #   depends_on:
+  #     - api
 
   api:
     image: codeforacause/udruzenjeparaplegicara:api-#{TAG_NUMBER}#
