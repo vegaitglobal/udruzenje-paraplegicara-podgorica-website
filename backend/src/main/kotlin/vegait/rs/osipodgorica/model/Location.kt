@@ -34,11 +34,10 @@ data class Location(
     var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf(),
 
     @OneToMany(
-            cascade = [CascadeType.ALL],
-            orphanRemoval = true
+        cascade = [CascadeType.ALL],
+        orphanRemoval = true,
     )
-    @JoinColumn(name= "location_id")
+    @JoinColumn(name = "location_id")
     var images: MutableList<LocationImage>? = mutableListOf(),
-    var thumbnailUrl: String? = ""
+    var thumbnailUrl: String? = "",
 )
-
