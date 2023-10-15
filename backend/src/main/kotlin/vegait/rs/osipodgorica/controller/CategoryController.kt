@@ -29,7 +29,7 @@ class CategoryController(val categoryService: CategoryService) {
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     fun delete(@PathVariable id: Long) {
-        return categoryService.delete(id)
+        categoryService.delete(id)
     }
 
     @PutMapping("/{id}")
