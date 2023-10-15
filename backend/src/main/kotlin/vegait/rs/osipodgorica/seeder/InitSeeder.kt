@@ -445,8 +445,8 @@ class InitSeeder(
             description = "bilans stanja",
             "uploads/archive/Bilans-stanja.pdf",
             name = "Bilans stanja",
-            startDate = "01.01.2018",
-            endDate = "31.12.2018",
+            startDateInstance = LocalDate.now(),
+            endDateInstance = LocalDate.now().plusDays(10),
         ),
     )
 }

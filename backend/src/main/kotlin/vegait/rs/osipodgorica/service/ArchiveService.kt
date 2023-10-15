@@ -22,8 +22,8 @@ class ArchiveService(
                 Archive(
                     description = request.description,
                     name = request.name,
-                    startDate = request.startDate,
-                    endDate = request.endDate,
+                    startDateInstance = request.startDate,
+                    endDateInstance = request.endDate,
                     relativeUrl = relativeUrl,
                 ),
             )
@@ -34,8 +34,8 @@ class ArchiveService(
             id = id,
             name = request.name ?: oldArchive.name,
             description = request.description ?: oldArchive.description,
-            startDate = request.startDate ?: oldArchive.startDate,
-            endDate = request.endDate ?: oldArchive.endDate,
+            startDateInstance = request.startDate ?: oldArchive.startDateInstance,
+            endDateInstance = request.endDate ?: oldArchive.endDateInstance,
             relativeUrl = oldArchive.relativeUrl,
         )
     }.let { newArchive ->

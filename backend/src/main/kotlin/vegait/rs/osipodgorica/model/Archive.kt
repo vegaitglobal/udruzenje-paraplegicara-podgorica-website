@@ -1,6 +1,8 @@
 package vegait.rs.osipodgorica.model
 
 import jakarta.persistence.*
+import java.text.SimpleDateFormat
+import java.time.LocalDate
 
 @Entity
 @Table(name = "archive")
@@ -13,6 +15,6 @@ data class Archive(
     val relativeUrl: String,
     @Column(unique = true)
     val name: String,
-    val startDate: String,
-    val endDate: String,
+    val startDateInstance: LocalDate,
+    val endDateInstance: LocalDate,
 )
