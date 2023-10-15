@@ -1,5 +1,7 @@
 package vegait.rs.osipodgorica.dto
 
+import org.springframework.web.multipart.MultipartFile
+
 data class CreateLocationRequest(
     val name: String,
     val slug: String,
@@ -11,4 +13,6 @@ data class CreateLocationRequest(
     val cityId: Long,
     val address: String?,
     val postalNumber: Long?,
+    val thumbnail: MultipartFile,
+    val images: List<MultipartFile>?
 )
