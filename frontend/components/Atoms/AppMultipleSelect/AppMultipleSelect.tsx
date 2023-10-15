@@ -4,12 +4,29 @@ import { useState } from "react";
 import { AppMultipleSelectProps } from "./AppMultipleSelectProps";
 import ArrowDown from "@/styles/assets/arrowDown.svg";
 
-const AppMultipleSelect = ({ togglerTitle, options }: AppMultipleSelectProps) => {
+const AppMultipleSelect = ({
+  togglerTitle,
+  options,
+  selectedOptions,
+  setSelectedOptions,
+  errorMessage,
+}: AppMultipleSelectProps) => {
   const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleCheckboxChange = (value: string) => {
+    // Toggle the selection
+    if (selectedOptions.includes(value)) {
+      setSelectedOptions((prev: string[]) => prev.filter((item) => item !== value));
+    } else {
+      setSelectedOptions((prev: string[]) => [...prev, value]);
+    }
+  };
+
   return (
     <div className="relative">
       <button
-        onClick={() => setShowDropdown(!showDropdown)}
+        type="button"
+        onClick={() => setShowDropdown((prev) => !prev)}
         className="flex justify-between items-center bg-blue-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
         {togglerTitle}
@@ -26,10 +43,13 @@ const AppMultipleSelect = ({ togglerTitle, options }: AppMultipleSelectProps) =>
         >
           {options.map((option) => (
             <li key={option.value}>
-              <div className="flex items-center p-2 rounded hover:bg-blue-200 dark:hover:bg-gray-600 ">
+              <div className="flex items-center p-2 rounded hover:bg-blue-200 dark:hover-bg-gray-600">
                 <input
                   id={option.label}
                   type="checkbox"
+                  onChange={() => {
+                    handleCheckboxChange(option.value.toString());
+                  }}
                   value={option.value}
                   className="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
                 />
@@ -44,6 +64,7 @@ const AppMultipleSelect = ({ togglerTitle, options }: AppMultipleSelectProps) =>
           ))}
         </ul>
       </div>
+      {errorMessage && <p className="text-sm text-red-700">{errorMessage}</p>}
     </div>
   );
 };
