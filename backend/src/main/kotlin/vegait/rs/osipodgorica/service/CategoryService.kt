@@ -10,47 +10,45 @@ import vegait.rs.osipodgorica.repository.CategoryRepository
 @Service
 @Transactional
 class CategoryService(
-	val categoryRepo: CategoryRepository,
-	val uploadService: ImageUploadService,
-	val imageUploadService: ImageUploadService,
+        val categoryRepo: CategoryRepository,
+        val uploadService: FileUploadService,
+        val fileUploadService: FileUploadService,
 ) {
 
-	fun store(request: CreateCategoryRequest): Category {
-		val category = categoryRepo.save(Category(name = request.name))
+    fun store(request: CreateCategoryRequest): Category {
+        val category = categoryRepo.save(Category(name = request.name))
 
-		val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
-		category.relativeUrl = imagePath
+        val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
+        category.relativeUrl = imagePath
 
-		return categoryRepo.save(category)
-	}
+        return categoryRepo.save(category)
+    }
 
-	fun update(request: UpdateCategoryRequest, id: Long): Category {
-		val category = categoryRepo.findById(id).orElseThrow()
-		category.name = request.name
+    fun update(request: UpdateCategoryRequest, id: Long): Category {
+        val category = categoryRepo.findById(id).orElseThrow()
+        category.name = request.name
 
-		if (request.thumbnail != null) {
-			val oldThumbnail = category.relativeUrl
-			val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
-			if (oldThumbnail != null) {
-				uploadService.deleteFile(oldThumbnail)
-			}
-			category.relativeUrl = imagePath
+        if (request.thumbnail != null) {
+            val oldThumbnail = category.relativeUrl
+            val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
+            if (oldThumbnail != null) {
+                uploadService.deleteFile(oldThumbnail)
+            }
+            category.relativeUrl = imagePath
+        }
+        return categoryRepo.save(category)
+    }
 
-		}
-		return categoryRepo.save(category)
-	}
+    fun get(id: Long): Category {
+        return categoryRepo.findById(id).orElseThrow()
+    }
 
-	fun get(id: Long): Category {
-		return categoryRepo.findById(id).orElseThrow()
-	}
+    fun index(): List<Category> {
+        return categoryRepo.findAll()
+    }
 
-	fun index(): List<Category> {
-		return categoryRepo.findAll()
-	}
-
-	fun delete(id: Long) {
-		imageUploadService.deleteFolder("categories/$id")
-		return categoryRepo.deleteById(id)
-	}
-
+    fun delete(id: Long) {
+        fileUploadService.deleteFolder("categories/$id")
+        return categoryRepo.deleteById(id)
+    }
 }

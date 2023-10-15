@@ -14,7 +14,7 @@ import java.time.LocalDate
 @Service
 @Transactional
 class NewsService(val repository: NewsRepository,
-                  val uploadService: ImageUploadService,
+                  val uploadService: FileUploadService,
                   val entityManager: EntityManager
 ) {
 
