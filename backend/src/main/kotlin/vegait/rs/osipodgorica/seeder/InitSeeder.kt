@@ -155,10 +155,12 @@ class InitSeeder(
 				accessibilityFeatures = hashSetOf(parking, toalet),
 				latitude = 42.437966,
 				longitude = 19.246028,
-				address = "",
+				address = "Ljubljanska bb",
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "kbc",
+				email = "kbc@gmail.com",
+				phone = "069439289"
 			),
 			Location(
 				name = "KIC Budo Tomović",
@@ -167,10 +169,12 @@ class InitSeeder(
 				accessibilityFeatures = hashSetOf(toalet),
 				latitude = 42.446105,
 				longitude = 19.264439,
-				address = "",
+				address = "Vaka Đurovića",
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "kic",
+				email = "kicbudo@gmail.com",
+				phone = "069439280"
 			),
 			Location(
 				name = "MUP",
@@ -179,22 +183,26 @@ class InitSeeder(
 				accessibilityFeatures = hashSetOf(ramp),
 				latitude = 42.442171,
 				longitude = 19.252682,
-				address = "",
+				address = "Bulevar Svetog Petra Cetinjskog 22",
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "mup",
+				email = "mup@gmail.com",
+				phone = "069429289"
 			),
 			Location(
-				name = "Crnogorsko Komercijalna Banka",
+				name = "Crnogorska Komercijalna Banka",
 				description = "Crnogorsko Komercijalna Banka",
 				category = bank,
 				accessibilityFeatures = hashSetOf(ramp, toalet),
 				latitude = 42.441631066437786,
 				longitude = 19.247161806315603,
-				address = "",
+				address = "Moskovska",
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "ckb",
+				email = "crnogorska-komercijalna@gmail.com",
+				phone = "069111289"
 			),
 			Location(
 				name = "Filijala Crnogorska Komercijalna Banka",
@@ -203,10 +211,12 @@ class InitSeeder(
 				accessibilityFeatures = hashSetOf(ramp, toalet),
 				latitude = 42.44190356595263,
 				longitude = 19.247437111656154,
-				address = "",
+				address = "Bulevar Svetog Petra Cetinjskog",
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "filijala-ckb",
+				email = "ckb@office.com",
+				phone = "068999289"
 			),
 			Location(
 				name = "Filijala Crnogorska Komercijalna Banka 2",
@@ -215,13 +225,15 @@ class InitSeeder(
 				accessibilityFeatures = hashSetOf(ramp, toalet),
 				latitude = 42.442468066159144,
 				longitude = 19.249060753384356,
-				address = "",
+				address = "Bratstva i Jedinstva 28",
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "filijala-ckb-2",
+				email = "ckb-filijala2@gmail.com",
+				phone = "069439282"
 			),
 			Location(
-				name = "MINISTARSTVO ZA LJUDSKA I MANJINSKA PRAVA",
+				name = "Ministarstvo za ljudska i manjinska prava",
 				description = "U sklopu ministarstva se nalazi i Direktorat za unapredjenje i zastitu ljudskih prava, koji se izmedju ostalog bavi i sa temama koje se ticu lica sa invaliditetom.",
 				category = publicFacility,
 				accessibilityFeatures = hashSetOf(ramp, toalet, lift),
@@ -231,10 +243,12 @@ class InitSeeder(
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "mzmp",
+				email = "ministarstvo_za_ljudska_prava@gmail.com",
+				phone = "069439200"
 			),
 			Location(
-				name = "shoping-centar-mall-of-montenegro",
-				description = "Shoping centar Mall of Montenegro u sklopu kojeg se nalazi zelena pijaca, moderni shoping centar i savremeni hotel \"Ramada\" u kojem su dvije sobe pristupačne za lica koja su korisnici invalidskih kolica. U sklopu objekta se nalazi hipermarket \"Roda\", banka, bankomati, apoteka, prodavnice tehničkih uređaja, sportske opreme, garderobe, obuće, igraonica za djecu, kladionica, prodavnica kozmetičkih proizvoda, teretana, spa&welness centar, kuglana, restorani, autoperionica...",
+				name = "Mall of Montenegro",
+				description = "Shopping centar Mall of Montenegro u sklopu kojeg se nalazi zelena pijaca, moderni shoping centar i savremeni hotel \"Ramada\" u kojem su dvije sobe pristupačne za lica koja su korisnici invalidskih kolica. U sklopu objekta se nalazi hipermarket \"Roda\", banka, bankomati, apoteka, prodavnice tehničkih uređaja, sportske opreme, garderobe, obuće, igraonica za djecu, kladionica, prodavnica kozmetičkih proizvoda, teretana, spa&welness centar, kuglana, restorani, autoperionica...",
 				category = publicFacility,
 				accessibilityFeatures = hashSetOf(ramp, toalet, lift),
 				latitude = 42.432195991907406,
@@ -242,11 +256,13 @@ class InitSeeder(
 				address = "Bulevar Save Kovačevića br. 74",
 				postalNumber = 81000,
 				city = podgorica,
-				slug = "mallofmne",
+				slug = "mall-of-mne",
+				email = "mallofmontenegro@gmail.com",
+				phone = "069439289"
 			),
 			Location(
-				name = "njegosev-park",
-				description = "njegosev-park",
+				name = "Njegošev park",
+				description = "Park u Podgorici",
 				category = culturalFacility,
 				accessibilityFeatures = hashSetOf(ramp),
 				latitude = 42.385984654613424,
@@ -254,10 +270,12 @@ class InitSeeder(
 				address = "Bulevar Save Kovačevića br. 74",
 				postalNumber = 81000,
 				city = cetinje,
-				slug = "njegosev",
+				slug = "njegosev-park",
+				email = "",
+				phone = ""
 			),
 			Location(
-				name = "voli-29-podgorica",
+				name = "Voli 29 Podgorica",
 				description = "voli-29-podgorica",
 				category = commercialFacilities,
 				accessibilityFeatures = hashSetOf(ramp),
@@ -267,9 +285,11 @@ class InitSeeder(
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "voli",
+				email = "volivasvoli@gmail.com",
+				phone = ""
 			),
 			Location(
-				name = "nas-diskont-podgorica",
+				name = "Naš diskont Podgorica",
 				description = "Objekat nas diskont ima uradjena zakosenja prije ulaska u prodajni prostor. Unutrasnja komunikacija licima sa invaliditetom je moguca, a ispred samog objekta nalazi se obiljezeno vise parking mjesta.\n" +
 						"Radno vrijeme: 07:00 - 22:00 svakog dana",
 				category = commercialFacilities,
@@ -280,9 +300,11 @@ class InitSeeder(
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "lakovic",
+				email = "lakijemalonervozan@gmail.com",
+				phone = "020439289"
 			),
 			Location(
-				name = "benzinska-pumpa-eko-petrol-bs-podgorica-6",
+				name = "Benzinska pumpa eko-petrol podgorica",
 				description = "Iza objekta se nalazi toalet do koga vodi rampa sa rukohvatom. Neposredno do rampe se nalaze obiljezena dva parking mjesta. U sklopu objekta se nalazi cafe, prodavnica i auto perionica.\n" +
 						"Pumpa se nalazi sa desne strane magistralnog pumpa od pravca naselja Zabjelo u pravcu takozvanih cetinjskih semafora.\n" +
 						"Radno vrijeme: 0:00 - 24:00 svakog dana.",
@@ -294,21 +316,25 @@ class InitSeeder(
 				postalNumber = 81000,
 				city = podgorica,
 				slug = "benzinska",
+				email = "eko@gmail.com",
+				phone = "020439289"
 			),
 			Location(
-				name = "dom-zdravlja-tuzi",
+				name = "Dom zdravlja Tuzi",
 				description = "Ulazna rampa bez rukohvata. Toalet",
 				category = trafficFacility,
 				accessibilityFeatures = hashSetOf(ramp, toalet, parking),
 				latitude = 42.36343149754172,
 				longitude = 19.329114486755316,
 				address = "Tuzi, E-762",
-				postalNumber = 81000,
+				postalNumber = 81206,
 				city = podgorica,
 				slug = "doma-zdravlja-tuzi",
+				email = "domzdravlja_tuzi@gmail.com",
+				phone = "067439289"
 			),
 			Location(
-				name = "idea-kapino-polje-niksic",
+				name = "Idea Kapino polje Nikšić",
 				description = "Na izlazu iz Niksica, prema granici Bosne i Hercegovine, do Vukovog mosta, nalazi se prodajni objekat IDEA.\n" +
 						"Objekat ima na ulazu rampu bez ograde.\n" +
 						"Radno vrijeme: pon - ned: 07:00 - 22:00",
@@ -316,10 +342,12 @@ class InitSeeder(
 				accessibilityFeatures = hashSetOf(ramp, toalet, parking),
 				latitude = 42.78118691504842,
 				longitude = 18.92085760831833,
-				address = "Tuzi, E-762",
-				postalNumber = 81000,
+				address = "Nikšić bb",
+				postalNumber = 81420,
 				city = niksic,
 				slug = "idea",
+				email = "idea@gmail.com",
+				phone = "069439289"
 			),
 		)
 	}

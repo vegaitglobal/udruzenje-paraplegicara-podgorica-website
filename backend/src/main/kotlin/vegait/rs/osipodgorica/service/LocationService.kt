@@ -44,6 +44,8 @@ class LocationService(
             postalNumber = request.postalNumber ?: 81000,
             city = city,
             slug = request.slug,
+            email = request.email ?: "",
+            phone = request.phone ?: ""
         )
 
         location = repository.save(location);
@@ -102,6 +104,14 @@ class LocationService(
         }
         if (request.postalNumber != null) {
             existingLocation.postalNumber = request.postalNumber
+        }
+
+        if (request.email != null) {
+            existingLocation.email = request.email
+        }
+
+        if (request.phone != null) {
+            existingLocation.phone = request.phone
         }
 
         if (request.thumbnail != null) {
