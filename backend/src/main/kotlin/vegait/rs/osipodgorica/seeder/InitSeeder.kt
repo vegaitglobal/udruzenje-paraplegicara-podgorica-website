@@ -28,7 +28,7 @@ class InitSeeder(
             categoryRepo.saveAll(categories())
         }
 
-        if (env.activeProfiles.contains("dev") && locationRepo.count() == 0L) {
+        if (locationRepo.count() == 0L) {
             locationRepo.saveAll(locations())
         }
 
@@ -151,6 +151,7 @@ class InitSeeder(
 
         return arrayListOf(
             Location(
+                id = 1,
                 name = "KBC",
                 description = "Kliničko bolnički centar CG",
                 category = hospital,
@@ -163,8 +164,10 @@ class InitSeeder(
                 slug = "kbc",
                 email = "kbc@gmail.com",
                 phone = "069439289",
+                thumbnailUrl = "uploads/locations/1/image.jpeg",
             ),
             Location(
+                id = 2,
                 name = "KIC Budo Tomović",
                 description = "Kulturni objekat",
                 category = culturalFacility,
@@ -177,8 +180,10 @@ class InitSeeder(
                 slug = "kic",
                 email = "kicbudo@gmail.com",
                 phone = "069439280",
+                thumbnailUrl = "uploads/locations/2/image.jpeg",
             ),
             Location(
+                id = 3,
                 name = "MUP",
                 description = "Ministarstvo unutrašnjih poslova",
                 category = publicFacility,
@@ -191,8 +196,10 @@ class InitSeeder(
                 slug = "mup",
                 email = "mup@gmail.com",
                 phone = "069429289",
+                thumbnailUrl = "uploads/locations/3/image.jpeg",
             ),
             Location(
+                id = 4,
                 name = "Crnogorska Komercijalna Banka",
                 description = "Crnogorsko Komercijalna Banka",
                 category = bank,
@@ -205,8 +212,10 @@ class InitSeeder(
                 slug = "ckb",
                 email = "crnogorska-komercijalna@gmail.com",
                 phone = "069111289",
+                thumbnailUrl = "uploads/locations/4/image.jpeg",
             ),
             Location(
+                id = 5,
                 name = "Filijala Crnogorska Komercijalna Banka",
                 description = "filijala-crnogorska-komercijalna-banka",
                 category = bank,
@@ -219,8 +228,10 @@ class InitSeeder(
                 slug = "filijala-ckb",
                 email = "ckb@office.com",
                 phone = "068999289",
+                thumbnailUrl = "uploads/locations/5/image.jpeg",
             ),
             Location(
+                id = 6,
                 name = "Filijala Crnogorska Komercijalna Banka 2",
                 description = "filijala-crnogorska-komercijalna-banka",
                 category = bank,
@@ -233,8 +244,10 @@ class InitSeeder(
                 slug = "filijala-ckb-2",
                 email = "ckb-filijala2@gmail.com",
                 phone = "069439282",
+                thumbnailUrl = "uploads/locations/6/image.jpeg",
             ),
             Location(
+                id = 7,
                 name = "Ministarstvo za ljudska i manjinska prava",
                 description = "U sklopu ministarstva se nalazi i Direktorat za unapredjenje i zastitu ljudskih prava, koji se izmedju ostalog bavi i sa temama koje se ticu lica sa invaliditetom.",
                 category = publicFacility,
@@ -247,8 +260,10 @@ class InitSeeder(
                 slug = "mzmp",
                 email = "ministarstvo_za_ljudska_prava@gmail.com",
                 phone = "069439200",
+                thumbnailUrl = "uploads/locations/7/image.jpeg",
             ),
             Location(
+                id = 8,
                 name = "Mall of Montenegro",
                 description = "Shopping centar Mall of Montenegro u sklopu kojeg se nalazi zelena pijaca, moderni shoping centar i savremeni hotel \"Ramada\" u kojem su dvije sobe pristupačne za lica koja su korisnici invalidskih kolica. U sklopu objekta se nalazi hipermarket \"Roda\", banka, bankomati, apoteka, prodavnice tehničkih uređaja, sportske opreme, garderobe, obuće, igraonica za djecu, kladionica, prodavnica kozmetičkih proizvoda, teretana, spa&welness centar, kuglana, restorani, autoperionica...",
                 category = publicFacility,
@@ -261,8 +276,10 @@ class InitSeeder(
                 slug = "mall-of-mne",
                 email = "mallofmontenegro@gmail.com",
                 phone = "069439289",
+                thumbnailUrl = "uploads/locations/8/image.jpeg",
             ),
             Location(
+                id = 9,
                 name = "Njegošev park",
                 description = "Park u Podgorici",
                 category = culturalFacility,
@@ -275,8 +292,10 @@ class InitSeeder(
                 slug = "njegosev-park",
                 email = "",
                 phone = "",
+                thumbnailUrl = "uploads/locations/9/image.jpeg",
             ),
             Location(
+                id = 10,
                 name = "Voli 29 Podgorica",
                 description = "voli-29-podgorica",
                 category = commercialFacilities,
@@ -289,8 +308,10 @@ class InitSeeder(
                 slug = "voli",
                 email = "volivasvoli@gmail.com",
                 phone = "",
+                thumbnailUrl = "uploads/locations/10/image.jpeg",
             ),
             Location(
+                id = 11,
                 name = "Naš diskont Podgorica",
                 description = "Objekat nas diskont ima uradjena zakosenja prije ulaska u prodajni prostor. Unutrasnja komunikacija licima sa invaliditetom je moguca, a ispred samog objekta nalazi se obiljezeno vise parking mjesta.\n" +
                     "Radno vrijeme: 07:00 - 22:00 svakog dana",
@@ -304,8 +325,10 @@ class InitSeeder(
                 slug = "lakovic",
                 email = "lakijemalonervozan@gmail.com",
                 phone = "020439289",
+                thumbnailUrl = "uploads/locations/11/image.jpeg",
             ),
             Location(
+                id = 12,
                 name = "Benzinska pumpa eko-petrol podgorica",
                 description = "Iza objekta se nalazi toalet do koga vodi rampa sa rukohvatom. Neposredno do rampe se nalaze obiljezena dva parking mjesta. U sklopu objekta se nalazi cafe, prodavnica i auto perionica.\n" +
                     "Pumpa se nalazi sa desne strane magistralnog pumpa od pravca naselja Zabjelo u pravcu takozvanih cetinjskih semafora.\n" +
@@ -320,8 +343,10 @@ class InitSeeder(
                 slug = "benzinska",
                 email = "eko@gmail.com",
                 phone = "020439289",
+                thumbnailUrl = "uploads/locations/12/image.jpeg",
             ),
             Location(
+                id = 13,
                 name = "Dom zdravlja Tuzi",
                 description = "Ulazna rampa bez rukohvata. Toalet",
                 category = trafficFacility,
@@ -334,8 +359,10 @@ class InitSeeder(
                 slug = "doma-zdravlja-tuzi",
                 email = "domzdravlja_tuzi@gmail.com",
                 phone = "067439289",
+                thumbnailUrl = "uploads/locations/13/image.jpeg",
             ),
             Location(
+                id = 14,
                 name = "Idea Kapino polje Nikšić",
                 description = "Na izlazu iz Niksica, prema granici Bosne i Hercegovine, do Vukovog mosta, nalazi se prodajni objekat IDEA.\n" +
                     "Objekat ima na ulazu rampu bez ograde.\n" +
@@ -350,6 +377,7 @@ class InitSeeder(
                 slug = "idea",
                 email = "idea@gmail.com",
                 phone = "069439289",
+                thumbnailUrl = "uploads/locations/14/image.jpeg",
             ),
         )
     }
