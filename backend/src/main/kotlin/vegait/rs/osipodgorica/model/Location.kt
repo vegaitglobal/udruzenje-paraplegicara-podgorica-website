@@ -3,7 +3,7 @@ package vegait.rs.osipodgorica.model
 import jakarta.persistence.*
 
 @Entity
-@Table(name = "locations")
+@Table(name = "locations", uniqueConstraints = [UniqueConstraint(columnNames = ["latitude", "longitude"])])
 data class Location(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
