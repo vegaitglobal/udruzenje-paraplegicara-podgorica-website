@@ -14,5 +14,7 @@ data class CreateLocationRequest(
     val address: String?,
     val postalNumber: Long?,
     val thumbnail: MultipartFile,
-    val images: List<MultipartFile>?
+    val images: List<MultipartFile>?,
+    val email: String?,
+    val phone: String?
 )
