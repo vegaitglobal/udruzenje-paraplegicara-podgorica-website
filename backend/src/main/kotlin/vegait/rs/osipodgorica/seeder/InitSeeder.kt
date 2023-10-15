@@ -3,17 +3,8 @@ package vegait.rs.osipodgorica.seeder
 import org.springframework.boot.CommandLineRunner
 import org.springframework.core.env.Environment
 import org.springframework.stereotype.Component
-import vegait.rs.osipodgorica.model.AccessibilityFeature
-import vegait.rs.osipodgorica.model.Category
-import vegait.rs.osipodgorica.model.Location
-import vegait.rs.osipodgorica.model.News
-import vegait.rs.osipodgorica.model.NewsTag
-import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
-import vegait.rs.osipodgorica.repository.CategoryRepository
-import vegait.rs.osipodgorica.repository.CityRepository
-import vegait.rs.osipodgorica.repository.LocationRepository
-import vegait.rs.osipodgorica.repository.NewsRepository
-import vegait.rs.osipodgorica.repository.NewsTagRepository
+import vegait.rs.osipodgorica.model.*
+import vegait.rs.osipodgorica.repository.*
 import java.time.LocalDate
 
 @Component
@@ -24,6 +15,7 @@ class InitSeeder(
     val locationRepo: LocationRepository,
     val newsTagRepo: NewsTagRepository,
     val newsRepo: NewsRepository,
+    val archiveRepo: ArchiveRepository,
     val env: Environment,
 ) : CommandLineRunner {
 
@@ -47,6 +39,8 @@ class InitSeeder(
         if (newsRepo.count() == 0L) {
             newsRepo.saveAll(news())
         }
+
+        archiveRepo.takeIf { it.count() == 0L }?.saveAll(archive)
     }
 
     private fun features(): List<AccessibilityFeature> {
@@ -416,4 +410,6 @@ class InitSeeder(
             ),
         )
     }
+
+    private val archive: List<Archive> = listOf(Archive(id = 1, description = "bilans stanja", "uploads/archive/Bilans-stanja.pdf", name = "Bilans stanja"))
 }
