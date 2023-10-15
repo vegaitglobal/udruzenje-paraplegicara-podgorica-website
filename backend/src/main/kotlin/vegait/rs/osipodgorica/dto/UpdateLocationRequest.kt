@@ -1,5 +1,7 @@
 package vegait.rs.osipodgorica.dto
 
+import org.springframework.web.multipart.MultipartFile
+
 data class UpdateLocationRequest(
     val name: String,
     val slug: String,
@@ -9,5 +11,7 @@ data class UpdateLocationRequest(
     val latitude: Double,
     val longitude: Double,
     val address: String?,
-    val postalNumber: Long?
+    val postalNumber: Long?,
+    val thumbnail: MultipartFile?,
+    val images: List<MultipartFile>?
 )

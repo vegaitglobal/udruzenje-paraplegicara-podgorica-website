@@ -2,8 +2,8 @@ package vegait.rs.osipodgorica.service
 
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
-import vegait.rs.osipodgorica.dto.CreateAccessibilityFeature
-import vegait.rs.osipodgorica.dto.UpdateAccessibilityFeature
+import vegait.rs.osipodgorica.dto.CreateAccessibilityFeatureRequest
+import vegait.rs.osipodgorica.dto.UpdateAccessibilityFeatureRequest
 import vegait.rs.osipodgorica.model.AccessibilityFeature
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 
@@ -11,7 +11,7 @@ import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 @Transactional
 class AccessibilityFeatureService(val featureRepo: AccessibilityFeatureRepository, val uploadService: ImageUploadService) {
 
-    fun store(request: CreateAccessibilityFeature): AccessibilityFeature {
+    fun store(request: CreateAccessibilityFeatureRequest): AccessibilityFeature {
         val feature = featureRepo.save(AccessibilityFeature(name = request.name))
 
         val imagePath = uploadService.store(request.thumbnail, "features/" + feature.id)
@@ -28,7 +28,7 @@ class AccessibilityFeatureService(val featureRepo: AccessibilityFeatureRepositor
         return featureRepo.findAll()
     }
 
-    fun update(request: UpdateAccessibilityFeature, id: Long): AccessibilityFeature {
+    fun update(request: UpdateAccessibilityFeatureRequest, id: Long): AccessibilityFeature {
         val feature = featureRepo.findById(id).orElseThrow()
         feature.name = request.name
 

@@ -18,21 +18,29 @@ class ImageUploadService(
 ) {
     val rootLocation: Path = Paths.get(uploadDir)
 
+    // currently in case of failure in some cases the folder will remain behind but we could have a cron to delete empty folders
     fun store(file: MultipartFile, folderName: String): String {
         // file name format: timestamp_originalName
-        val name: String = System.currentTimeMillis().toString() + "_" + file.originalFilename
-        val destinationFile: Path = this.rootLocation.resolve(Paths.get("$folderName/$name")).normalize()
+        val name = generateFileName(file)
+        val destinationFile = generateDestinationPath(folderName, name)
 
         try {
             Files.createDirectories(this.rootLocation.resolve("$folderName/$name"))
             val inputStream: InputStream = file.inputStream
             Files.copy(inputStream, destinationFile.toAbsolutePath(), StandardCopyOption.REPLACE_EXISTING)
         } catch (e: IOException) {
-            deleteFolder(folderName)
             throw RuntimeException("There was an error uploading the file to $folderName/$name", e)
         }
 
         return destinationFile.toString()
+    }
+
+    private fun generateDestinationPath(folderName: String, name: String): Path {
+        return this.rootLocation.resolve(Paths.get("$folderName/$name")).normalize()
+    }
+
+    private fun generateFileName(file: MultipartFile): String {
+        return System.currentTimeMillis().toString() + "_" + file.originalFilename
     }
 
     fun deleteFile(path: String) {
@@ -50,5 +58,24 @@ class ImageUploadService(
             }
             folder.delete()
         }
+    }
+
+    // in case of exception we will delete any files uploaded beforehand
+    fun storeAll(newImages: List<MultipartFile>, folderName: String): List<String> {
+        val storedUrls: MutableList<String> = mutableListOf()
+        try {
+            for (file in newImages) {
+                val url = store(file, folderName)
+                storedUrls.add(url)
+            }
+        } catch (ex: RuntimeException) {
+            for (url in storedUrls) {
+                deleteFile(url)
+            }
+
+            throw RuntimeException("There was an error uploading files to $folderName/", ex)
+        }
+
+        return storedUrls
     }
 }
