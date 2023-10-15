@@ -40,6 +40,8 @@ data class Location(
     )
     @JoinColumn(name= "location_id")
     var images: MutableList<LocationImage>? = mutableListOf(),
-    var thumbnailUrl: String? = ""
+    var thumbnailUrl: String? = "",
+    var email: String?,
+    var phone: String?
 )
 
