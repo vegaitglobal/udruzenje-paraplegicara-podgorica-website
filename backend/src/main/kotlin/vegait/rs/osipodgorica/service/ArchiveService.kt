@@ -12,8 +12,8 @@ private const val ARCHIVE_FOLDER_NAME = "archive/"
 @Service
 @Transactional
 class ArchiveService(
-    val archiveRepository: ArchiveRepository,
-    val fileUploadService: ImageUploadService,
+    private val archiveRepository: ArchiveRepository,
+    private val fileUploadService: ImageUploadService,
 ) {
 
     fun store(request: CreateArchiveRequest): Archive =
