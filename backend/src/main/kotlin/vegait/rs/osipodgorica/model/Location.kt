@@ -3,7 +3,7 @@ package vegait.rs.osipodgorica.model
 import jakarta.persistence.*
 
 @Entity
-@Table(name = "locations")
+@Table(name = "locations", uniqueConstraints = [UniqueConstraint(columnNames = ["latitude", "longitude"])])
 data class Location(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,13 +35,12 @@ data class Location(
     var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf(),
 
     @OneToMany(
-            cascade = [CascadeType.ALL],
-            orphanRemoval = true
+        cascade = [CascadeType.ALL],
+        orphanRemoval = true,
     )
-    @JoinColumn(name= "location_id")
+    @JoinColumn(name = "location_id")
     var images: MutableList<LocationImage>? = mutableListOf(),
     var thumbnailUrl: String? = "",
     var email: String?,
     var phone: String?
 )
-
