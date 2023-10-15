@@ -4,7 +4,7 @@ export const routes = [
     path: "/",
   },
   {
-    name: "Udrženja",
+    name: "Udruženja",
     path: "/udruzenja",
   },
   {
