@@ -9,7 +9,7 @@ import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 
 @Service
 @Transactional
-class AccessibilityFeatureService(val featureRepo: AccessibilityFeatureRepository, val uploadService: ImageUploadService) {
+class AccessibilityFeatureService(val featureRepo: AccessibilityFeatureRepository, val uploadService: FileUploadService) {
 
     fun store(request: CreateAccessibilityFeatureRequest): AccessibilityFeature {
         val feature = featureRepo.save(AccessibilityFeature(name = request.name))

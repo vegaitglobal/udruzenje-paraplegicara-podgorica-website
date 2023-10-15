@@ -12,7 +12,7 @@ import java.nio.file.Paths
 import java.nio.file.StandardCopyOption
 
 @Service
-class ImageUploadService(
+class FileUploadService(
     @Value("\${app.file.upload-dir:./uploads}")
     var uploadDir: String,
 ) {

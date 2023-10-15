@@ -19,14 +19,14 @@ import vegait.rs.osipodgorica.utils.LocationQueryBuilder
 @Service
 @Transactional
 class LocationService(
-    val repository: LocationRepository,
-    val categoryRepo: CategoryRepository,
-    val cityRepository: CityRepository,
-    val featureRepo: AccessibilityFeatureRepository,
-    val entityManager: EntityManager,
-    val criteriaBuilderFactory: CriteriaBuilderFactory,
-    val uploadService: ImageUploadService,
-    val imageRepo: LocationImageRepository
+        val repository: LocationRepository,
+        val categoryRepo: CategoryRepository,
+        val cityRepository: CityRepository,
+        val featureRepo: AccessibilityFeatureRepository,
+        val entityManager: EntityManager,
+        val criteriaBuilderFactory: CriteriaBuilderFactory,
+        val uploadService: FileUploadService,
+        val imageRepo: LocationImageRepository
 ) {
     fun store(request: CreateLocationRequest): Location {
         val category: Category = categoryRepo.findById(request.categoryId).orElseThrow()
