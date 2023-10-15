@@ -6,12 +6,15 @@ import org.springframework.stereotype.Component
 import vegait.rs.osipodgorica.model.AccessibilityFeature
 import vegait.rs.osipodgorica.model.Category
 import vegait.rs.osipodgorica.model.Location
+import vegait.rs.osipodgorica.model.News
 import vegait.rs.osipodgorica.model.NewsTag
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 import vegait.rs.osipodgorica.repository.CategoryRepository
 import vegait.rs.osipodgorica.repository.CityRepository
 import vegait.rs.osipodgorica.repository.LocationRepository
+import vegait.rs.osipodgorica.repository.NewsRepository
 import vegait.rs.osipodgorica.repository.NewsTagRepository
+import java.time.LocalDate
 
 @Component
 class InitSeeder(
@@ -20,6 +23,7 @@ class InitSeeder(
 	val cityRepo: CityRepository,
 	val locationRepo: LocationRepository,
 	val newsTagRepo: NewsTagRepository,
+	val newsRepo: NewsRepository,
 	val env: Environment
 ) : CommandLineRunner {
 
@@ -38,6 +42,10 @@ class InitSeeder(
 
 		if (newsTagRepo.count() == 0L) {
 			newsTagRepo.saveAll(newsTags())
+		}
+
+		if (newsRepo.count() == 0L) {
+			newsRepo.saveAll(news())
 		}
 	}
 
@@ -331,6 +339,53 @@ class InitSeeder(
 			NewsTag(id = 3, name = "Projekti", slug = "projekti"),
 			NewsTag(id = 4, name = "Nekategorisano", slug = "nekategorisano"),
 			NewsTag(id = 5, name = "Saopštenja", slug = "saopstenja"),
+		)
+	}
+
+	val CONTENT_1 = """
+	   <div class="blog-post-body">
+	      <p style="text-align: justify;">Dana 24 i 25. aprila 2021. godine, takmičari stonoteniskog kluba osoba sa invaliditetom “Luča” će se sastati sa stonoteniskim klubom “Budim” iz Berana, u meču Plej offa za ulazak u Super ligu Crne Gore.</p>
+	      <p style="text-align: justify;">Stonoteniski klub “Luča” se u sezoni 2020/2021 takmičio u Prvoj Crnogorskoj ligi u kojoj je zauzeo drugo mjesto sa skorom od četiri pobjede i dva poraza, iza kluba “Kotor”.</p>
+	      <p style="text-align: justify;">Za ekipu nastupaju: Pjetro Paljušević, Zoran Bašanović, Dejan Bašanović, Zoran Čabarkapa, Miljan Cerović i Đuro Krivokapić.</p>
+	      <p style="text-align: justify;">Mečevi Plej offa se odigravaju u sportskoj dvorani “Voco” u Podgorici sa početkom u 13:00 h.</p>
+	   </div>
+	""".trimIndent()
+
+	val CONTENT_2 = """
+		<div class="blog-post-body">
+		   <p>Na Evropskoj univerzijadi koja se održava u Republici Hrvatskoj, u Zagrebu i Rijeci, Crnu Goru u stonom tenisu za lica sa invaliditetom predstavljaju takmičarke stonoteniskog kluba “Luča” Samra Kojić i Slobodanka Gurešić.</p>
+		   <p><img class="alignleft size-medium wp-image-2167" src="http://www.osipodgorica.me/wp-content/uploads/2016/07/13735628_826144477520570_8372667437946295870_o-300x225.jpg" alt="13735628_826144477520570_8372667437946295870_o" width="300" height="225">Naše predstavnice se takmiče u klasama 5 – Samra Kojić i 4 – Slobodanka Gurešić. U klasama 4 i 5 učestvuju takmičari koji su korisnici invalidskih kolica. Osim sportiskinja Crnu Goru na Univerzijadi predstavlja i trener Čedomir Damjanović.</p>
+		   <p>Nadamo se da će nas sa takmičenja obradovati dobrim rezultatima. Srećno!</p>
+		   <p>&nbsp;</p>
+		</div>
+	""".trimIndent()
+
+	private fun news(): List<News> {
+		val uncategorizedTag = newsTagRepo.findBySlug("nekategorisano")
+		val sportTag = newsTagRepo.findBySlug("sport")
+		val projectTag = newsTagRepo.findBySlug("projekti")
+
+		return arrayListOf(
+			News(
+				id = 1,
+				title = "Play off za ulazak u super ligu",
+				slug = "play-off-za-ulazak-u-super-ligu",
+				content = CONTENT_1,
+				createdAt = LocalDate.now().minusMonths(9),
+				updatedAt = LocalDate.now().minusMonths(9),
+				imageRelativeUri = "uploads/news/1/liga-1.jpg",
+				tags = hashSetOf(sportTag!!, projectTag!!)
+			),
+			News(
+				id = 2,
+				title = "Evropska Univerzijada",
+				slug = "evropska-univerzijada",
+				content = CONTENT_2,
+				createdAt = LocalDate.now().minusMonths(19),
+				updatedAt = LocalDate.now().minusMonths(19),
+				imageRelativeUri = "uploads/news/2/vijest-2.jpg",
+				tags = hashSetOf(sportTag, uncategorizedTag!!)
+			)
 		)
 	}
 }
