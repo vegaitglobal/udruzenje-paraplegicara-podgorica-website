@@ -13,4 +13,6 @@ data class Archive(
     val path: String,
     @Column(unique = true)
     val name: String,
+    val startDate: String,
+    val endDate: String,
 )
