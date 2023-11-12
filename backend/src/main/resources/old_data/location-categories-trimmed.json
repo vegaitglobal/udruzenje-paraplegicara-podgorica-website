@@ -1,0 +1,3500 @@
+[
+	{
+		"location_id" : 634,
+		"location_name" : "Crnogorska komercijalna banka, Ul. Moskovska - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 636,
+		"location_name" : "Filijala Crnogorska komercijalna banka, Ul. Moskovska - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 641,
+		"location_name" : "Filijala - Crnogorska komercijalna banka, Ul. Bulevar Svetog Petra Cetinjskog br. 121 - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 644,
+		"location_name" : "Filijala - Crnogorska komercijalna banka, Momisici - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 647,
+		"location_name" : "Filijala - Crnogorska komercijalna banka, Stari Aerodrom - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 794,
+		"location_name" : "ATLAS BANKA - Filijala 2 Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 795,
+		"location_name" : "ATLAS BANKA - Filijala Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 796,
+		"location_name" : "ATLAS BANKA - Ekspozitura Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 797,
+		"location_name" : "ATLAS BANKA - Salter Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 804,
+		"location_name" : "NLB MONTENEGRO BANKA - Filijala Podgorica II",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 806,
+		"location_name" : "NLB MONTENEGRO BANKA - Filijala Podgorica I",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 808,
+		"location_name" : "NLB MONTENEGRO BANKA - Filijala Podgorica V",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 810,
+		"location_name" : "IBM INVEST BANKA MONTENEGRO - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 815,
+		"location_name" : "SOCIETE GENERALE MONTENEGRO BANKA - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 817,
+		"location_name" : "SOCIETE GENERALE MONTENEGRO BANKA - Podgorica",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1342,
+		"location_name" : "NLB Montenegro banka - Cetinje",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1472,
+		"location_name" : "PODGORICKA BANKA - EKSPOZITURA DANILOVGRAD",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1524,
+		"location_name" : "CRNOGORSKA KOMERCIJALNA BANKA  - TRG SLOBODE NIKSIC",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1613,
+		"location_name" : "CRNOGORSKO KOMERCIJALNA BANKA - CKB - SPOMENIK MAJKE TEREZE - Ulcinj",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1616,
+		"location_name" : "NLB MONTENEGRO BANKA - FILIJALA ULCINJ -26 NOVEMBRA",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1622,
+		"location_name" : "PRVA BANKA - FILIJALA BAR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1704,
+		"location_name" : "CENTRALNO KOMERCIJALNA BANKA - MELJINE",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1763,
+		"location_name" : "NLB BANKA - FILIJALA BERANE",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1766,
+		"location_name" : "PRVA BANKA - FILIJALA BERANE",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1812,
+		"location_name" : "PRVA BANKA SALTER - SAVNIK",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1840,
+		"location_name" : "ERSTE BANKA - FILIJALA BIJELO POLJE",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1859,
+		"location_name" : "PRVA BANKA - FILIJALA BIJELO POLJE",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1926,
+		"location_name" : "CKB BANKA - TIVAT",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1963,
+		"location_name" : "CKB BANKA - KOLASIN",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1966,
+		"location_name" : "SOCIETE GENERALE MONTENEGRO BANKA - KOLASIN",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1973,
+		"location_name" : "PRVA BANKA - KOLASIN",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 2145,
+		"location_name" : "NLB BANKA AD PODGORICA - FILIJALA KOTOR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 2151,
+		"location_name" : "HIPOTEKARNA BANKA - FILIJALA KOTOR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 2154,
+		"location_name" : "SOCIETE GENERALE MONTENEGRO BANKA- EKSPOZITURA KOTOR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 2247,
+		"location_name" : "ATLAS BANKA - FILIJALA KOTOR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3067,
+		"location_name" : "CENTRALNO KOMERCIJALNA BANKA, FILIJALA PODGORICA, SALTER CENTAR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3208,
+		"location_name" : "ADDIKO BANKA - EKSPOZITURA, BAR",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3230,
+		"location_name" : "ATLAS BANKA, SALTER ZABLJAK",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3244,
+		"location_name" : "ERSTE BANKA, FILIJALA NIKSIC",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3256,
+		"location_name" : "LOVCEN BANKA FILIJALA PODGORICA",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3305,
+		"location_name" : "NLB BANKA, FILIJALA ROZAJE",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3418,
+		"location_name" : "KOMERCIJALNA BANKA AD BUDVA, PODGORICA",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 3426,
+		"location_name" : "PRVA BANKA, SALTER HD LAKOVIC, PODGORICA",
+		"category_name" : "Banke",
+		"category_id" : 7
+	},
+	{
+		"location_id" : 1324,
+		"location_name" : "Uprava za zastitu kulturnih dobara, Cetinje",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 1328,
+		"location_name" : "MINISTARSTVO KULTURE, Cetinje",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 1466,
+		"location_name" : "STARI HRAST - Danilovgrad",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 1783,
+		"location_name" : "DIVAN BAŠČA - PETNJICA",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 1998,
+		"location_name" : "GROTULJA - PARTIZANSKI SPOMEN KOMPLEKS - MOJKOVAC",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2022,
+		"location_name" : "STARI GRAD - BUDVA",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2075,
+		"location_name" : "STARI GRAD - KOTOR",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2105,
+		"location_name" : "POMORSKI MUZEJ - KOTOR",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2132,
+		"location_name" : "RIMSKI MOZAICI RISAN",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2764,
+		"location_name" : "DUKLJA - ARHEOLOSKO NALAZISTE, PODGORICA",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2870,
+		"location_name" : "KULA REDZEPAGICA, PLAV",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 2944,
+		"location_name" : "NIKSICKO POZORISTE, NIKSIC",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 3011,
+		"location_name" : "SAHAT KULA, PODGORICA",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 3216,
+		"location_name" : "CRNOGORSKA GALERIJA UMJETNOSTI MIODRAG DADO DJURIC, CETINJE",
+		"category_name" : "Kultura",
+		"category_id" : 8
+	},
+	{
+		"location_id" : 727,
+		"location_name" : "MINISTARSTVO ZA LJUDSKA I MANJINSKA PRAVA - Podgorica",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 728,
+		"location_name" : "MINISTARSTVO ZA INFORMACIONO DRUSTVO I TELEKOMUNIKACIJE - Podgorica",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 729,
+		"location_name" : "MINISTARSTVO ZDRAVLJA - Podgorica",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 730,
+		"location_name" : "MINISTARSTVO SAOBRACAJA I POMORSTVA - Podgorica",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 731,
+		"location_name" : "MINISTARSTVO PROSVETE - Podgorica",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 1324,
+		"location_name" : "Uprava za zastitu kulturnih dobara, Cetinje",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 1328,
+		"location_name" : "MINISTARSTVO KULTURE, Cetinje",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 2671,
+		"location_name" : "JU Centar za socijalni rad za Glavni grad Podgorica i opstine u okviru Glavnog grada Golubovci i Tuzi",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 2817,
+		"location_name" : "MINISTARSTVO RADA I SOCIJALNOG STARANJA - PODGORICA",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 3002,
+		"location_name" : "CALIMS - Agencija za ljekove i medicinska sredstva Crne Gore, Podgorica",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 3583,
+		"location_name" : "OSNOVNI SUD PODGORICA",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 3613,
+		"location_name" : "MINISTARSTVO ODRZIVOG RAZVOJA I TURIZMA",
+		"category_name" : "Objekti državnih organa",
+		"category_id" : 9
+	},
+	{
+		"location_id" : 1379,
+		"location_name" : "Udruzenje paraplegicara Pljevlja",
+		"category_name" : "Objekti za OSI",
+		"category_id" : 10
+	},
+	{
+		"location_id" : 1818,
+		"location_name" : "RUDO MONTENEGRO - BIJELO POLJE",
+		"category_name" : "Objekti za OSI",
+		"category_id" : 10
+	},
+	{
+		"location_id" : 2006,
+		"location_name" : "JAVNI TOALET HOTEL MOGREN - BUDVA",
+		"category_name" : "Objekti za OSI",
+		"category_id" : 10
+	},
+	{
+		"location_id" : 2009,
+		"location_name" : "JAVNI TOALET MARINA - BUDVA",
+		"category_name" : "Objekti za OSI",
+		"category_id" : 10
+	},
+	{
+		"location_id" : 611,
+		"location_name" : "Dom zdravlja Stara Varos - Podgorica",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 615,
+		"location_name" : "Dom zdravlja Tuzi",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 624,
+		"location_name" : "Dom Zdravlja Blok V - Podgorica",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 629,
+		"location_name" : "Dom Zdravlja Nova Varos - Podgorica",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 1832,
+		"location_name" : "JZU DOM ZDRAVLJA  - BIJELO POLJE",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 1929,
+		"location_name" : "DOM ZDRAVLJA TIVAT",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 1990,
+		"location_name" : "DOM ZDRAVLJA BOSKO DEDEJIC - MOJKOVAC",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 3408,
+		"location_name" : "JAVNA ZDRAVSTVENA USTANOVA DOM ZDRAVLJA ROZAJE, ROZAJE",
+		"category_name" : "Zdravstvo",
+		"category_id" : 11
+	},
+	{
+		"location_id" : 658,
+		"location_name" : "Hotel M Nikic - Podgorica",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 999,
+		"location_name" : "GORBIS - Turisticka agencija, Podgorica",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1365,
+		"location_name" : "Hotel FRANCA Pljevlja",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1478,
+		"location_name" : "CRNO JEZERO - Zabljak",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1583,
+		"location_name" : "HOTEL PORTO SOLE - SUTOMORE, Bar",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1637,
+		"location_name" : "HOTEL FRANCA BAR",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1714,
+		"location_name" : "APARTMANI KRISTINA - IGALO",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1847,
+		"location_name" : "HOTEL FRANCA - BIJELO POLJE",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1939,
+		"location_name" : "TURISTICKA ORGANIZACIJA TIVAT",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1948,
+		"location_name" : "PORTO MONTENEGRO - TIVAT",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 1954,
+		"location_name" : "HOTEL REGENT PORTO MONTENEGRO - TIVAT",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 2030,
+		"location_name" : "HOTEL SPLENDID CONFERENCE & SPA - BECICI - BUDVA",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 2044,
+		"location_name" : "HOTEL MONTE CASA SPA & WELLNES - PETROVAC, Budva",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 2674,
+		"location_name" : "Hotel AUREL. Podgorica",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 2679,
+		"location_name" : "HOTEL RAMADA , Podgorica",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 3212,
+		"location_name" : "TURISTICKA ORGANIZACIJA BAR",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 3285,
+		"location_name" : "ALIPASINI IZVORI, GUSINJE",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 3574,
+		"location_name" : "HOTEL PRINCESS - BAR",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 3589,
+		"location_name" : "HOTEL BUDVA",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 3595,
+		"location_name" : "HOTEL ADRIA - BUDVA",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 3604,
+		"location_name" : "HOTEL HILTON - PODGORICA",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 4189,
+		"location_name" : "HOTEL AGAPE - BAR",
+		"category_name" : "Turistički objekti",
+		"category_id" : 12
+	},
+	{
+		"location_id" : 659,
+		"location_name" : "DELTA CITY - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 660,
+		"location_name" : "Suzana Peric Boutique - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 665,
+		"location_name" : "Salon namjestaja MAKO - design - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 670,
+		"location_name" : "City Mobile - servis i prodaja mobilnih telefona - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 673,
+		"location_name" : "Trzni centar BAZAR - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 678,
+		"location_name" : "SONY S shop - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 680,
+		"location_name" : "TEHNO PLUS - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 682,
+		"location_name" : "SUPER VOLI - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 687,
+		"location_name" : "VENETA PLAMEN D.O.O. - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 694,
+		"location_name" : "AUTO MECE D.O.O. - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 700,
+		"location_name" : "SIMANT D.O.O. - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 708,
+		"location_name" : "MEBLO LINE (templers d.o.o.) - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 720,
+		"location_name" : "LAPTOP SHOP - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 743,
+		"location_name" : "Shoping centar MALL OF MONTENEGRO - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 753,
+		"location_name" : "Parfimerija TANJA 2 - Elizabeth Arden - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 758,
+		"location_name" : "Foto BONI GREEN - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 766,
+		"location_name" : "Butik KIDS S OLIVER - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 773,
+		"location_name" : "Butik COMMA - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 790,
+		"location_name" : "HOME DEPO, Salon italijanske keramike, Roksped Group, Tuzi",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 792,
+		"location_name" : "GOLDEN GATE - Salon keramike - Tuzi",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 812,
+		"location_name" : "KUCA HEMIJE - Drogerija 3 - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 960,
+		"location_name" : "Butik MOTIVI - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 964,
+		"location_name" : "Butik MURA - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 970,
+		"location_name" : "Butik S OLIVER - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 974,
+		"location_name" : "Butik MARELLA - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 978,
+		"location_name" : "Butik BARBOSA - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 982,
+		"location_name" : "Butik LISCA - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 987,
+		"location_name" : "Butik DANICA - SPORT, Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 990,
+		"location_name" : "Butik PORTOS - NAVIGARE - Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1003,
+		"location_name" : "TEHNOMAX - Megastore, Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1329,
+		"location_name" : "Trznica - Zelena pijaca, Cetinje",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1359,
+		"location_name" : "Supermarket IDEA Cetinje",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1361,
+		"location_name" : "MARTEX d.o.o.",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1367,
+		"location_name" : "Market IDEA Centar, Pljevlja",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1370,
+		"location_name" : "Market IDEA Kameni most, Pljevlja",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1526,
+		"location_name" : "VOLI 20 - NIKSIC",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1545,
+		"location_name" : "TRZNI CENTAR - BAR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1564,
+		"location_name" : "VOLI 15 - HIPER MARKET BAR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1569,
+		"location_name" : "VOLI 17 - SUPER MARKET SUTOMORE, Bar",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1573,
+		"location_name" : "VOLI 23 - MARKET VIRPAZAR, Bar",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1577,
+		"location_name" : "2 DECEMBAR - ROBNA KUCA BAR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1594,
+		"location_name" : "IDEA - MARKET SUTOMORE, Bar",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1597,
+		"location_name" : "IDEA MARKET - BAR, POPOVICI BB",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1600,
+		"location_name" : "IDEA  BAR, CELUGA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1603,
+		"location_name" : "IDEA  SUPERMARKET- SOLARIS MALA PLAZA ULCINJ",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1606,
+		"location_name" : "IDEA MARKET - SPOMENIK MAJKE TEREZE - Ulcinj",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1609,
+		"location_name" : "IDEA SUPERMARKET 2 - MAJKE TEREZE - Ulcinj",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1619,
+		"location_name" : "CASTELLANA PETROL - Benzinska pumpa - Ulcinj",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1634,
+		"location_name" : "IDEA - TRZNI CENTAR BAR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1645,
+		"location_name" : "SUPERMARKET FRANCA BAR, MARSALA TITA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1649,
+		"location_name" : "SUPERMARKET FRANCA - BAR, CB BULEVAR 24. NOVEMBRA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1701,
+		"location_name" : "IDEA SUPERMARKET - MELJINE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1711,
+		"location_name" : "VOLI 35 - HERCEG NOVI, Ul. NIKOLE LJUBIBRATICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1753,
+		"location_name" : "IDEA Super - ZELENIKA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1756,
+		"location_name" : "IDEA - ZELENIKA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1759,
+		"location_name" : "VOLI 43 HIPERMARKET - Berane",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1769,
+		"location_name" : "IDEA- MARKET BERANE 1",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1772,
+		"location_name" : "IDEA - CENTAR BERANE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1775,
+		"location_name" : "IDEA - MARKET BERANE 2",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1778,
+		"location_name" : "VOLI 53 - NAS DISKONT BERANE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1790,
+		"location_name" : "KLIKOVAC DOO - SUPERMARKET GOLD",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1793,
+		"location_name" : "VOLI MARKET, ZETA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1799,
+		"location_name" : "SUPERMARKET FRANCA - ZETA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1807,
+		"location_name" : "ZELENA I MLIJECNA PIJACA - BERANE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1815,
+		"location_name" : "VOLI 25 HIPERMARKET - BIJELO POLJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1829,
+		"location_name" : "TEHNOPLUS - BIJELO POLJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1865,
+		"location_name" : "SUPERMARKET FRANCA - BIJELO POLJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1873,
+		"location_name" : "MARKET IDEA - DONJA PRUSKA - BIJELO POLJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1876,
+		"location_name" : "MARKET IDEA - GORNJA PRUSKA - BIJELO POLJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1911,
+		"location_name" : "SUPERMARKET VOLI 37 - RADOVICI - TIVAT",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1914,
+		"location_name" : "SUPERMARKET VOLI 34 - 21 Novembra Tivat",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1918,
+		"location_name" : "SUPERMARKET IDEA - KUKOLJINA TIVAT",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1921,
+		"location_name" : "ZELENA PIJACA - TIVAT",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1936,
+		"location_name" : "SUPERMARKET FRANCA - TIVAT",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1976,
+		"location_name" : "MARKET VOLI 27 - KOLASIN",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1979,
+		"location_name" : "IDEA - KOLASIN",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 1995,
+		"location_name" : "VOLI 48 - MOJKOVAC",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2026,
+		"location_name" : "TEHNOMAX MEGASTORE - JAZ - BUDVA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2038,
+		"location_name" : "HOTEL MAESTRAL RESORT & CASINO - Przno, Budva",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2051,
+		"location_name" : "VOLI 54 - PETROVAC, Budva",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2056,
+		"location_name" : "VOLI 8 - PETROVAC, Budva",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2083,
+		"location_name" : "HIPERMARKET VOLI 13 - KOTOR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2087,
+		"location_name" : "DISKONT VOLI 47 - KOTOR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2091,
+		"location_name" : "SHOPPING CENTAR KAMELIJA - KOTOR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2110,
+		"location_name" : "GRADSKA (ZELENA) PIJACA - KOTOR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2161,
+		"location_name" : "IDEA - MARKET KOTOR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2259,
+		"location_name" : "SUPERMARKET FRANCA - ANDRIJEVICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2864,
+		"location_name" : "PIJACA - GUSINJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2876,
+		"location_name" : "PIJACA, PLAV",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2920,
+		"location_name" : "IDEA - KAPINO POLJE, NIKSIC",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2923,
+		"location_name" : "IDEA - MARKET STRASEVINA, NIKSIC",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2926,
+		"location_name" : "PRODAVNICA  RMD promet - KOCANI, NIKSIC",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 2995,
+		"location_name" : "VOLI 46 - HIPERMARKET, PLJEVLJA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3015,
+		"location_name" : "VOLI 44, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3018,
+		"location_name" : "VOLI 5 - SUPERMARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3021,
+		"location_name" : "VOLI 40 - NAS DISKONT, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3026,
+		"location_name" : "HDL Hard Discount Lakovic d.o.o., Podgorica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3030,
+		"location_name" : "VOLI 42 - SUPERMARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3033,
+		"location_name" : "VOLI 11, SUPERMARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3039,
+		"location_name" : "VOLI 29, SUPERMARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3043,
+		"location_name" : "VOLI 2 - SUPERMARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3047,
+		"location_name" : "ZELENA PIJACA BAZAR, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3052,
+		"location_name" : "VOLI 6 MARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3056,
+		"location_name" : "VOLI 4 MARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3059,
+		"location_name" : "VOLI 1, MARKET PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3062,
+		"location_name" : "VOLI 10  - SUPERMARKET, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3105,
+		"location_name" : "PIJACA POBREZJE, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3128,
+		"location_name" : "HARD DISKONT LAKOVIC - BAR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3137,
+		"location_name" : "VOLI 18, HIPERMARKET, IGALO, HERCEG NOVI",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3148,
+		"location_name" : "VOLI 56 SUPERMARKET BIJELA, HERCEG NOVI",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3200,
+		"location_name" : "IDEA CITY 2, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3204,
+		"location_name" : "IDEA CITY KVART, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3220,
+		"location_name" : "VOLI 28, ZABLJAK",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3247,
+		"location_name" : "BONELLA 2 (AGRO GROUP D.O.O.), PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3260,
+		"location_name" : "BUTIK MaxMara, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3268,
+		"location_name" : "BUTIK WEEKEND MaxMara, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3273,
+		"location_name" : "BUTIK BALDININI, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3281,
+		"location_name" : "SUPER MARKET ROSI, GUSINJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3311,
+		"location_name" : "P....S....FASHION, BUTIK ROZAJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3314,
+		"location_name" : "VOLI 51, SUPERMARKET ROZAJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3317,
+		"location_name" : "SUPER MARKET WAHELS, ROZAJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3320,
+		"location_name" : "MEGA MARKET KEMI KOMERC D.O.O., ROZAJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3323,
+		"location_name" : "CASTELLANAco, ROZAJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3326,
+		"location_name" : "SUPERMARKET FRANCA, ROZAJE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3329,
+		"location_name" : "HARD DISKONT LAKOVIC, BERANE",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3332,
+		"location_name" : "STIL SHOP MARKET, ANDRIJEVICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3338,
+		"location_name" : "CENTRO MARKET PLAV",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3341,
+		"location_name" : "MARKET PLAV PROMET, PLAV",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3362,
+		"location_name" : "BUTIK I BLUES, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3367,
+		"location_name" : "BUTIK BOGNER, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3372,
+		"location_name" : "BUTIK ERMENEGILDO ZEGNA, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3378,
+		"location_name" : "BUTIK INTIMO LOOK, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3384,
+		"location_name" : "BUTIK EMPORIO JUNIOR, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3390,
+		"location_name" : "BUTIK BOSS (HUGO BOSS), PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3394,
+		"location_name" : "BUTIK PAUL SHARK, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3398,
+		"location_name" : "BUTIK MAX&CO, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3402,
+		"location_name" : "BUTIK MARINA RINALDI, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 3812,
+		"location_name" : "HIPERMARKET VOLI br. 73, Donja Gorica, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4091,
+		"location_name" : "PIJACA FORUM, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4101,
+		"location_name" : "VOLI 74 Mahala, ZETA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4104,
+		"location_name" : "VOLI 76 Zlatica, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4109,
+		"location_name" : "VOLI 31, Momišići, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4112,
+		"location_name" : "VOLI 30, Blok V, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4117,
+		"location_name" : "VOLI 41, Gorica, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4120,
+		"location_name" : "VOLI 24 RIBARNICA, Bulevar Josipa Broza, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4137,
+		"location_name" : "JUMBO robna kuća, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4142,
+		"location_name" : "OBUĆA METRO, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4145,
+		"location_name" : "OBUĆA OFFICE SHOES, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4149,
+		"location_name" : "COSMETICS MARKET 30, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4152,
+		"location_name" : "PRODAVNICA SPORT VISION, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4155,
+		"location_name" : "NIKE FACTORY STORE, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4159,
+		"location_name" : "FASHION & FRIENDS OUTLET, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4162,
+		"location_name" : "PRODAVNICA US POLO ASSN, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4165,
+		"location_name" : "PRODAVNICA LEGEND, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4168,
+		"location_name" : "EXTRA RETAIL PARK, 4 Jula bb, PODGORICA",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4180,
+		"location_name" : "HDL HARD DISCOUNT LAKOVIC PODGORICA Zlatica",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4185,
+		"location_name" : "HDL HARD DISCOUNT LAKOVIC PODGORICA, Konik",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 4225,
+		"location_name" : "VOLI 59 BAR",
+		"category_name" : "Trgovine",
+		"category_id" : 13
+	},
+	{
+		"location_id" : 819,
+		"location_name" : "PARKING MJESTO - Ul. BOKESKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 821,
+		"location_name" : "PARKING MJESTO - Ul. HERCEGOVACKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 823,
+		"location_name" : "PARKING MJESTO - Ul. MILJANA VUKOVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 825,
+		"location_name" : "PARKING MJESTO - Ul. NOVAKA MILOSEVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 827,
+		"location_name" : "PARKING MJESTO - Ul. NOVAKA MILOSEVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 829,
+		"location_name" : "PARKING MJESTO - Ul. NJEGOSEVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 831,
+		"location_name" : "PARKING MJESTO - Ul. NJEGOSEVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 833,
+		"location_name" : "PARKING MJESTO - Ul. VUCEDOLSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 835,
+		"location_name" : "PARKING MJESTO - GARAZA  P - Ul. MARKA MILJANOVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 837,
+		"location_name" : "PARKING MJESTO - GARAZA M - Ul. KARADJORDJEVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 839,
+		"location_name" : "PARKING MJESTO NA OTVORENOM PROSTORU - Ul. MILJANA VUKOVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 841,
+		"location_name" : "PARKING MJESTO NA OTVORENOM PROSTORU - Ul BALSICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 843,
+		"location_name" : "PARKING MJESTO NA OTVORENOM - GRADSKI STADION, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 845,
+		"location_name" : "PARKING MJESTO - Ul. IV PROLETERSKE, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 847,
+		"location_name" : "PARKING MJESTO - Ul. BRATSTVA I JEDINSTVA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 849,
+		"location_name" : "PARKING MJESTO - Ul. IV PROLETERSKE - DOM ZDRAVLJA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 851,
+		"location_name" : "PARKING MJESTO - PLATO ISPRED NEKADASNJEG KINA KULTURA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 853,
+		"location_name" : "PARKING MJESTO - Ul. KRALJA NIKOLE, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 855,
+		"location_name" : "PARKING MJESTO - Ul. NOVAKA MILOSEVA - MUZICKA SKOLA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 857,
+		"location_name" : "PARKING MJESTO - Ul. OMLADINSKIH BRIGADA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 859,
+		"location_name" : "PARKING MJESTO - UPRAVA CARINE, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 862,
+		"location_name" : "PARKING MJESTO - Ul. OKTOB@RSKE REVOLUCIJE - ZGRADA PEJTON, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 864,
+		"location_name" : "PARKING MJESTO - Ul. VUKA KARADZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 866,
+		"location_name" : "PARKING MJESTO - Ul. ARHITEKTE MILANA POPOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 868,
+		"location_name" : "PARKING MJESTO - Ul. SVETLANE KANE RADEVIC, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 870,
+		"location_name" : "PARKING MJESTO - Ul. SVETLANE KANE RADEVIC, PREMA T-COM-u, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 872,
+		"location_name" : "PARKING MJESTO - BULEVAR SVETOG PETRA CETINJSKOG - ISPRED T-COM-a, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 874,
+		"location_name" : "PARKING MJESTO - Ul. BLAZA JOVANOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 876,
+		"location_name" : "PARKING MJESTO - Ul. BLAZA JOVANOVICA - DO BAZARA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 878,
+		"location_name" : "PARKING MJESTO - CRVENI KRST, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 880,
+		"location_name" : "PARKING MJESTO - Ul. DALMATINSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 882,
+		"location_name" : "PARKING MJESTO - GARAZA - Ul. ARH. MILANA POPOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 884,
+		"location_name" : "PARKING MJESTO - Ul. VASA RAICKOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 886,
+		"location_name" : "PARKING MJESTO - Ul. SERDARA JOLA PILETICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 890,
+		"location_name" : "PARKING MJESTO - SPORTSKI CENTAR, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 893,
+		"location_name" : "PARKING MJESTO - Ul. CETINJSKI PUT, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 895,
+		"location_name" : "PARKING MJESTO - Ul. BULEVAR SVETOG PETRA CETINJSKOG, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 897,
+		"location_name" : "PARKING MJESTO - Ul. BULEVAR SVETOG PETRA CETINJSKOG, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 899,
+		"location_name" : "PARKING MJESTO - Ul. LJUBLJANSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 901,
+		"location_name" : "PARKING MJESTO - Ul. LJUBLJANSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 903,
+		"location_name" : "PARKING MJESTO - Ul. IVANA MILUTINOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 905,
+		"location_name" : "PARKING MJESTO - Ul. 13 JULA - OSNOVNI SUD, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 907,
+		"location_name" : "PARKING MJESTO - Ul. 13 JULA - OSNOVNI SUD, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 909,
+		"location_name" : "PARKING MJESTO - Ul. 13 JULA - OSNOVNI SUD, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 911,
+		"location_name" : "PARKING MJESTO - Ul. 13 JULA - OSNOVNI SUD, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 913,
+		"location_name" : "PARKING MJESTO - Ul. MESE SELIMOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 915,
+		"location_name" : "PARKING MJESTO - Ul. MESE SELIMOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 917,
+		"location_name" : "PARKING MJESTO - ULICA MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 919,
+		"location_name" : "PARKING MJESTO - ULICA MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 921,
+		"location_name" : "PARKING MJESTO - ULICA MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 923,
+		"location_name" : "PARKING MJESTO - ULICA MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 925,
+		"location_name" : "PARKING MJESTO - ULICA MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 927,
+		"location_name" : "PARKING MJESTO - Ul. MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 929,
+		"location_name" : "PARKING MJESTO - ULICA MOSKOVSKA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 931,
+		"location_name" : "PARKING MJESTO - Ul. IVANA VUJOSEVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 933,
+		"location_name" : "PARKING MJESTO - Ul. IVANA VUJOSEVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 935,
+		"location_name" : "PARKING MJESTO - Ul. IVANA VUJOSEVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 937,
+		"location_name" : "PARKING MJESTO - UL. SVETOZARA MARKOVICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 939,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 941,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 943,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 945,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 947,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 949,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 951,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 953,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 955,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 957,
+		"location_name" : "PARKING MJESTO - UL. VELIMIRA TERZICA, Podgorica",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1344,
+		"location_name" : "Parking mjesto - Staro igraliste - Cetinje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1347,
+		"location_name" : "Parking mjesto - Ul. Njegoseva - Cetinje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1350,
+		"location_name" : "Parking mjesto - Balsica Pazar - Cetinje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1353,
+		"location_name" : "Parking mjesto - Balsica Pazar - Cetinje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1356,
+		"location_name" : "Parking mjesto - Vladin dom - Cetinje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1389,
+		"location_name" : "Parking mjesto - Ul. Prijepoljska, Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1391,
+		"location_name" : "Parking mjesto - Ul. Kralja Petra I, Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1393,
+		"location_name" : "Parking mjesto - Osnovni sud, Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1395,
+		"location_name" : "Parking mjesto - Gimnazija, Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1399,
+		"location_name" : "Parking mjesto - Opstina, Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1402,
+		"location_name" : "Parking mjesto - Nikole Pasica - Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1404,
+		"location_name" : "Parking mjesto - Bolnica, Pljevlja",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1454,
+		"location_name" : "PARKING MJESTO - TRG GOLOOTOCKIH ZRTAVA - Danilovgrad",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1455,
+		"location_name" : "PARKING MJESTO - 9 DECEMBRA - Danilovgrad",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1523,
+		"location_name" : "PARKING MJESTO - BULEVAR 13 JUL NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1658,
+		"location_name" : "PARKING MJESTO, ULICA SAVA ILICA, IGALO",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1661,
+		"location_name" : "PARKING MJESTO - INSTITUT STARA FAZA - Igalo",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1664,
+		"location_name" : "PARKING MJESTO - UL. V CRNOGORSKE BRIGADE, IGALO",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1667,
+		"location_name" : "PARKING MJESTO - APARTMANI KUKOLJAC - Herceg Novi",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1670,
+		"location_name" : "PARKING MJESTO - UL. NJEGOSEVA, HERCEG NOVI",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1673,
+		"location_name" : "PARKING MJESTO - GLAVNA POSTA, HERCEG NOVI",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1676,
+		"location_name" : "PARKING MJESTO - HIPOTEKARNA BANKA, HERCEG NOVI",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1679,
+		"location_name" : "PARKING MJESTO - KANLI KULA, HERCEG NOVI",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1682,
+		"location_name" : "PARKING MJESTO - AUTOBUSKA STANICA, HERCEG NOVI",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1717,
+		"location_name" : "PARKING MJESTO - UL. NORVESKA - IGALO",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1720,
+		"location_name" : "PARKING MJESTO - UL. MANASTIRSKA - HERCEG NOVI",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1826,
+		"location_name" : "PARKING MJESTO - Ul. 3 Januar Bijelo Polje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1856,
+		"location_name" : "PARKING MJESTO - Ul Tomasa Zizica - Bijelo Polje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1862,
+		"location_name" : "PARKING MJESTO - Ul. Zivka Zizica Bijelo Polje",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1893,
+		"location_name" : "PARKING MJESTO - POSTA TIVAT",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1896,
+		"location_name" : "PARKING MJESTO KALIMANJ - TIVAT",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1899,
+		"location_name" : "PARKING MJESTO 21 Novembar Tivat",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1902,
+		"location_name" : "PARKING MJESTO - Turisticka organizacija Tivat",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1905,
+		"location_name" : "PARKING MJESTO - Mali djecji park Tivat",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1908,
+		"location_name" : "PARKING MJESTO - Centar za kulturu Tivat",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2013,
+		"location_name" : "PARKING MJESTO MARINA - BUDVA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2016,
+		"location_name" : "PARKING MJESTO TQ PLAZA - BUDVA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2019,
+		"location_name" : "PARKING MJESTO MEDITERANSKA ULICA - BUDVA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2064,
+		"location_name" : "PARKING MJESTO RIVA - KOTOR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2067,
+		"location_name" : "PARKING MJESTO BENOVO - KOTOR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2070,
+		"location_name" : "PARKING MJESTO PUC - KOTOR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2262,
+		"location_name" : "PARKING MJESTO - ANDRIJEVICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2692,
+		"location_name" : "PARKING MJESTO - Ul. DR NIKA MILJANICA - NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2695,
+		"location_name" : "PARKING MJESTO - BAJA PIVLJANINA - NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2699,
+		"location_name" : "PARKING MJESTO - BAJA PIVLJANINA (ispred zgrade) - NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2867,
+		"location_name" : "PARKING MJESTO - SULTANIJA, PLAV",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2877,
+		"location_name" : "PARKING MJESTO, Ul. Marka Miljanova, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2880,
+		"location_name" : "PARKING MJESTO, Ul. Djura Salaja, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2883,
+		"location_name" : "PARKING MJESTO, Ul. Lazara Socice, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2886,
+		"location_name" : "PARKING MJESTO, Ul. Manastirska, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2889,
+		"location_name" : "PARKING MJESTO, Ul. Danila Bojovica, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2892,
+		"location_name" : "PARKING MJESTO, Ul. Danila Bojovica (benzinska pumpa), NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2895,
+		"location_name" : "PARKING MJESTO, Ul. Jovana Cvijica, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2898,
+		"location_name" : "PARKING MJESTO, Ul. Staro pazariste, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2901,
+		"location_name" : "PARKING MJESTO, Ul. Staro pazariste 1, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2904,
+		"location_name" : "PARKING MJESTO, Ul. Serdara Scepana, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2907,
+		"location_name" : "PARKING MJESTO, Ul. Serdara Scepana (2) NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2910,
+		"location_name" : "PARKING MJESTO, Ul. Serdara Scepana (3), NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2913,
+		"location_name" : "PARKING MJESTO, Ul. Karadjordjeva, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 2917,
+		"location_name" : "PARKING MJESTO, Ul. Novaka Ramova, NIKSIC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 3191,
+		"location_name" : "PARKING MJESTO UL. MILA RADUNOVICA, PODGORICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 3194,
+		"location_name" : "PARKING MJESTO TRG BALSICA, PODGORICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 3197,
+		"location_name" : "PARKING MJESTO RADOVCE, PODGORICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 3441,
+		"location_name" : "PARKING MJESTO - DZONA DZEKSONA, PODGORICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 3444,
+		"location_name" : "PARKING MJESTO, MOSKOVSKA ULICA KBC, PODGORICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 3447,
+		"location_name" : "PARKING MJESTO - CEPURCI, PODGORICA",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4200,
+		"location_name" : "PARKING MJESTO KATEDRALA - BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4204,
+		"location_name" : "PARKING MJESTO - Ul. Jovana Stojanovica, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4207,
+		"location_name" : "PARKING MJESTO, Ul. Jovana Stojanovica 2, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4210,
+		"location_name" : "PARKING MJESTO, Ul. Jovana Tomasevica 2, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4213,
+		"location_name" : "PARKING MJESTO, Ul. Jovana Tomasevica, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4216,
+		"location_name" : "PARKING, TRG VLADIMIRA I KOSARE, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4219,
+		"location_name" : "PARKING MJESTO, FAKULTET ZA POSLOVNU BEZBJEDNOST, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4222,
+		"location_name" : "PARKING MJESTO, CB BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4230,
+		"location_name" : "PARKING MJESTO, POPA DUKLJANINA, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4233,
+		"location_name" : "PARKING MJESTO, UL. BRANKA CALOVICA, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4235,
+		"location_name" : "PARKING MJESTO, UL. MAKEDONSKA, BAR",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4247,
+		"location_name" : "PARKING MJESTO, Gradsko groblje, MOJKOVAC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4251,
+		"location_name" : "PARKING MJESTO,  Centar grada, MOJKOVAC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4253,
+		"location_name" : "PARKING MJESTO, Centar grada 2, MOJKOVAC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4257,
+		"location_name" : "PARKING MJESTO, MUP, MOJKOVAC",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4259,
+		"location_name" : "PARKING MJESTO, Poreska uprava, KOLAŠIN",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 4262,
+		"location_name" : "PARKING MJESTO, Odjeljenje bezbjednosti, KOLASIN",
+		"category_name" : "Parking",
+		"category_id" : 14
+	},
+	{
+		"location_id" : 1332,
+		"location_name" : "Njegoseva ulica, Cetinje",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1335,
+		"location_name" : "Trg Kralja Nikole - Cetinje",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1337,
+		"location_name" : "Njegosev park - Cetinje",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1376,
+		"location_name" : "Park Strazica - Pljevlja",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1382,
+		"location_name" : "Milet Basta, Pljevlja",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1387,
+		"location_name" : "Gradski park Vodice, Pljevlja",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1444,
+		"location_name" : "TRG GOLOOTOCKIH ZRTAVA - Danilovgrad",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1449,
+		"location_name" : "TRG 9 DECEMBAR - Danilovgrad",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1458,
+		"location_name" : "ULICA BAJA SEKULICA - Danilovgrad",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1503,
+		"location_name" : "GRADSKI PARK - Niksic",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1508,
+		"location_name" : "SETALISTE, Ul. Njegoseva - Niksic",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1513,
+		"location_name" : "TRG SLOBODE - Niksic",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1517,
+		"location_name" : "PARK SUMA TREBJESA - Niksic",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1549,
+		"location_name" : "SETALISTE KRALJA NIKOLE - Bar",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1588,
+		"location_name" : "SETALISTE OBALA IVA NOVAKOVICA - SUTOMORE, Bar",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1685,
+		"location_name" : "SETALISTE - IGALO",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1690,
+		"location_name" : "ILIJIN PARK - IGALO",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1694,
+		"location_name" : "PARK NEZAVISNOSTI - HERCEG NOVI",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1723,
+		"location_name" : "TRG NIKOLE DJURKOVICA - HERCEG NOVI",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1802,
+		"location_name" : "PARK BERANE",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1835,
+		"location_name" : "GRADSKI PARK - BIJELO POLJE",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1870,
+		"location_name" : "SETALISTE - Ul. Slobode Bijelo Polje",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1879,
+		"location_name" : "MALI DJECJI PARK - TIVAT",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1883,
+		"location_name" : "TRG MAGNOLIJA - TIVAT",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1887,
+		"location_name" : "MARINA KALIMANJ - TIVAT",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1942,
+		"location_name" : "SETALISTE PINE - TIVAT",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1969,
+		"location_name" : "SETALISTE IV PROLETERSKE - KOLASIN",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1982,
+		"location_name" : "TRG LJUBOMIRA BAKOCA - MOJKOVAC",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2060,
+		"location_name" : "SETALISTE - PETROVAC, Budva",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2127,
+		"location_name" : "SETALISTE PERAST",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2137,
+		"location_name" : "PARK RISAN",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2157,
+		"location_name" : "PARK SLOBODE - KOTOR",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2265,
+		"location_name" : "SETALISTE - UL MATIJE JAKICA - SAVNIK",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2940,
+		"location_name" : "TRG SAKA PETROVICA, NIKSIC",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 2981,
+		"location_name" : "DJECJI PARK PODGORICA",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3007,
+		"location_name" : "TRG VOJVODE BECIR BEGA OSMANAGICA, Podgorica",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3070,
+		"location_name" : "TRG REPUBLIKE, PODGORICA",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3144,
+		"location_name" : "PARK BIJELA, HERCEG NOVI",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3151,
+		"location_name" : "PARK HOTELA BOKA, HERCEG NOVI",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3160,
+		"location_name" : "PARK, ULCINJ",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3169,
+		"location_name" : "SETALISTE ULCINJSKIH MOREPLOVACA, ULCINJ",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3183,
+		"location_name" : "IZLETISTE JEZERO KRUPAC, NIKSIC",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3223,
+		"location_name" : "DJECIJE IGRALISTE, GRADSKI PARK, ZABLJAK",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 3301,
+		"location_name" : "GRADSKI TRG, ROZAJE",
+		"category_name" : "Javne površine",
+		"category_id" : 15
+	},
+	{
+		"location_id" : 1321,
+		"location_name" : "JU Dom ucenika i studenata, Cetinje",
+		"category_name" : "Obrazovnje",
+		"category_id" : 16
+	},
+	{
+		"location_id" : 777,
+		"location_name" : "POSTA (81116)- Aroma market, Stari Aerodrom, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 780,
+		"location_name" : "POSTA (81111), Aroma market Donja Gorica, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 782,
+		"location_name" : "POSTA (81112) - Delta City - PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 784,
+		"location_name" : "POSTA (81117) Mall of Montenegro, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 786,
+		"location_name" : "POSTA (81206) TUZI",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 788,
+		"location_name" : "POSTA (81109) Trzni centar Bazar - PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1465,
+		"location_name" : "POSTA 81410 DANILOVGRAD                                                                                                   POSTA (81410) DANILOVGRAD",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1521,
+		"location_name" : "POŠTA 81405 - KLICEVO - NIKSIC",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1522,
+		"location_name" : "POSTA 81406 TRŽNI CENTAR CONTO - NIKŠIĆ",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1628,
+		"location_name" : "POSTA 2 - 85362, ULCINJ",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1631,
+		"location_name" : "POSTA - 85352 - TRZNI CENTAR BAR MARKET",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1655,
+		"location_name" : "POSTA 85347 - IGALO",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1708,
+		"location_name" : "POSTA 85340 - GLAVNA, HERCEG NOVI",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1853,
+		"location_name" : "POSTA - BIJELO POLJE",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1987,
+		"location_name" : "POSTA 84205 - MOJKOVAC",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 2142,
+		"location_name" : "POSTA 85337 RISAN",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 2148,
+		"location_name" : "POSTA 85339 STARI GRAD- KOTOR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 2250,
+		"location_name" : "POSTA 85335 PRCANJ - KOTOR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3838,
+		"location_name" : "POŠTA 85360 ULCINJ",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3844,
+		"location_name" : "POŠTA 85000 BAR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3849,
+		"location_name" : "POŠTA 85362 ULCINJ 2, ULCINJ",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3854,
+		"location_name" : "POŠTA 85351 GAT V, BAR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3859,
+		"location_name" : "POŠTA 85352 BAR 2, BAR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3866,
+		"location_name" : "POŠTA 84325 PLAV",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3879,
+		"location_name" : "POŠTA 85331 DOBROTA 1, KOTOR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3884,
+		"location_name" : "POSTA 85317 LASTVA GRBALJSKA, KOTOR",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3887,
+		"location_name" : "POSTA 85300 PETROVAC, BUDVA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3892,
+		"location_name" : "POSTA 85315 SVETI STEFAN, PRZNO, BUDVA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3895,
+		"location_name" : "POSTA 85312 BABILONIJA, BUDVA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3898,
+		"location_name" : "POSTA 85311 PODKOSLJUN, BUDVA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3901,
+		"location_name" : "POSTA 85314 AKADEMIJA ZNANJA, BUDVA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3907,
+		"location_name" : "POSTA 85310 MUP, BUDVA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3918,
+		"location_name" : "POSTA 81435 ŠAVNIK",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3922,
+		"location_name" : "POSTA 81403, NJEGOŠEVA 20, NIKŠIĆ",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3933,
+		"location_name" : "POSTA 85340 OPSTINA, HERCEG NOVI",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3936,
+		"location_name" : "POSTA 85343 BIJELA, HERCEG NOVI",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3941,
+		"location_name" : "POSTA 85346 ZELENIKA, HERCEG NOVI",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3945,
+		"location_name" : "POSTA  81304i, HIPERMARKET VOLI, ZETA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3949,
+		"location_name" : "POSTA 81114, VOLI NAS DISKONT, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3953,
+		"location_name" : "POSTA 81105 MASLINE, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3957,
+		"location_name" : "POSTA 81412 SPUŽ, DANILOVGRAD",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3961,
+		"location_name" : "POSTA 81410i, HIPERMARKET VOLI, DANILOVGRAD",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3972,
+		"location_name" : "POSTA 81126 ZLATICA, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3980,
+		"location_name" : "POSTA 81120 The Capital Plaza Centar, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3986,
+		"location_name" : "POSTA 81123 Gornja Gorica, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 3993,
+		"location_name" : "POSTA 81118 Mašinska škola, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4003,
+		"location_name" : "POSTA 81124 Konik, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4007,
+		"location_name" : "POSTA 81105 Hipermarket VOLI Zlatica, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4011,
+		"location_name" : "POSTA 81106 Zabjelo, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4015,
+		"location_name" : "POSTA 81115 Skupština Glavnog grada, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4018,
+		"location_name" : "POSTA 81101 Centar, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4022,
+		"location_name" : "POSTA 81107 Bul. S. P. C., PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 4027,
+		"location_name" : "POSTA 81110 MUP, PODGORICA",
+		"category_name" : "Pošte",
+		"category_id" : 17
+	},
+	{
+		"location_id" : 1625,
+		"location_name" : "CRNOGORSKI TELEKOM, T-MOBILE, BAR",
+		"category_name" : "Telekomunikacije",
+		"category_id" : 18
+	},
+	{
+		"location_id" : 3288,
+		"location_name" : "CRNOGORSKI TELEKOM, T-MOBILE, PLAV",
+		"category_name" : "Telekomunikacije",
+		"category_id" : 18
+	},
+	{
+		"location_id" : 3308,
+		"location_name" : "TELENOR, PRODAVNICA ROZAJE",
+		"category_name" : "Telekomunikacije",
+		"category_id" : 18
+	},
+	{
+		"location_id" : 3335,
+		"location_name" : "M:TEL, POSLOVNICA PLAV",
+		"category_name" : "Telekomunikacije",
+		"category_id" : 18
+	},
+	{
+		"location_id" : 3423,
+		"location_name" : "CRNOGORSKI TELEKOM, T-MOBILE, STARI AERODROM, PODGORICA,",
+		"category_name" : "Telekomunikacije",
+		"category_id" : 18
+	},
+	{
+		"location_id" : 653,
+		"location_name" : "Saborni hram Hristovog vaskrsenja - Podgorica",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 656,
+		"location_name" : "Medresa - Miljes",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 1363,
+		"location_name" : "Hram Svetog Georgija - Pljevlja",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 1381,
+		"location_name" : "Crkva Svete Petke - Pljevlja",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 1535,
+		"location_name" : "SABORNI HRAM SVETOG JOVANA VLADIMIRA - Bar",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 1822,
+		"location_name" : "CRKVA SVETOG APOSTOLA PETRA - BIJELO POLJE",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 2098,
+		"location_name" : "KATEDRALA SVETOG TRIPUNA - KOTOR",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 2932,
+		"location_name" : "SABORNA CRKVA SVETOG VASILIJA OSTROSKOG, NIKSIC",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 3120,
+		"location_name" : "ISLAMSKI KULTURNI CENTAR - BAR",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 3176,
+		"location_name" : "PAROHIJSKI DOM SVETI VASILIJE OSTROSKI, NIKSIC",
+		"category_name" : "Vjerski objekti",
+		"category_id" : 19
+	},
+	{
+		"location_id" : 2116,
+		"location_name" : "GRADSKA KAFANA DOJMI - KOTOR",
+		"category_name" : "Ugostiteljstvo",
+		"category_id" : 20
+	},
+	{
+		"location_id" : 3412,
+		"location_name" : "HARD ROCK CAFE PODGORICA, PODGORICA",
+		"category_name" : "Ugostiteljstvo",
+		"category_id" : 20
+	},
+	{
+		"location_id" : 1484,
+		"location_name" : "SPORTSKA DVORANA ZABLJAK",
+		"category_name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"category_id" : 22
+	},
+	{
+		"location_id" : 3112,
+		"location_name" : "SPORTSKA DVORANA UNIVERZITETA CRNE GORE, PODGORICA",
+		"category_name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"category_id" : 22
+	},
+	{
+		"location_id" : 4030,
+		"location_name" : "SPORTSKI CENTAR MORACA, PODGORICA",
+		"category_name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"category_id" : 22
+	},
+	{
+		"location_id" : 4035,
+		"location_name" : "GRADSKI BAZEN, PODGORICA",
+		"category_name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"category_id" : 22
+	},
+	{
+		"location_id" : 4042,
+		"location_name" : "STADION MALIH SPORTOVA, PODGORICA",
+		"category_name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"category_id" : 22
+	},
+	{
+		"location_id" : 4050,
+		"location_name" : "GRADSKI STADION PODGORICA",
+		"category_name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"category_id" : 22
+	},
+	{
+		"location_id" : 994,
+		"location_name" : "MERIDIAN RENT A CAR - Podgorica",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 1373,
+		"location_name" : "CMC - Benzinska pumpa, Pljevlja",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 1531,
+		"location_name" : "PIJACA KLICEVO - NIKSIC",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 1959,
+		"location_name" : "AERODROM TIVAT",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 2243,
+		"location_name" : "AUTOBUSKA STANICA KOTOR",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 2929,
+		"location_name" : "HIP HOP PETROL - benzinska pumpa, NIKSIC",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 2950,
+		"location_name" : "AUTOBUSKA STANICA NIKSIC",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 2964,
+		"location_name" : "AERODROM PODGORICA, ZETA",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3094,
+		"location_name" : "BENZINSKA PUMPA, EKO PETROL, BS PODGORICA 6",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3097,
+		"location_name" : "BENZINSKA PUMPA, EKO PETROL, BS PODGORICA 9",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3101,
+		"location_name" : "HIP HOP PETROL, BS PODGORICA - ZAGORIC",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3116,
+		"location_name" : "BENZINSKA PUMPA, BS PODGORICA 8",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3134,
+		"location_name" : "BENZINSKA PUMPA - EKO PETROL, IGALO, HERCEG NOVI",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3141,
+		"location_name" : "BENZINSKA PUMPA LUKOIL MONTENEGRO, IGALO, HERCEG NOVI",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3233,
+		"location_name" : "LOVCEN OSIGURANJE, POSLOVNICA ZABLJAK",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3240,
+		"location_name" : "LOVCEN OSIGURANJE FILIJALA PODGORICA",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3252,
+		"location_name" : "MERKUR OSIGURANJE A.D. PODGORICA",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3278,
+		"location_name" : "AUTOBUSKA STANICA MOJKOVAC",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3344,
+		"location_name" : "PRETTY HAIR STYLE, FRIZERSKI SALON PLAV",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 3451,
+		"location_name" : "BS PODGORICA,Mitra Bakica - Benzinska stanica",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 4127,
+		"location_name" : "BS PODGORICA, Krivi most - Benzinska stanica",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 4131,
+		"location_name" : "BS PODGORICA, Zagorič - Benzinska stanica",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 4134,
+		"location_name" : "BS PODGORICA, Donja Gorica, Benzinska stanica",
+		"category_name" : "Ostalo",
+		"category_id" : 24
+	},
+	{
+		"location_id" : 684,
+		"location_name" : "Apoteka VILLA - Podgorica",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 1796,
+		"location_name" : "KLIKOVAC DOO - POLJOPRIVREDNA APOTEKA GOLD",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 3236,
+		"location_name" : "JZU APOTEKA MONTEFARM ZABLJAK",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 3347,
+		"location_name" : "APOTEKA MONTEFARM ZDRAVLJE, PLAV",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 3350,
+		"location_name" : "PHARMACIJE, APOTEKA PLAV",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 3353,
+		"location_name" : "APOTEKA LIJEK, BERANE",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 3356,
+		"location_name" : "APOTEKA MAXIMA, PODGORICA",
+		"category_name" : "Apoteke",
+		"category_id" : 25
+	},
+	{
+		"location_id" : 2776,
+		"location_name" : "JU NARODNA BIBLIOTEKA RADOSAV LJUMOVIC PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 3047,
+		"location_name" : "ZELENA PIJACA BAZAR, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 3105,
+		"location_name" : "PIJACA POBREZJE, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4060,
+		"location_name" : "VODOVOD I KANALIZACIJA DOO PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4066,
+		"location_name" : "JU MUZEJI I GALERIJE PODGORICE - MODERNA GALERIJA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4070,
+		"location_name" : "JU MUZEJI I GALERIJE PODGORICE - ART GALERIJA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4074,
+		"location_name" : "JU MUZEJI I GALERIJE PODGORICE - GALERIJA RISTO STIJOVIĆ",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4081,
+		"location_name" : "SEKRETARIJATA ZA SOCIJALNO STARANJE, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4085,
+		"location_name" : "SEKRETARIJAT ZA LOKALNU SAMOUPRAVU, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4091,
+		"location_name" : "PIJACA FORUM, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4096,
+		"location_name" : "SKUPSTINA GLAVNOG GRADA, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4173,
+		"location_name" : "NARODNA KUHINJA PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4268,
+		"location_name" : "Javna Ustanova KAKARICKA GORA, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4274,
+		"location_name" : "JU MUZEJI I GALERIJE PODGORICE - KUSLEVOVA KUĆA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4278,
+		"location_name" : "ZGRADA GRADONAČELNIKA, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4283,
+		"location_name" : "JAVNA USTANOVA KULTURNO INFORMATIVNI CENTAR \"BUDO TOMOVIC\", PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4289,
+		"location_name" : "AGENCIJA ZA IZGRADNJU I RAZVOJ PODGORICE",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4293,
+		"location_name" : "DIREKCIJA ZA IMOVINU, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4297,
+		"location_name" : "SEKRETARIJAT ZA SAOBRACAJ, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	},
+	{
+		"location_id" : 4301,
+		"location_name" : "TRZNICE I PIJACE doo, PODGORICA",
+		"category_name" : "Lokalna samouprava",
+		"category_id" : 60
+	}
+]

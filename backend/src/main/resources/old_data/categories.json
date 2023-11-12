@@ -1,0 +1,128 @@
+[
+	{
+		"id" : 7,
+		"name" : "Banke",
+		"slug" : "banke",
+		"parent" : 59
+	},
+	{
+		"id" : 8,
+		"name" : "Kultura",
+		"slug" : "kultura",
+		"parent" : 58
+	},
+	{
+		"id" : 9,
+		"name" : "Objekti državnih organa",
+		"slug" : "javne-ustanove",
+		"parent" : 58
+	},
+	{
+		"id" : 10,
+		"name" : "Objekti za OSI",
+		"slug" : "osi",
+		"parent" : 59
+	},
+	{
+		"id" : 11,
+		"name" : "Zdravstvo",
+		"slug" : "zdravstvene-ustanove",
+		"parent" : 58
+	},
+	{
+		"id" : 12,
+		"name" : "Turistički objekti",
+		"slug" : "turisticki-objekti",
+		"parent" : 59
+	},
+	{
+		"id" : 13,
+		"name" : "Trgovine",
+		"slug" : "trgovine",
+		"parent" : 59
+	},
+	{
+		"id" : 14,
+		"name" : "Parking",
+		"slug" : "parking",
+		"parent" : 59
+	},
+	{
+		"id" : 15,
+		"name" : "Javne površine",
+		"slug" : "javne-povrsine",
+		"parent" : 59
+	},
+	{
+		"id" : 16,
+		"name" : "Obrazovnje",
+		"slug" : "obrazovne-ustanove",
+		"parent" : 58
+	},
+	{
+		"id" : 17,
+		"name" : "Pošte",
+		"slug" : "poste",
+		"parent" : 58
+	},
+	{
+		"id" : 18,
+		"name" : "Telekomunikacije",
+		"slug" : "telekomunikacije",
+		"parent" : 59
+	},
+	{
+		"id" : 19,
+		"name" : "Vjerski objekti",
+		"slug" : "vjerski-objekti",
+		"parent" : 59
+	},
+	{
+		"id" : 20,
+		"name" : "Ugostiteljstvo",
+		"slug" : "ugostiteljstvo",
+		"parent" : 59
+	},
+	{
+		"id" : 22,
+		"name" : "Otvoreni i zatvoreni sportski i rekreativni objekti",
+		"slug" : "sportski-objekti",
+		"parent" : 58
+	},
+	{
+		"id" : 24,
+		"name" : "Ostalo",
+		"slug" : "ostalo",
+		"parent" : 59
+	},
+	{
+		"id" : 25,
+		"name" : "Apoteke",
+		"slug" : "apoteke",
+		"parent" : 59
+	},
+	{
+		"id" : 57,
+		"name" : "Saobraćajni terminali",
+		"slug" : "saobracajni-terminali",
+		"parent" : 58
+	},
+	{
+		"id" : 58,
+		"name" : "Objekti u javnoj upotrebi",
+		"slug" : "objekti-u-javnoj-upotrebi",
+		"parent" : 0
+	},
+	{
+		"id" : 59,
+		"name" : "ostali",
+		"slug" : "ostali-objekti",
+		"parent" : 0
+	},
+	{
+		"id" : 60,
+		"name" : "Lokalna samouprava",
+		"slug" : "lokalna-samouprava",
+		"parent" : 58
+	}
+]
