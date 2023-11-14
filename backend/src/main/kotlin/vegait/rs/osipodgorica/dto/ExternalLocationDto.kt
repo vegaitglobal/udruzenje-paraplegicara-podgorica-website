@@ -16,16 +16,10 @@ open class ExternalLocationDto (
     var locationLatitude: Double,
     var locationLongitude: Double,
     var zipCode: String?,
-    var _city: String? = null,
+    var city: String,
     var country: String?,
     var webSite: String?,
     var email: String?,
     var companyImageUrl: String?,
     var accessibilityTags: String?
-) {
-    var city: String?
-        get() = _city
-        set(value) {
-            _city = value
-        }
-}
+)

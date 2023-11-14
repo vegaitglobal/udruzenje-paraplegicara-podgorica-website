@@ -1,12 +1,14 @@
 package vegait.rs.osipodgorica.seeder
 
 import org.springframework.boot.CommandLineRunner
+import org.springframework.core.annotation.Order
 import org.springframework.core.env.Environment
 import org.springframework.stereotype.Component
 import vegait.rs.osipodgorica.model.City
 import vegait.rs.osipodgorica.repository.CityRepository
 
 @Component
+@Order(1)
 class CitySeeder(
     val cityRepository: CityRepository,
     val env: Environment,
@@ -34,7 +36,8 @@ class CitySeeder(
             City(id = 12, name = "Berane"),
             City(id = 13, name = "Mojkovac"),
             City(id = 14, name = "Rozaje"),
-            City(id = 15, name = "Plav")
+            City(id = 15, name = "Plav"),
+            City(id = 16, name = "Nepoznat")
         )
     }
 }

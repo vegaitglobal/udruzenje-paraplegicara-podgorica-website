@@ -1,13 +1,10 @@
 package vegait.rs.osipodgorica.seeder
 
 import org.springframework.boot.CommandLineRunner
+import org.springframework.core.annotation.Order
 import org.springframework.core.env.Environment
 import org.springframework.stereotype.Component
-import vegait.rs.osipodgorica.model.AccessibilityFeature
-import vegait.rs.osipodgorica.model.Category
-import vegait.rs.osipodgorica.model.Location
-import vegait.rs.osipodgorica.model.News
-import vegait.rs.osipodgorica.model.NewsTag
+import vegait.rs.osipodgorica.model.*
 import vegait.rs.osipodgorica.repository.AccessibilityFeatureRepository
 import vegait.rs.osipodgorica.repository.CategoryRepository
 import vegait.rs.osipodgorica.repository.CityRepository
@@ -18,6 +15,7 @@ import java.lang.IllegalArgumentException
 import java.time.LocalDate
 
 @Component
+@Order(2)
 class InitSeeder(
     val featuresRepo: AccessibilityFeatureRepository,
     val categoryRepo: CategoryRepository,
@@ -80,70 +78,116 @@ class InitSeeder(
             Category(
                 id = 1,
                 name = "Objekti državnih organa",
-                relativeUrl = "uploads/categories/1/m-drzavni-organi.png"
+                relativeUrl = "uploads/categories/1/m-drzavni-organi.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 2,
                 name = "Lokalna samouprava",
-                relativeUrl = "uploads/categories/2/m-drzavni-organi.png"
+                relativeUrl = "uploads/categories/2/m-drzavni-organi.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 3,
                 name = "Zdravstvo",
-                relativeUrl = "uploads/categories/3/m-zdravlje.png"
+                relativeUrl = "uploads/categories/3/m-zdravlje.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 4,
                 name = "Obrazovanje",
-                relativeUrl = "uploads/categories/4/m-obrazovanje.png"
+                relativeUrl = "uploads/categories/4/m-obrazovanje.png",
+                type = CategoryType.PRIMARY
             ),
-            Category(id = 5, name = "Kultura", relativeUrl = "uploads/categories/5/m-kultura.png"),
+            Category(
+                id = 5,
+                name = "Kultura",
+                relativeUrl = "uploads/categories/5/m-kultura.png",
+                type = CategoryType.PRIMARY
+            ),
             Category(
                 id = 6,
                 name = "Otvoreni i zatvoreni sportski i rekreativni objekti",
-                relativeUrl = "uploads/categories/6/m-sport.png"
+                relativeUrl = "uploads/categories/6/m-sport.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 7,
                 name = "Saobraćajni terminali",
-                relativeUrl = "uploads/categories/7/m-saobracaj.png"
+                relativeUrl = "uploads/categories/7/m-saobracaj.png",
+                type = CategoryType.PRIMARY
             ),
-            Category(id = 8, name = "Pošte", relativeUrl = "uploads/categories/8/m-posta.png"),
-            Category(id = 9, name = "Banke", relativeUrl = "uploads/categories/9/m-banke.png"),
+            Category(
+                id = 8,
+                name = "Pošte",
+                relativeUrl = "uploads/categories/8/m-posta.png",
+                type = CategoryType.PRIMARY
+            ),
+            Category(
+                id = 9,
+                name = "Banke",
+                relativeUrl = "uploads/categories/9/m-banke.png",
+                type = CategoryType.PRIMARY
+            ),
             Category(
                 id = 10,
                 name = "Trgovački objekti",
-                relativeUrl = "uploads/categories/10/m-trgovina.png"
+                relativeUrl = "uploads/categories/10/m-trgovina.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 11,
                 name = "Turistički objekti",
-                relativeUrl = "uploads/categories/11/m-turizam.png"
+                relativeUrl = "uploads/categories/11/m-turizam.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 12,
                 name = "Ugostiteljski objekti",
-                relativeUrl = "uploads/categories/12/m-ugostiteljstvo.png"
+                relativeUrl = "uploads/categories/12/m-ugostiteljstvo.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 13,
                 name = "Vjerski objekti",
-                relativeUrl = "uploads/categories/13/m-crkve.png"
+                relativeUrl = "uploads/categories/13/m-crkve.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 14,
                 name = "Telekomunikacije",
-                relativeUrl = "uploads/categories/14/m-telekomunikacije.png"
+                relativeUrl = "uploads/categories/14/m-telekomunikacije.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 15,
                 name = "Zabava",
-                relativeUrl = "uploads/categories/15/m-zabava.png"
+                relativeUrl = "uploads/categories/15/m-zabava.png",
+                type = CategoryType.PRIMARY
             ),
             Category(
                 id = 16,
                 name = "Ostali",
-                relativeUrl = "uploads/categories/15/m-zabava.png"
+                relativeUrl = "uploads/categories/15/m-zabava.png",
+                type = CategoryType.SECONDARY
+            ),
+            Category(
+                id = 17,
+                name = "Parking",
+                relativeUrl = "uploads/categories/15/m-zabava.png",
+                type = CategoryType.SECONDARY
+            ),
+            Category(
+                id = 18,
+                name = "Javne površine",
+                relativeUrl = "uploads/categories/15/m-zabava.png",
+                type = CategoryType.SECONDARY
+            ),
+            Category(
+                id = 19,
+                name = "Apoteke",
+                relativeUrl = "uploads/categories/15/m-zabava.png",
+                type = CategoryType.SECONDARY
             ),
         )
     }
@@ -156,7 +200,7 @@ class InitSeeder(
         val trafficFacility = categoryRepo.findByName("Saobraćajni terminali")
         val commercialFacilities = categoryRepo.findByName("Trgovački objekti")
         val otherCategory =
-            categoryRepo.findByName("Ostali") ?: throw IllegalArgumentException("No category \"Ostali\"")
+            categoryRepo.findByName("Ostali")
 
         val parking = featuresRepo.findByName("Parking mjesto")
         val ramp = featuresRepo.findByName("Rampa")
@@ -172,7 +216,7 @@ class InitSeeder(
                 id = 1,
                 name = "KBC",
                 description = "Kliničko bolnički centar CG",
-                category = hospital ?: otherCategory,
+                category = hospital,
                 accessibilityFeatures = hashSetOf(parking, toalet),
                 latitude = 42.437966,
                 longitude = 19.246028,
@@ -188,7 +232,7 @@ class InitSeeder(
                 id = 2,
                 name = "KIC Budo Tomović",
                 description = "Kulturni objekat",
-                category = culturalFacility ?: otherCategory,
+                category = culturalFacility,
                 accessibilityFeatures = hashSetOf(toalet),
                 latitude = 42.446105,
                 longitude = 19.264439,
@@ -204,7 +248,7 @@ class InitSeeder(
                 id = 3,
                 name = "MUP",
                 description = "Ministarstvo unutrašnjih poslova",
-                category = publicFacility ?: otherCategory,
+                category = publicFacility,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.442171,
                 longitude = 19.252682,
@@ -220,7 +264,7 @@ class InitSeeder(
                 id = 4,
                 name = "Crnogorska Komercijalna Banka",
                 description = "Crnogorsko Komercijalna Banka",
-                category = bank ?: otherCategory,
+                category = bank,
                 accessibilityFeatures = hashSetOf(ramp, toalet),
                 latitude = 42.441631066437786,
                 longitude = 19.247161806315603,
@@ -236,7 +280,7 @@ class InitSeeder(
                 id = 5,
                 name = "Filijala Crnogorska Komercijalna Banka",
                 description = "filijala-crnogorska-komercijalna-banka",
-                category = bank ?: otherCategory,
+                category = bank,
                 accessibilityFeatures = hashSetOf(ramp, toalet),
                 latitude = 42.44190356595263,
                 longitude = 19.247437111656154,
@@ -252,7 +296,7 @@ class InitSeeder(
                 id = 6,
                 name = "Filijala Crnogorska Komercijalna Banka 2",
                 description = "filijala-crnogorska-komercijalna-banka",
-                category = bank ?: otherCategory,
+                category = bank,
                 accessibilityFeatures = hashSetOf(ramp, toalet),
                 latitude = 42.442468066159144,
                 longitude = 19.249060753384356,
@@ -268,7 +312,7 @@ class InitSeeder(
                 id = 7,
                 name = "Ministarstvo za ljudska i manjinska prava",
                 description = "U sklopu ministarstva se nalazi i Direktorat za unapredjenje i zastitu ljudskih prava, koji se izmedju ostalog bavi i sa temama koje se ticu lica sa invaliditetom.",
-                category = publicFacility ?: otherCategory,
+                category = publicFacility,
                 accessibilityFeatures = hashSetOf(ramp, toalet, lift),
                 latitude = 42.4421747388227,
                 longitude = 19.246871165554012,
@@ -284,7 +328,7 @@ class InitSeeder(
                 id = 8,
                 name = "Mall of Montenegro",
                 description = "Shopping centar Mall of Montenegro u sklopu kojeg se nalazi zelena pijaca, moderni shoping centar i savremeni hotel \"Ramada\" u kojem su dvije sobe pristupačne za lica koja su korisnici invalidskih kolica. U sklopu objekta se nalazi hipermarket \"Roda\", banka, bankomati, apoteka, prodavnice tehničkih uređaja, sportske opreme, garderobe, obuće, igraonica za djecu, kladionica, prodavnica kozmetičkih proizvoda, teretana, spa&welness centar, kuglana, restorani, autoperionica...",
-                category = publicFacility ?: otherCategory,
+                category = publicFacility,
                 accessibilityFeatures = hashSetOf(ramp, toalet, lift),
                 latitude = 42.432195991907406,
                 longitude = 19.26276325396725,
@@ -300,7 +344,7 @@ class InitSeeder(
                 id = 9,
                 name = "Njegošev park",
                 description = "Park u Podgorici",
-                category = culturalFacility ?: otherCategory,
+                category = culturalFacility,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.385984654613424,
                 longitude = 18.925302028656006,
@@ -316,7 +360,7 @@ class InitSeeder(
                 id = 10,
                 name = "Voli 29 Podgorica",
                 description = "voli-29-podgorica",
-                category = commercialFacilities ?: otherCategory,
+                category = commercialFacilities,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.46607432673881,
                 longitude = 19.29769992828369,
@@ -333,7 +377,7 @@ class InitSeeder(
                 name = "Naš diskont Podgorica",
                 description = "Objekat nas diskont ima uradjena zakosenja prije ulaska u prodajni prostor. Unutrasnja komunikacija licima sa invaliditetom je moguca, a ispred samog objekta nalazi se obiljezeno vise parking mjesta.\n" +
                         "Radno vrijeme: 07:00 - 22:00 svakog dana",
-                category = commercialFacilities ?: otherCategory,
+                category = commercialFacilities,
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.42097757031943,
                 longitude = 19.25699472427368,
@@ -351,7 +395,7 @@ class InitSeeder(
                 description = "Iza objekta se nalazi toalet do koga vodi rampa sa rukohvatom. Neposredno do rampe se nalaze obiljezena dva parking mjesta. U sklopu objekta se nalazi cafe, prodavnica i auto perionica.\n" +
                         "Pumpa se nalazi sa desne strane magistralnog pumpa od pravca naselja Zabjelo u pravcu takozvanih cetinjskih semafora.\n" +
                         "Radno vrijeme: 0:00 - 24:00 svakog dana.",
-                category = trafficFacility ?: otherCategory,
+                category = trafficFacility,
                 accessibilityFeatures = hashSetOf(ramp, toalet, parking),
                 latitude = 42.43025134141357,
                 longitude = 19.23166662454605,
@@ -367,7 +411,7 @@ class InitSeeder(
                 id = 13,
                 name = "Dom zdravlja Tuzi",
                 description = "Ulazna rampa bez rukohvata. Toalet",
-                category = trafficFacility ?: otherCategory,
+                category = trafficFacility,
                 accessibilityFeatures = hashSetOf(ramp, toalet, parking),
                 latitude = 42.36343149754172,
                 longitude = 19.329114486755316,
@@ -385,7 +429,7 @@ class InitSeeder(
                 description = "Na izlazu iz Niksica, prema granici Bosne i Hercegovine, do Vukovog mosta, nalazi se prodajni objekat IDEA.\n" +
                         "Objekat ima na ulazu rampu bez ograde.\n" +
                         "Radno vrijeme: pon - ned: 07:00 - 22:00",
-                category = commercialFacilities ?: otherCategory,
+                category = commercialFacilities,
                 accessibilityFeatures = hashSetOf(ramp, toalet, parking),
                 latitude = 42.78118691504842,
                 longitude = 18.92085760831833,

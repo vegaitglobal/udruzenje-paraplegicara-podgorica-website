@@ -1,0 +1,56 @@
+{
+  "matched": {
+    "Objekti državnih organa": [
+      "Objekti državnih organa"
+    ],
+    "Lokalna samouprava": [
+      "Lokalna samouprava"
+    ],
+    "Zdravstvo": [
+      "Zdravstvo"
+    ],
+    "Obrazovanje": [
+      "Obrazovnje"
+    ],
+    "Kultura": [
+      "Kultura"
+    ],
+    "Otvoreni i zatvoreni sportski i rekreativni objekti": [
+      "Otvoreni i zatvoreni sportski i rekreativni objekti"
+    ],
+    "Saobraćajni terminali": [],
+    "Pošte": [
+      "Pošte"
+    ],
+    "Banke": [
+      "Banke"
+    ],
+    "Trgovački objekti": [
+      "Trgovine"
+    ],
+    "Turistički objekti": [
+      "Turistički objekti"
+    ],
+    "Ugostiteljski objekti": [
+      "Ugostiteljstvo"
+    ],
+    "Vjerski objekti": [
+      "Vjerski objekti"
+    ],
+    "Telekomunikacije": [
+      "Telekomunikacije"
+    ],
+    "Zabava": [],
+    "Ostali": [
+      "Ostalo"
+    ],
+    "Parking" : ["Parking"],
+    "Javne površine": ["Javne površine"],
+    "Apoteke": ["Apoteke"]
+  },
+
+  "unmatched": ["Parking",
+    "Javne površine",
+    "Apoteke"]
+}
+

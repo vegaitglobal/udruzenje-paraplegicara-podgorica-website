@@ -5,6 +5,7 @@ import org.springframework.transaction.annotation.Transactional
 import vegait.rs.osipodgorica.dto.CreateCategoryRequest
 import vegait.rs.osipodgorica.dto.UpdateCategoryRequest
 import vegait.rs.osipodgorica.model.Category
+import vegait.rs.osipodgorica.model.CategoryType
 import vegait.rs.osipodgorica.repository.CategoryRepository
 
 @Service
@@ -16,7 +17,7 @@ class CategoryService(
 ) {
 
 	fun store(request: CreateCategoryRequest): Category {
-		val category = categoryRepo.save(Category(name = request.name))
+		val category = categoryRepo.save(Category(name = request.name, type = CategoryType.SECONDARY))
 
 		val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
 		category.relativeUrl = imagePath
