@@ -84,8 +84,8 @@ function AddLocationForm({
       longitude: lng,
       accessibilityFeatureIds: selectedAccessibilityFeatures.map((featureId) => +featureId),
     };
-
-    sendDataAndUploadImage(image, payload);
+    const url = `${process.env.NEXT_PUBLIC_URL}locations`;
+    sendDataAndUploadImage(image, payload, url);
     dispatch({ type: FORM_ACTIONS.RESET_STATE });
     setSelectedAccessibilityFeatures((prev) => []);
     setImage(null);
@@ -124,7 +124,7 @@ function AddLocationForm({
           required
         />
       </div>
-      <div className="md:flex md:gap-3 ">
+      <div className="lg:flex md:gap-3 ">
         <div className="h-100">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Accessibility features

@@ -1,7 +1,5 @@
-import { TCreateLocationPayload } from "@/components/Molecules/AddLocationForm/AddLocationForm.types";
-
 export type UseFileUploadReturn = {
-  sendDataAndUploadImage: (file: File, payload: TCreateLocationPayload) => Promise<void>;
+  sendDataAndUploadImage: (file: File, payload: any, url: string) => Promise<void>;
   response: UploadResponse;
   isLoading: boolean;
 };

@@ -27,7 +27,9 @@ export const getLocations = async ({
   const queryString = params.toString();
   const url = `${process.env.NEXT_PUBLIC_URL}locations${queryString ? `?${queryString}` : ""}`;
 
-  const data: Location[] = await fetch(url).then((res) => res.json());
+  const data: Location[] = await fetch(url, {
+    cache: "no-cache",
+  }).then((res) => res.json());
   return data;
 };
 

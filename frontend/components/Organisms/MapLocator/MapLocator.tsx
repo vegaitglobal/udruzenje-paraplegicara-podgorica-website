@@ -189,94 +189,96 @@ function MapLocator({
       </div>
       {isLoaded ? (
         <GoogleMap zoom={10} onLoad={onLoad} mapContainerStyle={{ width: "100%", height: 600 }}>
-          <MarkerClusterer
-            options={{
-              minimumClusterSize: 2,
-              enableRetinaIcons: true,
-              gridSize: 60,
+          {filteredLocations.length > 0 && (
+            <MarkerClusterer
+              options={{
+                minimumClusterSize: 2,
+                enableRetinaIcons: true,
+                gridSize: 60,
 
-              calculator: (markers, numStyles) => {
-                const clusterSize = markers.length;
-                let index = 0;
+                calculator: (markers, numStyles) => {
+                  const clusterSize = markers.length;
+                  let index = 0;
 
-                // Determine the index of the icon based on the cluster size
-                if (clusterSize >= 10) {
-                  index = 4;
-                } else if (clusterSize >= 5) {
-                  index = 3;
-                } else if (clusterSize >= 2) {
-                  index = 2;
-                } else if (clusterSize === 1) {
-                  index = 1;
-                }
+                  // Determine the index of the icon based on the cluster size
+                  if (clusterSize >= 10) {
+                    index = 4;
+                  } else if (clusterSize >= 5) {
+                    index = 3;
+                  } else if (clusterSize >= 2) {
+                    index = 2;
+                  } else if (clusterSize === 1) {
+                    index = 1;
+                  }
 
-                const icon = iconArray[index]; // Get the appropriate icon from the iconArray
+                  const icon = iconArray[index]; // Get the appropriate icon from the iconArray
 
-                // Create a custom HTML for the cluster icon
-                const customHtml = `<div style="position:relative;width:80px; height:80px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                  // Create a custom HTML for the cluster icon
+                  const customHtml = `<div style="position:relative;width:80px; height:80px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
               <img src="${icon.src}" width="80" height="80" />
               <p style="position:absolute;font-size:20px;color:blue">${clusterSize}</p>
             </div>`;
 
-                return {
-                  text: clusterSize.toString(),
-                  index,
-                  title: "",
-                  html: customHtml, // Use the custom HTML for the cluster icon
-                };
-              },
-            }}
-          >
-            {(clusterer) => (
-              <div>
-                {filteredLocations.map((loc) => (
-                  <MarkerF
-                    options={{
-                      icon: {
-                        url: `${process.env.NEXT_PUBLIC_BASE_URL}/${loc.category.relativeUrl}`,
-                      },
-                    }}
-                    key={loc.id}
-                    position={{ lat: loc.latitude, lng: loc.longitude }}
-                    clusterer={clusterer}
-                    onClick={() => {
-                      setActiveMarker(loc.id);
-                    }}
-                  >
-                    {activeMarker === loc.id && (
-                      <InfoWindowF
-                        onCloseClick={() => {
-                          setActiveMarker(null);
-                        }}
-                      >
-                        <div className="flex flex-col gap-3 lg:flex-row items-center">
-                          <div>
-                            <img
-                              width={200}
-                              height={100}
-                              src={`${process.env.NEXT_PUBLIC_BASE_URL}/${loc.thumbnailUrl}`}
-                              alt={loc.category.name}
-                            />
+                  return {
+                    text: clusterSize.toString(),
+                    index,
+                    title: "",
+                    html: customHtml, // Use the custom HTML for the cluster icon
+                  };
+                },
+              }}
+            >
+              {(clusterer) => (
+                <div>
+                  {filteredLocations.map((loc) => (
+                    <MarkerF
+                      options={{
+                        icon: {
+                          url: `${process.env.NEXT_PUBLIC_BASE_URL}/${loc.category.relative_url}`,
+                        },
+                      }}
+                      key={loc.id}
+                      position={{ lat: loc.latitude, lng: loc.longitude }}
+                      clusterer={clusterer}
+                      onClick={() => {
+                        setActiveMarker(loc.id);
+                      }}
+                    >
+                      {activeMarker === loc.id && (
+                        <InfoWindowF
+                          onCloseClick={() => {
+                            setActiveMarker(null);
+                          }}
+                        >
+                          <div className="flex flex-col gap-3 lg:flex-row items-center">
+                            <div>
+                              <img
+                                width={200}
+                                height={100}
+                                src={`${process.env.NEXT_PUBLIC_BASE_URL}/${loc.thumbnail_url}`}
+                                alt={loc.category.name}
+                              />
+                            </div>
+                            <div className="flex flex-col justify-between gap-3">
+                              <h3 className="text-blue-800 text-lg">
+                                <strong>{loc.name}</strong>
+                              </h3>
+                              <h3 className="text-gray-700 text-lg">{loc.address}</h3>
+                              <Link href={`objekti/${loc.slug}`}>
+                                <AppButton variant="outlined" fullWidth>
+                                  Opširnije
+                                </AppButton>
+                              </Link>
+                            </div>
                           </div>
-                          <div className="flex flex-col justify-between gap-3">
-                            <h3 className="text-blue-800 text-lg">
-                              <strong>{loc.name}</strong>
-                            </h3>
-                            <h3 className="text-gray-700 text-lg">{loc.address}</h3>
-                            <Link href={`objekti/${loc.slug}`}>
-                              <AppButton variant="outlined" fullWidth>
-                                Opširnije
-                              </AppButton>
-                            </Link>
-                          </div>
-                        </div>
-                      </InfoWindowF>
-                    )}
-                  </MarkerF>
-                ))}
-              </div>
-            )}
-          </MarkerClusterer>
+                        </InfoWindowF>
+                      )}
+                    </MarkerF>
+                  ))}
+                </div>
+              )}
+            </MarkerClusterer>
+          )}
         </GoogleMap>
       ) : (
         <div className="h-[600px]"></div>

@@ -1,6 +1,5 @@
 //@ts-nocheck
 
-import { TCreateLocationPayload } from "@/components/Molecules/AddLocationForm/AddLocationForm.types";
 import { useState } from "react";
 import { UploadResponse, UseFileUploadReturn } from "./useUploadImages.types";
 
@@ -8,11 +7,11 @@ export const useHandleForm = (fileKey: string): UseFileUploadReturn => {
   const [response, setResponse] = useState<UploadResponse>({});
   const [isLoading, setIsLoading] = useState(false);
 
-  const sendDataAndUploadImage = async (file: File, payload: TCreateLocationPayload) => {
+  const sendDataAndUploadImage = async (file: File, payload, url: string) => {
     setIsLoading(true);
     const formData = new FormData();
     for (const key of Object.keys(payload)) {
-      const value = payload[key as keyof TCreateLocationPayload];
+      const value = payload[key];
 
       if (Array.isArray(value)) {
         // If the value is an array, loop through its elements and append each one
@@ -26,7 +25,6 @@ export const useHandleForm = (fileKey: string): UseFileUploadReturn => {
     }
 
     formData.append(fileKey, file);
-    const url = `${process.env.NEXT_PUBLIC_URL}locations`;
 
     try {
       const res = await fetch(url, {

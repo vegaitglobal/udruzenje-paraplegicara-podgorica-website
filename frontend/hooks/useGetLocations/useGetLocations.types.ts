@@ -10,17 +10,17 @@ export interface Location {
   category: {
     id: number;
     name: string;
-    relativeUrl: string;
+    relative_url: string;
   };
   accessibilityFeatures: [
     {
       id: number;
       name: string;
-      relativeUrl: string;
+      relative_url: string;
     },
   ];
   images: [];
-  thumbnailUrl: string;
+  thumbnail_url: string;
   email: string;
   phone: string;
 }

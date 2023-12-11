@@ -7,8 +7,23 @@ const nextConfig = {
     });
     return config;
   },
+  reactStrictMode: false,
   images: {
     domains: ["localhost"],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/pocetna",
+        permanent: true, // Set to true for a permanent redirect (301), false for a temporary redirect (302)
+      },
+      {
+        source: "/admin",
+        destination: "/admin/admin-lokacija",
+        permanent: true,
+      },
+    ];
   },
 };
 

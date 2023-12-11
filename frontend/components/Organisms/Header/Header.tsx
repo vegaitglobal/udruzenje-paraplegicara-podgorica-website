@@ -38,7 +38,7 @@ const Header = () => {
             {routes.map((route) => (
               <li
                 key={route.path}
-                className={`block py-2 lg:pl-3 pr-4 hover:text-blue-700 lg:p-0 ${
+                className={`block py-2 hover:text-blue-700 lg:p-0 ${
                   isActiveRoute(route.path) ? "text-blue-800 font-bold" : ""
                 }`}
               >

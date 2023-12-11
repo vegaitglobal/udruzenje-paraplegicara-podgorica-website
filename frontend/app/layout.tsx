@@ -18,15 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
-          <div className="container mx-auto px-4">
-            <Header />
-            <ToastProvider>
-              <div className="pt-[73px]">{children}</div>
-            </ToastProvider>
-          </div>
-        </div>
-        <Footer />
+        <ToastProvider>
+          <div>{children}</div>
+        </ToastProvider>
       </body>
     </html>
   );

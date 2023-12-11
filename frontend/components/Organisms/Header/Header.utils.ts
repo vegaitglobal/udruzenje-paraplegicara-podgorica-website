@@ -1,7 +1,7 @@
 export const routes = [
   {
     name: "Početna",
-    path: "/",
+    path: "/pocetna",
   },
   {
     name: "Vijesti",

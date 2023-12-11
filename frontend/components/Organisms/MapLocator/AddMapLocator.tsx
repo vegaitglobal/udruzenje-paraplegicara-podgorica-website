@@ -6,7 +6,6 @@ import useGetCategories from "@/hooks/useGetCategories/useGetCategories";
 import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
 import { useCallback, useState } from "react";
 import React from "react";
-import { Category } from "@/hooks/useGetCategories/useGetCategories.types";
 import useGetCities from "@/hooks/useGetCities/useGetCities";
 import { DropdownsData } from "./AddMapLocator.types";
 

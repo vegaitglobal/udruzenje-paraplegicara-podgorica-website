@@ -20,25 +20,29 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           </div>
           <div className="flex gap-2">
             <TagIcon />
-            <div className="flex gap-2">
-              {singleNews.tags.map((item) => (
-                <p>{item.name}</p>
-              ))}
-            </div>
+            {singleNews.tags && (
+              <div className="flex gap-2">
+                {singleNews.tags.map((item) => (
+                  <p>{item.name}</p>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div>
           <img
             className="rounded-md h-1/4"
-            src={`${process.env.NEXT_PUBLIC_BASE_URL}/${singleNews.imageRelativeUri}`}
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}/${singleNews.image_relative_uri}`}
           />
         </div>
       </div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: singleNews.content,
-        }}
-      />
+      {singleNews.content && (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: singleNews.content,
+          }}
+        />
+      )}
     </div>
   );
 };

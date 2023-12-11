@@ -5,11 +5,11 @@ export interface Tag {
   slug: string;
 }
 export interface News {
-  id: number;
+  id?: number;
   title: string;
   content: string | TrustedHTML;
-  slug: string;
-  imageRelativeUri: string;
-  createdAt: string;
-  tags: Tag[];
+  slug?: string;
+  image_relative_uri?: string;
+  createdAt?: string;
+  tags?: Tag[];
 }

@@ -11,7 +11,7 @@ const Page = async () => {
           return (
             <SwiperCard
               className="h-72"
-              bgImage={`${process.env.NEXT_PUBLIC_BASE_URL}/${news.imageRelativeUri}`}
+              bgImage={`${process.env.NEXT_PUBLIC_BASE_URL}/${news.image_relative_uri}`}
               linkHref={`vijesti/${news.slug}`}
               linkTitle="Procitaj vise"
               title={news.title}

@@ -15,7 +15,7 @@ import dynamic from "next/dynamic";
 
 const MapLocator = dynamic(() => import("@/components/Organisms/MapLocator/MapLocator"), {
   loading: () => <p>Loading map...</p>,
-  ssr: false,
+  ssr: true,
 });
 export default async function Home() {
   const { locations } = await useGetLocations({
@@ -26,6 +26,7 @@ export default async function Home() {
       name: "",
     },
   });
+  console.log(locations);
   const { categories } = await useGetCategories();
   const { accessibilityFeatures } = await useGetAccessibilityFeatures();
   const { cities } = await useGetCities();
@@ -56,7 +57,7 @@ export default async function Home() {
       <AppSwiper
         swiperContent={news.map((item) => (
           <SwiperCard
-            bgImage={`${process.env.NEXT_PUBLIC_BASE_URL}/${item.imageRelativeUri}`}
+            bgImage={`${process.env.NEXT_PUBLIC_BASE_URL}/${item.image_relative_uri}`}
             linkHref={`vijesti/${item.slug}`}
             linkTitle="Procitaj vise"
             title={item.title}
